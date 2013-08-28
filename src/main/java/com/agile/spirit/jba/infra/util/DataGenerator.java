@@ -3,16 +3,16 @@ package com.agile.spirit.jba.infra.util;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
 
 import com.agile.spirit.jba.domain.Bookmark;
 import com.agile.spirit.jba.infra.repository.BookmarkRepository;
 import com.google.common.collect.Lists;
 
-@Service
+@Named
 public class DataGenerator {
 
     @Inject
@@ -55,8 +55,8 @@ public class DataGenerator {
                 sb.append("    \"id\" : \"" + bookmark.getId() + "\",\r\n");
                 sb.append("    \"url\" : \"" + bookmark.getUrl() + "\",\r\n");
                 sb.append("    \"description\" : \"" + bookmark.getDescription() + "\",\r\n");
-//                sb.append("    \"creationDate\" : \"" + bookmark.getCreationDate() + "\",\r\n");
-//                sb.append("    \"updateDate\" : \"" + bookmark.getUpdateDate() + "\"\r\n");
+                sb.append("    \"creationDate\" : \"" + bookmark.getCreationDate() + "\",\r\n");
+                sb.append("    \"updateDate\" : \"" + bookmark.getUpdateDate() + "\"\r\n");
                 sb.append("  }\r\n");
             }
             sb.append("}");

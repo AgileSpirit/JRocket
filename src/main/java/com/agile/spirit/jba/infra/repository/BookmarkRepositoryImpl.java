@@ -2,15 +2,17 @@ package com.agile.spirit.jba.infra.repository;
 
 import java.util.List;
 
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
-import org.springframework.stereotype.Repository;
-
 import com.agile.spirit.jba.domain.Bookmark;
 
-@Repository
+/**
+ * This class is an example of advanced/customized/specific query implementation.
+ */
+@Named
 public class BookmarkRepositoryImpl implements BookmarkRepositoryCustom {
 
     @PersistenceContext

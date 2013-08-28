@@ -10,6 +10,10 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 import com.agile.spirit.jba.infra.config.TestConfig;
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 
+/**
+ * Base class for DB testing.<br>
+ * DB testing could be useful to check query validity.
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { TestConfig.class })
 @ActiveProfiles("test")
