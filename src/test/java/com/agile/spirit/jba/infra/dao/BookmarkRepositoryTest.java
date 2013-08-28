@@ -2,36 +2,57 @@ package com.agile.spirit.jba.infra.dao;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.joda.time.DateTime;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.agile.spirit.jba.domain.Bookmark;
-import com.agile.spirit.jba.infra.config.TestConfig;
+import com.github.springtestdbunit.annotation.DatabaseSetup;
+import com.google.common.collect.Lists;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { TestConfig.class })
-@ActiveProfiles("test")
-public class BookmarkRepositoryTest {
+@DatabaseSetup(value = "classpath:dataset/BookmarkRepositoryTest.xml")
+public class BookmarkRepositoryTest extends RepositoryTest {
+
+    private static Logger logger = LoggerFactory.getLogger(BookmarkRepositoryTest.class);
 
     @Inject
     private BookmarkRepository bookmarkRepository;
 
     @Test
-    public void testFindLastBookmarks() {
+    public void testFindAll() throws Exception {
         // Given
 
         // When
-        Iterable<Bookmark> bookmarks = bookmarkRepository.findLastBookmarksOrderByCreationDateDesc(5);
+        List<Bookmark> bookmarks = Lists.newArrayList(bookmarkRepository.findAll());
+
+        // Then
+        assertThat(bookmarks.size()).isEqualTo(11);
+
+        // Bonus
+        for (Bookmark bookmark : bookmarks) {
+            logger.info("bookmark : id =" + bookmark.getId() + ", url=" + bookmark.getUrl() + ", creationDate="
+                    + bookmark.getCreationDate());
+        }
+
+    }
+
+    @Test
+    public void testFindLastBookmarksOrderByCreationDateDesc() {
+        // Given
+
+        // When
+        List<Bookmark> bookmarks = Lists.newArrayList(bookmarkRepository.findLastBookmarksOrderByCreationDateDesc(5));
 
         // Then
         DateTime time = new DateTime();
         for (Bookmark bookmark : bookmarks) {
+            logger.info("bookmark : id =" + bookmark.getId() + ", url=" + bookmark.getUrl() + ", creationDate="
+                    + bookmark.getCreationDate());
             assertThat(bookmark.getCreationDate().isBefore(time));
             time = bookmark.getCreationDate();
         }

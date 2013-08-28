@@ -10,17 +10,17 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Entity
 public class Bookmark extends AbstractPersistable<Long> {
 
-    @Column
+    @Column(nullable=false)
     private String url;
 
-    @Column
+    @Column(nullable=true)
     private String description;
 
-    @Column
+    @Column(nullable=false)
     @Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     private DateTime creationDate;
     
-    @Column
+    @Column(nullable=true)
     @Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     private DateTime updateDate;
 

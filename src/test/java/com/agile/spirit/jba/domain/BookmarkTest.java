@@ -21,8 +21,7 @@ public class BookmarkTest {
         assertThat(bookmark.getUrl()).isEqualTo(inputUrl);
         assertThat(bookmark.getDescription()).isEqualTo(inputDescription);
         assertThat(bookmark.getCreationDate()).isNotNull();
-        assertThat(bookmark.getUpdateDate()).isNull();
-        
+        assertThat(bookmark.getUpdateDate()).isNull();   
     }
 
 }

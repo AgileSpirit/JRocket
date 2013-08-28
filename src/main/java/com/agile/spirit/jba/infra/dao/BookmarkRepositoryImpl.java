@@ -1,5 +1,7 @@
 package com.agile.spirit.jba.infra.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -15,7 +17,7 @@ public class BookmarkRepositoryImpl implements BookmarkRepositoryCustom {
     private EntityManager em;
     
     @Override
-    public Iterable<Bookmark> findLastBookmarksOrderByCreationDateDesc(int number) {
+    public List<Bookmark> findLastBookmarksOrderByCreationDateDesc(int number) {
         TypedQuery<Bookmark> query = em.createQuery("from Bookmark order by creationDate desc", Bookmark.class).setMaxResults(number);
         return query.getResultList();
     }
