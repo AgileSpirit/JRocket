@@ -15,5 +15,5 @@ import com.github.springtestdbunit.DbUnitTestExecutionListener;
 @ActiveProfiles("test")
 @TestExecutionListeners({ DependencyInjectionTestExecutionListener.class, DbUnitTestExecutionListener.class })
 public abstract class RepositoryTest {
-    
+
 }

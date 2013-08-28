@@ -18,16 +18,16 @@
   </appender>
 
   <appender name="file" class="ch.qos.logback.core.FileAppender">
-    <file>${catalina.base}/logs/java-backbone.log</file>
+    <file>target/logs/JavaBackbone.log</file>
     <append>true</append>
     <encoder>
       <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
 
-  <logger name="org.springframework" level="WARN" />
-  <logger name="org.hibernate" level="WARN" />
-  <logger name="org.dbunit" level="WARN" />
+  <logger name="org.springframework" level="INFO" />
+  <logger name="org.hibernate" level="INFO" />
+  <logger name="org.dbunit" level="INFO" />
 
   <root level="INFO">
     <appender-ref ref="stdout" />

@@ -8,8 +8,6 @@ import javax.inject.Inject;
 
 import org.joda.time.DateTime;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.agile.spirit.jba.domain.Bookmark;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
@@ -17,8 +15,6 @@ import com.google.common.collect.Lists;
 
 @DatabaseSetup(value = "classpath:dataset/BookmarkRepositoryTest.xml")
 public class BookmarkRepositoryTest extends RepositoryTest {
-
-    private static Logger logger = LoggerFactory.getLogger(BookmarkRepositoryTest.class);
 
     @Inject
     private BookmarkRepository bookmarkRepository;
@@ -32,13 +28,6 @@ public class BookmarkRepositoryTest extends RepositoryTest {
 
         // Then
         assertThat(bookmarks.size()).isEqualTo(11);
-
-        // Bonus
-        for (Bookmark bookmark : bookmarks) {
-            logger.info("bookmark : id =" + bookmark.getId() + ", url=" + bookmark.getUrl() + ", creationDate="
-                    + bookmark.getCreationDate());
-        }
-
     }
 
     @Test
@@ -51,8 +40,6 @@ public class BookmarkRepositoryTest extends RepositoryTest {
         // Then
         DateTime time = new DateTime();
         for (Bookmark bookmark : bookmarks) {
-            logger.info("bookmark : id =" + bookmark.getId() + ", url=" + bookmark.getUrl() + ", creationDate="
-                    + bookmark.getCreationDate());
             assertThat(bookmark.getCreationDate().isBefore(time));
             time = bookmark.getCreationDate();
         }
