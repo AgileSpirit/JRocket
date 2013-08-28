@@ -1,4 +1,4 @@
-package com.agile.spirit.jba.infra.dao;
+package com.agile.spirit.jba.infra.repository;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 
@@ -10,6 +10,7 @@ import org.joda.time.DateTime;
 import org.junit.Test;
 
 import com.agile.spirit.jba.domain.Bookmark;
+import com.agile.spirit.jba.infra.repository.BookmarkRepository;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
 import com.google.common.collect.Lists;
 

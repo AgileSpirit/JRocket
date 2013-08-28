@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.agile.spirit.jba.domain.Bookmark;
-import com.agile.spirit.jba.infra.dao.BookmarkRepository;
+import com.agile.spirit.jba.infra.repository.BookmarkRepository;
 import com.google.common.collect.Lists;
 
 @Service

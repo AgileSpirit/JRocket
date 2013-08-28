@@ -1,4 +1,4 @@
-package com.agile.spirit.jba.infra.dao;
+package com.agile.spirit.jba.infra.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
