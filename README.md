@@ -3,13 +3,16 @@ JavaBackbone
 
 Java project boostrapper for common &amp; standard technical stack : 
 - Spring
+- Spring JavaConfig
+- Spring profiles
+- Spring Data - JPA
 - JPA
 - Hibernate
-- Spring Data - JPA
 - Logback
 - Guava
 - JodaTime
-- etc.
+- DBUnit
+- Mockito
 
 Get started
 ===========
