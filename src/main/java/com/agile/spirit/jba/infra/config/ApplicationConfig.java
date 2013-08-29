@@ -14,12 +14,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories("com.agile.spirit.jba")
 @EnableScheduling
-@Import(value = { LocalhostConfig.class, ProductionConfig.class, RepositoryConfig.class })
+@Import({ RepositoryConfig.class, MailingConfig.class })
 public class ApplicationConfig {
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-       return new PropertySourcesPlaceholderConfigurer();
+        return new PropertySourcesPlaceholderConfigurer();
     }
-    
+
 }

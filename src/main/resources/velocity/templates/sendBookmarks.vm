@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body>
+
+	Hello,
+	
+	Find below the last added bookmarks :
+
+	#foreach( $bookmark in $bookmarks )
+  <h3><a href="$bookmark.url" target="_blank">$bookmark.url</a></h3>
+  <p>$bookmark.description</p>
+	#end
+
+</body>
+</html>

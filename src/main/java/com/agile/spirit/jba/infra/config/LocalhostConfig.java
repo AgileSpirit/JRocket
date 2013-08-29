@@ -17,23 +17,26 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 public class LocalhostConfig implements EnvironmentConfig {
 
     /*
-     * JDBC properties
+     * ================
+     * DATA PERSISTENCE
+     * ================
      */
-    @Value("${jdbc.driverClassName}")
-    private String driverClassName;
-
-    @Value("${jdbc.url}")
-    private String url;
-
-    @Value("${jdbc.username}")
-    private String username;
-
-    @Value("${jdbc.password}")
-    private String password;
-
+    
     /*
      * Hibernate properties
      */
+
+    @Value("${hibernate.connection.driver_class}")
+    private String hibernateConnectionDriverClass;
+
+    @Value("${hibernate.connection.url}")
+    private String hibernateConnectionUrl;
+
+    @Value("${hibernate.connection.username}")
+    private String hibernateConnectionUsername;
+
+    @Value("${hibernate.connection.password}")
+    private String hibernateConnectionPassword;
 
     @Value("${hibernate.dialect}")
     private String hibernateDialect;
@@ -59,16 +62,22 @@ public class LocalhostConfig implements EnvironmentConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
-        ds.setDriverClassName(driverClassName);
-        ds.setUrl(url);
-        ds.setUsername(username);
-        ds.setPassword(password);
+        ds.setDriverClassName(hibernateConnectionDriverClass);
+        ds.setUrl(hibernateConnectionUrl);
+        ds.setUsername(hibernateConnectionUsername);
+        ds.setPassword(hibernateConnectionPassword);
         return ds;
     }
 
     @Bean
     public Properties jpaProperties() {
         Properties properties = new Properties();
+
+        // JDBC connection
+        properties.put("hibernate.connection.driver_class", hibernateConnectionDriverClass);
+        properties.put("hibernate.connection.url", hibernateConnectionUrl);
+        properties.put("hibernate.connection.username", hibernateConnectionUsername);
+        properties.put("hibernate.connection.password", hibernateConnectionPassword);
 
         // Hibernate
         properties.put("hibernate.dialect", hibernateDialect);
@@ -79,6 +88,38 @@ public class LocalhostConfig implements EnvironmentConfig {
         properties.put("hibernate.use_sql_comments", hibernateUseSqlComments);
         properties.put("hibernate.format_sql", hibernateFormatSql);
 
+        return properties;
+    }
+
+    /*
+     * =======
+     * MAILING
+     * =======
+     */
+
+    @Value("${mail.debug}")
+    private String mailDebug;
+
+    @Value("${mail.smtp.host}")
+    private String mailSmtpHost;
+    
+    @Value("${mail.smtp.port}")
+    private String mailSmtpPort;
+    
+    @Value("${mail.smtp.auth}")
+    private String mailSmtpAuth;
+    
+    @Value("${mail.smtp.starttls.enable}")
+    private String mailSmtpStarttlsEnable;
+    
+    @Bean
+    public Properties javaMailProperties() {
+        Properties properties = new Properties();
+        properties.put("mail.debug", mailDebug);
+        properties.put("mail.smtp.host", mailSmtpHost);
+        properties.put("mail.smtp.port", mailSmtpPort);
+        properties.put("mail.smtp.auth", mailSmtpAuth);
+        properties.put("mail.smtp.starttls.enable", mailSmtpStarttlsEnable);
         return properties;
     }
 

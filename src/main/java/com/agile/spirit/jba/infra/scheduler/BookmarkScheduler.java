@@ -7,12 +7,14 @@ import javax.inject.Named;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 
 import com.agile.spirit.jba.domain.Bookmark;
 import com.agile.spirit.jba.infra.repository.BookmarkRepository;
 import com.google.common.collect.Lists;
 
+/**
+ * This class is an example of scheduled task implementation.
+ */
 @Named
 public class BookmarkScheduler {
 
@@ -21,7 +23,7 @@ public class BookmarkScheduler {
     @Inject
     private BookmarkRepository bookmarkRepository;
     
-    @Scheduled(cron="*/5 * * * * *")
+//    @Scheduled(cron="*/5 * * * * *")
     public void countAndDisplayBookmarks() {
         List<Bookmark> bookmarks = Lists.newArrayList(bookmarkRepository.findAll());
         if (bookmarks.isEmpty()) {

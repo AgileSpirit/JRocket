@@ -9,4 +9,6 @@ public interface EnvironmentConfig {
     DataSource dataSource();
     
     Properties jpaProperties();
+    
+    Properties javaMailProperties();
 }

@@ -24,6 +24,12 @@ import com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean;
 @Profile("test")
 public class TestConfig implements EnvironmentConfig {
 
+    /*
+     * ================
+     * DATA PERSISTENCE
+     * ================
+     */
+    
     private static String DRIVER_CLASS_NAME = "org.h2.Driver";
     /*
      * Without the URL option 'DB_CLOSE_DELAY=-1', the H2 in-memory database closes just after Hibernate schema initialization.
@@ -69,6 +75,18 @@ public class TestConfig implements EnvironmentConfig {
         DatabaseDataSourceConnectionFactoryBean databaseConnectionFactory = new DatabaseDataSourceConnectionFactoryBean(dataSource());
         databaseConnectionFactory.setDatabaseConfig(databaseConfig);
         return databaseConnectionFactory.getObject();
+    }
+
+    /*
+     * =======
+     * MAILING
+     * =======
+     */
+    
+    @Bean
+    public Properties javaMailProperties() {
+        Properties properties = new Properties();
+        return properties;
     }
 
 }

@@ -10,11 +10,10 @@ import org.joda.time.DateTime;
 import org.junit.Test;
 
 import com.agile.spirit.jba.domain.Bookmark;
-import com.agile.spirit.jba.infra.repository.BookmarkRepository;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
 import com.google.common.collect.Lists;
 
-@DatabaseSetup(value = "classpath:dataset/BookmarkRepositoryTest.xml")
+@DatabaseSetup(value = "classpath:dbunit/dataset/BookmarkRepositoryTest.xml")
 public class BookmarkRepositoryTest extends RepositoryTest {
 
     @Inject

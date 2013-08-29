@@ -17,9 +17,12 @@ import org.springframework.transaction.PlatformTransactionManager;
 @Configuration
 public class RepositoryConfig {
 
-    @Inject private DataSource dataSource;
-    @Inject private Properties jpaProperties;
-    
+    @Inject
+    private DataSource dataSource;
+
+    @Inject
+    private Properties jpaProperties;
+
     @Bean
     public EntityManagerFactory entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
@@ -27,8 +30,8 @@ public class RepositoryConfig {
         factory.setDataSource(dataSource);
         factory.setJpaProperties(jpaProperties);
         factory.afterPropertiesSet();
-       return factory.getObject();
-       }
+        return factory.getObject();
+    }
 
     @Bean
     public PlatformTransactionManager transactionManager() {
