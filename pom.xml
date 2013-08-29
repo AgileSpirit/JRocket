@@ -20,7 +20,6 @@
     <guava.version>12.0</guava.version>
     <joda-time.version>2.3</joda-time.version>
     <jadira.version>3.0.0.GA</jadira.version>
-    <postgresql-jdbc-driver.version>9.1-901.jdbc4</postgresql-jdbc-driver.version>
     <hsqldb-jdbc-driver.version>2.3.0</hsqldb-jdbc-driver.version>
     <fest-assert.version>2.0M10</fest-assert.version>
     <dbunit.version>2.4.9</dbunit.version>

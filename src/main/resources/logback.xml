@@ -25,7 +25,7 @@
     </encoder>
   </appender>
 
-  <logger name="org.springframework" level="INFO" />
+  <logger name="org.springframework" level="WARN" />
   <logger name="org.hibernate" level="WARN" />
   <logger name="org.dbunit" level="WARN" />
 
