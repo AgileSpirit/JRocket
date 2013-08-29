@@ -8,6 +8,7 @@ Java project boostrapper for common &amp; standard technical stack :
 - Spring Data - JPA
 - JPA
 - Hibernate
+- C3P0
 - SLF4J
 - Logback
 - Guava
