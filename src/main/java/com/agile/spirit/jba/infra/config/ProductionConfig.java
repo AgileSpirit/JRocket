@@ -125,16 +125,9 @@ public class ProductionConfig implements EnvironmentConfig {
      * =======
      */
     
-
     @Value("${mail.debug}")
     private String mailDebug;
 
-    @Value("${mail.username}")
-    private String mailUsername;
-    
-    @Value("${mail.password}")
-    private String mailPassword;
-    
     @Value("${mail.smtp.host}")
     private String mailSmtpHost;
     
@@ -146,21 +139,15 @@ public class ProductionConfig implements EnvironmentConfig {
     
     @Value("${mail.smtp.starttls.enable}")
     private String mailSmtpStarttlsEnable;
-    
-    @Value("${mail.template.from}")
-    private String mailTemplateFrom;
-    
+        
     @Bean
     public Properties javaMailProperties() {
         Properties properties = new Properties();
         properties.put("mail.debug", mailDebug);
-        properties.put("mail.username", mailUsername);
-        properties.put("mail.password", mailPassword);
-        properties.put("mail.smtp.host", mailSmtpAuth);
+        properties.put("mail.smtp.host", mailSmtpHost);
         properties.put("mail.smtp.port", mailSmtpPort);
         properties.put("mail.smtp.auth", mailSmtpAuth);
         properties.put("mail.smtp.starttls.enable", mailSmtpStarttlsEnable);
-        properties.put("mail.template.from", mailTemplateFrom);
         return properties;
     }
 
