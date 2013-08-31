@@ -7,6 +7,7 @@ import javax.inject.Named;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Scheduled;
 
 import com.agile.spirit.jba.domain.Bookmark;
 import com.agile.spirit.jba.infra.repository.BookmarkRepository;
@@ -23,7 +24,10 @@ public class BookmarkScheduler {
     @Inject
     private BookmarkRepository bookmarkRepository;
     
-//    @Scheduled(cron="*/5 * * * * *")
+    /*
+     * Retrieve, count and display the whole bookmarks every minute.
+     */
+    @Scheduled(cron="0 */1 * * * *")
     public void countAndDisplayBookmarks() {
         List<Bookmark> bookmarks = Lists.newArrayList(bookmarkRepository.findAll());
         if (bookmarks.isEmpty()) {

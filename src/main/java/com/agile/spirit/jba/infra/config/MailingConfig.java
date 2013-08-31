@@ -1,5 +1,7 @@
 package com.agile.spirit.jba.infra.config;
 
+import static com.agile.spirit.jba.infra.util.PropertyHelper.setProperty;
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -18,9 +20,17 @@ public class MailingConfig {
 
     @Inject
     private Environment env;
-    
-    @Inject
-    private Properties javaMailProperties;
+
+    @Bean
+    public Properties javaMailProperties() {
+        Properties properties = new Properties();
+        setProperty(env, properties, "mail.debug");
+        setProperty(env, properties, "mail.smtp.host");
+        setProperty(env, properties, "mail.smtp.port");
+        setProperty(env, properties, "mail.smtp.auth");
+        setProperty(env, properties, "mail.smtp.starttls.enable");
+        return properties;
+    }
 
     @Bean
     public VelocityEngine velocityEngine() throws VelocityException, IOException {
@@ -41,7 +51,7 @@ public class MailingConfig {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setUsername(env.getProperty("mail.username"));
         mailSender.setPassword(env.getProperty("mail.password"));
-        mailSender.setJavaMailProperties(javaMailProperties);
+        mailSender.setJavaMailProperties(javaMailProperties());
         return mailSender;
     }
     

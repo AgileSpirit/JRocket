@@ -35,6 +35,11 @@
     <jacoco.version>0.6.3.201306030806</jacoco.version>
   </properties>
 
+  <scm>
+    <connection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</connection>
+    <developerConnection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</developerConnection>
+  </scm>
+
   <dependencies>
 
     <!-- ************ -->
