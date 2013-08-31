@@ -32,7 +32,6 @@
 
     <!-- Plugins version -->
     <cobertura.version>2.6</cobertura.version>
-    <jacoco.version>0.6.3.201306030806</jacoco.version>
   </properties>
 
   <scm>
@@ -322,6 +321,7 @@
       </plugin>
 
       <!-- COBERTURA : plugin that calculates the Code Coverage -->
+      <!-- Usage : $ mvn cobertura:cobertura -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
@@ -342,12 +342,6 @@
         </configuration>
       </plugin>
 
-      <!-- JACOCO : another plugin that calculates the Code Coverage (based on Emma) -->
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.version}</version>
-      </plugin>
     </plugins>
   </build>
 
