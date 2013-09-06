@@ -2,14 +2,15 @@
 <html>
 <body>
 
-	Hello,
-	
-	Find below the last added bookmarks :
+Hello,
 
-	#foreach( $bookmark in $bookmarks )
-  <h3><a href="$bookmark.url" target="_blank">$bookmark.url</a></h3>
-  <p>$bookmark.description</p>
-	#end
+Find below the last added bookmarks :
+
+    #foreach( $bookmark in $bookmarks )
+    <h3><a href="$bookmark.url" target="_blank">$bookmark.url</a></h3>
+
+    <p>$bookmark.description</p>
+    #end
 
 </body>
 </html>
