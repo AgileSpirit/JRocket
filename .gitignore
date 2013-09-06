@@ -8,3 +8,4 @@ target/**
 bin/**
 .hg/**
 .DS_Store
+*.iml
