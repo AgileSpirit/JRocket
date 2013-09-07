@@ -5,10 +5,13 @@ Java project boostrapper for common &amp; standard technical stack :
 - Spring
 - Spring JavaConfig
 - Spring profiles
+- Spring Scheduler
 - Spring Data - JPA
 - JPA
 - Hibernate
 - C3P0
+- HSQLDB
+- H2
 - SLF4J
 - Logback
 - Guava
