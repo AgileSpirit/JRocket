@@ -22,7 +22,7 @@ public class Bookmark extends AbstractPersistable<Long> {
 
     @Column(nullable = true)
     @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
-    private DateTime updateDate;
+    private DateTime modificationDate;
 
     public static Bookmark create(String url, String description) {
         Bookmark bookmark = new Bookmark();
@@ -56,12 +56,12 @@ public class Bookmark extends AbstractPersistable<Long> {
         this.creationDate = creationDate;
     }
 
-    public DateTime getUpdateDate() {
-        return updateDate;
+    public DateTime getModificationDate() {
+        return modificationDate;
     }
 
-    public void setUpdateDate(DateTime updateDate) {
-        this.updateDate = updateDate;
+    public void setModificationDate(DateTime modificationDate) {
+        this.modificationDate = modificationDate;
     }
 
 }

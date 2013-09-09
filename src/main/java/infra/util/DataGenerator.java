@@ -54,7 +54,7 @@ public class DataGenerator {
                 sb.append("    \"url\" : \"" + bookmark.getUrl() + "\",\r\n");
                 sb.append("    \"description\" : \"" + bookmark.getDescription() + "\",\r\n");
                 sb.append("    \"creationDate\" : \"" + bookmark.getCreationDate() + "\",\r\n");
-                sb.append("    \"updateDate\" : \"" + bookmark.getUpdateDate() + "\"\r\n");
+                sb.append("    \"modificationDate\" : \"" + bookmark.getModificationDate() + "\"\r\n");
                 sb.append("  }\r\n");
             }
             sb.append("}");
