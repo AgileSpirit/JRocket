@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @ComponentScan(".")
 @EnableTransactionManagement
-@EnableJpaRepositories("")
+@EnableJpaRepositories("infra.repository")
 @EnableScheduling
 @Import({RepositoryConfig.class, MailingConfig.class})
 public class ApplicationConfig {
