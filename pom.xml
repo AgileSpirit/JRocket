@@ -45,12 +45,6 @@
     <maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
   </properties>
 
-  <scm>
-    <connection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</connection>
-    <developerConnection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</developerConnection>
-    <url>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</url>
-  </scm>
-
   <dependencies>
 
     <!-- ************ -->
@@ -285,7 +279,7 @@
   </dependencies>
 
   <build>
-    <finalName>${project.artifactId}-${project.version}.r${buildNumber}</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
     <resources>
       <resource>
         <filtering>false</filtering>
@@ -349,27 +343,6 @@
       <!-- PACKAGING -->
       <!-- ********* -->
 
-      <!-- Plugin used to generate SCM build number in MANIFEST.MF -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>buildnumber-maven-plugin</artifactId>
-        <version>${maven-buildnumber-plugin.version}</version>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>create</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <doCheck>true</doCheck>
-          <doUpdate>true</doUpdate>
-          <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
-          <useLastCommittedRevision>true</useLastCommittedRevision>
-        </configuration>
-      </plugin>
-
       <!-- Plugin used because we do not need no more web.xml (cf. ApplicationInitializer) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -382,10 +355,6 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
-            <manifestEntries>
-              <SCM-Revision>${buildNumber}</SCM-Revision>
-              <BuildScmBranch>${buildScmBranch}</BuildScmBranch>
-            </manifestEntries>
           </archive>
         </configuration>
       </plugin>
