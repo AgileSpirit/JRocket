@@ -358,7 +358,7 @@
       <!-- ********* -->
 
       <!-- Reporting quality plugins (such as PMD, Cobertura, Checkstyle) aggregator -->
-      <!-- Usage : the summary page is /target/site/project-reports.html -->
+      <!-- Usage : execute command 'mvn site' and see the summary page is /target/site/project-reports.html -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
