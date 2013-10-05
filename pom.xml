@@ -48,6 +48,7 @@
   <scm>
     <connection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</connection>
     <developerConnection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</developerConnection>
+    <url>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</url>
   </scm>
 
   <dependencies>
@@ -284,7 +285,7 @@
   </dependencies>
 
   <build>
-    <finalName>JavaBackbone</finalName>
+    <finalName>${project.artifactId}-${project.version}-{buildNumber}</finalName>
     <resources>
       <resource>
         <filtering>false</filtering>
@@ -347,7 +348,7 @@
       <!-- ********* -->
       <!-- PACKAGING -->
       <!-- ********* -->
-      
+
       <!-- Plugin used to generate SCM build number in MANIFEST.MF -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -362,8 +363,10 @@
           </execution>
         </executions>
         <configuration>
-          <doCheck>true</doCheck>
-          <doUpdate>true</doUpdate>
+          <doCheck>false</doCheck>
+          <doUpdate>false</doUpdate>
+          <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
+          <useLastCommittedRevision>true</useLastCommittedRevision>
         </configuration>
       </plugin>
 
@@ -375,20 +378,14 @@
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
           <archive>
-            <addMavenDescriptor />
-            <compress />
-            <forced />
-            <index />
             <manifest>
-              <addClasspath>true</addClasspath>
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
             <manifestEntries>
-              <git-SHA-1>${buildNumber}</git-SHA-1>
+              <SCM-Revision>${buildNumber}</SCM-Revision>
+              <BuildScmBranch>${buildScmBranch}</BuildScmBranch>
             </manifestEntries>
-            <manifestFile />
-            <pomPropertiesFile />
           </archive>
         </configuration>
       </plugin>
