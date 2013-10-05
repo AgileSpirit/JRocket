@@ -46,9 +46,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</connection>
-    <developerConnection>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</developerConnection>
-    <url>scm:git:https://github.com/AgileSpirit/JavaBackbone.git</url>
+    <connection>scm:git:git@github.com:AgileSpirit/JavaBackbone.git</connection>
+    <developerConnection>scm:git:git@github.com:AgileSpirit/JavaBackbone.git</developerConnection>
+    <url>scm:git:git@github.com:AgileSpirit/JavaBackbone.git</url>
   </scm>
 
   <dependencies>
@@ -285,7 +285,7 @@
   </dependencies>
 
   <build>
-    <finalName>${project.artifactId}-${project.version}-{buildNumber}</finalName>
+    <finalName>${project.artifactId}-${project.version}.r${buildNumber}</finalName>
     <resources>
       <resource>
         <filtering>false</filtering>
@@ -363,8 +363,8 @@
           </execution>
         </executions>
         <configuration>
-          <doCheck>false</doCheck>
-          <doUpdate>false</doUpdate>
+          <doCheck>true</doCheck>
+          <doUpdate>true</doUpdate>
           <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
           <useLastCommittedRevision>true</useLastCommittedRevision>
         </configuration>
