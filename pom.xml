@@ -5,13 +5,13 @@
   <groupId>com.agile.spirit</groupId>
   <artifactId>JavaBackbone</artifactId>
   <packaging>war</packaging>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
 
   <name>JavaBackbone Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
-    <!-- Project version -->
+    <!-- Project properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- Dependencies version -->
@@ -37,6 +37,7 @@
     <!-- Plugins version -->
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
     <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+    <maven-buildnumber-plugin.version>1.2</maven-buildnumber-plugin.version>
     <maven-war-plugin.version>2.4</maven-war-plugin.version>
     <maven-site-plugin.version>3.3</maven-site-plugin.version>
     <maven-cobertura-plugin.version>2.6</maven-cobertura-plugin.version>
@@ -343,6 +344,29 @@
         </configuration>
       </plugin>
 
+      <!-- ********* -->
+      <!-- PACKAGING -->
+      <!-- ********* -->
+      
+      <!-- Plugin used to generate SCM build number in MANIFEST.MF -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>${maven-buildnumber-plugin.version}</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>true</doCheck>
+          <doUpdate>true</doUpdate>
+        </configuration>
+      </plugin>
+
       <!-- Plugin used because we do not need no more web.xml (cf. ApplicationInitializer) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -350,6 +374,22 @@
         <version>${maven-war-plugin.version}</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
+          <archive>
+            <addMavenDescriptor />
+            <compress />
+            <forced />
+            <index />
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+            </manifest>
+            <manifestEntries>
+              <git-SHA-1>${buildNumber}</git-SHA-1>
+            </manifestEntries>
+            <manifestFile />
+            <pomPropertiesFile />
+          </archive>
         </configuration>
       </plugin>
 
