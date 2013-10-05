@@ -5,10 +5,10 @@
   <groupId>com.agile.spirit</groupId>
   <artifactId>JavaBackbone</artifactId>
   <packaging>war</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
 
   <name>JavaBackbone Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/AgileSpirit/JavaBackbone</url>
 
   <properties>
     <!-- Project properties -->
