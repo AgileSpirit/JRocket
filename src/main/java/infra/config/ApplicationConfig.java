@@ -14,8 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories("infra.repository")
 @EnableScheduling
-@Import({RepositoryConfig.class, MailingConfig.class})
-public class ApplicationConfig {
+@Import({ RepositoryConfig.class, MailingConfig.class })
+public class ApplicationConfig  {
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {

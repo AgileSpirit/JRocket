@@ -1,18 +1,22 @@
 package infra.bootstrap;
 
-import com.google.common.collect.Lists;
-import domain.Bookmark;
 import infra.mailing.MailService;
 import infra.repository.BookmarkRepository;
 import infra.util.DataGenerator;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Profile;
 
-import javax.inject.Inject;
-import javax.inject.Named;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
+
+import com.google.common.collect.Lists;
+
+import domain.Bookmark;
 
 @Named
 @Profile("localhost")
@@ -34,7 +38,11 @@ public class LocalhostBootstrap extends ApplicationBootstrap {
     void bootstrap() {
         dataGenerator.populateData();
         dataGenerator.retrieveAndDisplayAllData();
-        sendTestMail();
+
+        /*
+         * Uncomment the following instruction to test mail sending after application bootstraping.
+         */
+        // sendTestMail();
     }
 
     private void sendTestMail() {

@@ -1,8 +1,7 @@
 package domain;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
-
-import static org.fest.assertions.api.Assertions.assertThat;
 
 public class BookmarkTest {
 
@@ -19,10 +18,10 @@ public class BookmarkTest {
         Bookmark bookmark = Bookmark.create(inputUrl, inputDescription);
 
         // Then
-        assertThat(bookmark.getUrl()).isEqualTo(inputUrl);
-        assertThat(bookmark.getDescription()).isEqualTo(inputDescription);
-        assertThat(bookmark.getCreationDate()).isNotNull();
-        assertThat(bookmark.getModificationDate()).isNull();
+        Assertions.assertThat(bookmark.getUrl()).isEqualTo(inputUrl);
+        Assertions.assertThat(bookmark.getDescription()).isEqualTo(inputDescription);
+        Assertions.assertThat(bookmark.getCreationDate()).isNotNull();
+        Assertions.assertThat(bookmark.getModificationDate()).isNull();
     }
 
 }

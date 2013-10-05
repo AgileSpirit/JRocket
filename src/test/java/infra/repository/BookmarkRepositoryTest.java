@@ -1,15 +1,18 @@
 package infra.repository;
 
-import com.github.springtestdbunit.annotation.DatabaseSetup;
-import com.google.common.collect.Lists;
-import domain.Bookmark;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
 import org.joda.time.DateTime;
 import org.junit.Test;
 
-import javax.inject.Inject;
-import java.util.List;
+import com.github.springtestdbunit.annotation.DatabaseSetup;
+import com.google.common.collect.Lists;
 
-import static org.fest.assertions.api.Assertions.assertThat;
+import domain.Bookmark;
 
 @DatabaseSetup(value = "classpath:dbunit/dataset/BookmarkRepositoryTest.xml")
 public class BookmarkRepositoryTest extends RepositoryTest {
