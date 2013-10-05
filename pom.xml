@@ -13,7 +13,7 @@
   <properties>
     <!-- Project version -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  
+
     <!-- Dependencies version -->
     <junit.version>4.11</junit.version>
     <spring.version>3.2.4.RELEASE</spring.version>
@@ -38,8 +38,10 @@
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
     <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
     <maven-war-plugin.version>2.4</maven-war-plugin.version>
-    <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
+    <maven-site-plugin.version>3.3</maven-site-plugin.version>
+    <maven-cobertura-plugin.version>2.6</maven-cobertura-plugin.version>
     <maven-checkstyle-plugin.version>2.10</maven-checkstyle-plugin.version>
+    <maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
   </properties>
 
   <scm>
@@ -351,26 +353,39 @@
         </configuration>
       </plugin>
 
-      <!-- ************ -->
-      <!-- CODE QUALITY -->
-      <!-- ************ -->
+      <!-- ********* -->
+      <!-- REPORTING -->
+      <!-- ********* -->
 
-      <!-- Plugin used to evaluate code coverage -->
-      <!-- Usage : mvn cobertura:cobertura -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <version>${cobertura-maven-plugin.version}</version>
-      </plugin>
-
-      <!-- Plugin used to evaluate code style -->
-      <!-- Usage : mvn checkstyle:checkstyle -->
+      <!-- Reporting quality plugins (such as PMD, Cobertura, Checkstyle) aggregator -->
+      <!-- Usage : the summary page is /target/site/project-reports.html -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>${maven-checkstyle-plugin.version}</version>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven-site-plugin.version}</version>
+        <configuration>
+          <reportPlugins>
+            <!-- Plugin used to evaluate code coverage -->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>cobertura-maven-plugin</artifactId>
+              <version>${maven-cobertura-plugin.version}</version>
+            </plugin>
+            <!-- Plugin used to evaluate code style -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-checkstyle-plugin</artifactId>
+              <version>${maven-checkstyle-plugin.version}</version>
+            </plugin>
+            <!-- Plugin used to evaluate code quality -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-pmd-plugin</artifactId>
+              <version>${maven-pmd-plugin.version}</version>
+            </plugin>
+          </reportPlugins>
+        </configuration>
       </plugin>
-
 
     </plugins>
   </build>
