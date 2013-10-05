@@ -1,20 +1,19 @@
 package application.resources;
 
-import infra.repository.BookmarkRepository;
+import java.util.List;
 
-import javax.inject.Inject;
+import domain.Bookmark;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+public interface BookmarkResource {
 
-/**
- * Example of REST Web Services with Spring-MVC
- */
-@Controller
-@RequestMapping("/bookmark")
-public class BookmarkResource {
+    Bookmark getBookmarkById(Long id);
+    
+    List<Bookmark> getAllBookmarks();
+    
+    Bookmark addBookmark(Bookmark bookmark);
 
-    @Inject
-    private BookmarkRepository bookmarkRepository;
-
+    Bookmark editBookmark(Bookmark bookmark);
+    
+    void removeBookmark(Long id);
+    
 }
