@@ -6,6 +6,7 @@ Java project boostrapper for common &amp; standard technical stack :
 - Spring JavaConfig
 - Spring profiles
 - Spring Scheduler
+- Spring MVC
 - Spring Data - JPA
 - JPA
 - Hibernate
@@ -16,11 +17,12 @@ Java project boostrapper for common &amp; standard technical stack :
 - Logback
 - Guava
 - JodaTime
-- Fest Assert
+- AssertJ
 - DBUnit
 - Mockito
 - JavaMail
 - Velocity
+- and some Maven plugins for quality code (PMD, Cobertura, Checkstyle)
 
 Get started
 ===========
@@ -46,7 +48,7 @@ Eclipse IDE integration
 
 1) Generate the Eclipse project thanks to the Maven Eclipse plugin  
 ```
-$ mvn eclipse:eclipse -Dwtpversion=2.0 -DdownloadSources=true -DdownloadJavadocs=true
+$ mvn eclipse:eclipse
 ```
 2) Import the project into your Eclipse workspace  
 3) Declare a new Tomcat web server instance and add the application artifact  
