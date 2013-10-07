@@ -13,6 +13,7 @@
   <properties>
     <!-- Project properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.7</java.version>
 
     <!-- Dependencies version -->
     <junit.version>4.11</junit.version>
@@ -340,8 +341,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
