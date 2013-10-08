@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Example of REST Web Services with Spring-MVC
  */
 @Controller
-@RequestMapping("/example")
+@RequestMapping("/service/example")
 public class ExampleResource {
 
     /**

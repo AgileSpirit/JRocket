@@ -24,7 +24,7 @@ import domain.Bookmark;
  * Example of REST Web Services with Spring-MVC
  */
 @Controller
-@RequestMapping("/bookmarks")
+@RequestMapping("/service/bookmarks")
 public class BookmarkResourceImpl implements BookmarkResource {
 
     @Inject
