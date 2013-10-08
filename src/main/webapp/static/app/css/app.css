@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+/*=============*/
+/* Page Layout */
+/*=============*/
+
+#page-header {
+  background-color: #2ba6cb;
+  padding: 22px 0;
+}
+#page-header * {
+  color: white;
+}
+#page-header h1 {
+  font-weight: 500;
+}
+#page-header h4 {
+  font-weight: 300;
+}
+
+#page-main {
+  margin-top: 44px;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  overflow: hidden;
+}
+
+#page-footer {
+  border-top: 1px solid #eee;
+}
+
+#page-footer .top {
+  background: #33A6C9;
+  padding: 25px 0 25px 0;
+  margin-top: 30px;
+}
+
+#page-footer .middle {
+  background: #1399bd;
+  padding: 40px 0;
+  color: white;
+}
+
+#page-footer .bottom {
+  background: #333;
+  padding: 24px 0 10px;
+}
+
+/*============*/
+/* Components */
+/*============*/
+
+.button.tiny {
+  margin: 0;
+  min-width: 60px; 
+}

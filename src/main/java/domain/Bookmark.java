@@ -1,19 +1,19 @@
 package domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-
 @Entity
 public class Bookmark extends AbstractPersistable<Long> {
 
-    @Column(nullable = false)
+    @Column(nullable = false, length=1024)
     private String url;
 
-    @Column(nullable = true)
+    @Column(nullable = true, length=1024)
     private String description;
 
     @Column(nullable = false)

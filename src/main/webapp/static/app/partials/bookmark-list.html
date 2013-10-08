@@ -1,6 +1,20 @@
-<ul class="bookmarks">
-  <li ng-repeat="bookmark in data.bookmarks">
-    <a href="{{bookmark.url}}">{{bookmark.url}}</a>
-    <p>{{bookmark.description}}</p>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Link</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="bookmark in data.bookmarks">
+      <td width="50">{{bookmark.id}}</td>
+      <td><a href="{{bookmark.url}}">{{bookmark.url}}</a></td>
+      <td>{{bookmark.description}}</td>
+      <td><a href="#" class="tiny button">Edit</a></td>
+      <td><a href="#" class="tiny button alert">Remove</a></td>
+    </tr>
+  </tbody>
+</table>
