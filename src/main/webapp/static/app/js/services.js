@@ -2,11 +2,9 @@
 
 /* Services */
 
-
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('impulse.services', ['ngResource'])
-  .factory('Bookmarks', function($resource) {
-    return $resource('http://localhost\\:8080/JavaBackbone/service/bookmarks/', {});
-  })
-  .value('version', '0.1');
+angular.module('impulse.services', [ 'ngResource' ]).factory('bookmarkService', function($resource) {
+  var bookmarkService = $resource('/JavaBackbone/service/bookmarks/:id', {id:'@id'});
+  return bookmarkService;
+}).value('version', '0.1');

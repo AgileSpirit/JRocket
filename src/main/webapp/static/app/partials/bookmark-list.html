@@ -1,20 +1,11 @@
 <table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Link</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
   <tbody>
     <tr ng-repeat="bookmark in data.bookmarks">
       <td width="50">{{bookmark.id}}</td>
       <td><a href="{{bookmark.url}}">{{bookmark.url}}</a></td>
       <td>{{bookmark.description}}</td>
-      <td><a href="#" class="tiny button">Edit</a></td>
-      <td><a href="#" class="tiny button alert">Remove</a></td>
+      <td><a href="#" class="tiny button" ng-click="getBookmark(bookmark.id)">Edit</a></td>
+      <td><a href="#" class="tiny button alert" ng-click="removeBookmark(bookmark)">Remove</a></td>
     </tr>
   </tbody>
 </table>

@@ -1,5 +1,7 @@
 package infra.config;
 
+import infra.filter.CorsFilter;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 
@@ -51,5 +53,8 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet(dispatcherContext));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
+        
+        // Register servlet filters
+        container.addFilter("corsFilter", CorsFilter.class).addMappingForUrlPatterns(null, false, "/*");
     }
 }
