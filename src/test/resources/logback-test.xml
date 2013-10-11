@@ -18,7 +18,7 @@
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.FileAppender">
-        <file>target/logs/JavaBackbone-tests.log</file>
+        <file>target/logs/JavaWebStack-tests.log</file>
         <append>true</append>
         <encoder>
             <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>

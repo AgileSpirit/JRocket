@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var impulseApp = angular.module('impulse', ['impulse.filters', 'impulse.services', 'impulse.directives', 'impulse.controllers'])
+var jwsApp = angular.module('jws', ['jws.filters', 'jws.services', 'jws.directives', 'jws.controllers'])
   .config(['$routeProvider', '$httpProvider',function($routeProvider, httpProvider) {
     $routeProvider.when('/bookmarks', {templateUrl: 'partials/bookmark-list.html', controller: 'BookmarkListCtrl'});
     $routeProvider.when('/bookmarks/:bookmarkId', {templateUrl: 'partials/bookmark-detail.html', controller: 'BookmarkDetailCtrl'});

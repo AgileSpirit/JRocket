@@ -54,7 +54,7 @@ public class LocalhostBootstrap extends ApplicationBootstrap {
         model.put("bookmarks", bookmarks);
 
         // Send mail
-        mailService.sendMail("JavaBackbone test", mailTo, "sendBookmarks.vm", model);
+        mailService.sendMail("JavaWebStack test", mailTo, "sendBookmarks.vm", model);
     }
 
 }

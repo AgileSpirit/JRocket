@@ -3,7 +3,7 @@
 /* Directives */
 
 
-angular.module('impulse.directives', []).
+angular.module('jws.directives', []).
   directive('appVersion', ['version', function(version) {
     return function(scope, elm, attrs) {
       elm.text(version);

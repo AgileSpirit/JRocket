@@ -1,4 +1,4 @@
-JavaBackbone
+JavaWebStack
 ============
 
 Java project boostrapper for common &amp; standard technical stack : 
@@ -29,7 +29,7 @@ Get started
 
 1) Retrieve the sources  
 ```
-$ git clone https://github.com/AgileSpirit/JavaBackbone.git
+$ git clone https://github.com/AgileSpirit/JavaWebStack.git
 ```
 2) Configure the *application-localhost.properties* file in order to set your mailing properties  
 ```
@@ -56,5 +56,5 @@ $ mvn eclipse:eclipse
 
 If all is OK :
 - there is no ERROR in the log console, 
-- nor in the */target/logs/JavaBackbone.log* file, 
-- and you should have received an email entitled "JavaBackbone test"
+- nor in the */target/logs/JavaWebStack.log* file, 
+- and you should have received an email entitled "JavaWebStack test"
