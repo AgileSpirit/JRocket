@@ -53,6 +53,5 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         dispatcher.addMapping("/");
         
         // Register servlet filters
-//        container.addFilter("corsFilter", CorsFilter.class).addMappingForUrlPatterns(null, false, "/*");
     }
 }

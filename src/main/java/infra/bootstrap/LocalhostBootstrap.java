@@ -42,7 +42,7 @@ public class LocalhostBootstrap extends ApplicationBootstrap {
         /*
          * Uncomment the following instruction to test mail sending after application bootstraping.
          */
-        // sendTestMail();
+        sendTestMail();
     }
 
     private void sendTestMail() {

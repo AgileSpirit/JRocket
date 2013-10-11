@@ -1,5 +1,12 @@
 package infra.config;
 
+import static infra.util.PropertyHelper.setProperty;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import javax.inject.Inject;
+
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.exception.VelocityException;
 import org.springframework.context.annotation.Bean;
@@ -7,12 +14,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.ui.velocity.VelocityEngineFactoryBean;
-
-import javax.inject.Inject;
-import java.io.IOException;
-import java.util.Properties;
-
-import static infra.util.PropertyHelper.setProperty;
 
 @Configuration
 public class MailingConfig {
@@ -34,7 +35,7 @@ public class MailingConfig {
     @Bean
     public VelocityEngine velocityEngine() throws VelocityException, IOException {
         VelocityEngineFactoryBean factoryBean = new VelocityEngineFactoryBean();
-        factoryBean.setResourceLoaderPath("classpath:velocity/templates");
+        factoryBean.setResourceLoaderPath("classpath:velocity");
 
         VelocityEngine velocityEngine = factoryBean.createVelocityEngine();
         return velocityEngine;

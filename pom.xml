@@ -37,6 +37,7 @@
     <velocity.version>1.7</velocity.version>
     <javamelody.version>1.46.0</javamelody.version>
     <itext.version>4.2.1</itext.version>
+    <appstatus.version>0.4.4</appstatus.version>
 
     <!-- Plugins version -->
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
@@ -48,6 +49,13 @@
     <maven-checkstyle-plugin.version>2.10</maven-checkstyle-plugin.version>
     <maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
   </properties>
+
+  <!-- ************ -->
+  <!-- REPOSITORIES -->
+  <!-- ************ -->
+
+  <repositories>
+  </repositories>
 
   <dependencies>
 
@@ -225,7 +233,18 @@
     <!-- MONITORING -->
     <!-- ********** -->
 
+    <!-- APPSTATUS : library that add an application status page for health monitoring -->
+    <!-- Url : http://[hostname]:[port]/[context]/status -->
+    <!-- Doc : http://appstatus.sourceforge.net/ -->
+    <!-- It does not work :-( -->
+    <!-- <dependency> -->
+    <!-- <groupId>net.sf.appstatus </groupId> -->
+    <!-- <artifactId>appstatus-web</artifactId> -->
+    <!-- <version>${appstatus.version}</version> -->
+    <!-- </dependency> -->
+
     <!-- JAVAMELODY : tool for monitoring Java applications (based on servlet filtering) -->
+    <!-- Url : http://[hostname]:[port]/[context]/monitoring -->
     <!-- Doc : https://code.google.com/p/javamelody/wiki/UserGuide -->
     <dependency>
       <groupId>net.bull.javamelody</groupId>

@@ -20,10 +20,7 @@ angular.module('jws.controllers', [])
         
     $scope.removeBookmark = function(bookmark) {
       console.log("$scope.removeBookmark, id=" + bookmark.id);
-      bookmarkService.remove({id:bookmark.id}, function() {
-          var bookmarks = $scope.data.bookmarks;
-          bookmarks.splice(bookmarks.indexOf(bookmark), 1);
-      });
+      bookmarkService.remove({id:bookmark.id});
     };
   }])
   .controller('BookmarkDetailCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
