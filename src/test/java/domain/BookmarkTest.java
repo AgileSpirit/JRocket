@@ -12,13 +12,15 @@ public class BookmarkTest {
     public void create() {
         // Given
         String inputUrl = "http://some-url.fr";
+        String inputTitle = "Lorem ipsum";
         String inputDescription = "Lorem ipsum dolor sit amet...";
 
         // When
-        Bookmark bookmark = Bookmark.create(inputUrl, inputDescription);
+        Bookmark bookmark = Bookmark.create(inputUrl, inputTitle, inputDescription);
 
         // Then
         Assertions.assertThat(bookmark.getUrl()).isEqualTo(inputUrl);
+        Assertions.assertThat(bookmark.getTitle()).isEqualTo(inputTitle);
         Assertions.assertThat(bookmark.getDescription()).isEqualTo(inputDescription);
         Assertions.assertThat(bookmark.getCreationDate()).isNotNull();
         Assertions.assertThat(bookmark.getModificationDate()).isNull();

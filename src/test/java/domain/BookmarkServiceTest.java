@@ -40,7 +40,7 @@ public class BookmarkServiceTest {
     @Test
     public void testSave() {
         // Given
-        Bookmark bookmark = create("http://original.com", "Original bookmark");
+        Bookmark bookmark = create("http://original.com", "Original bookmark", "Description of my original bookmark");
         assertThat(bookmark.getId()).isEqualTo(null);
 
         // When

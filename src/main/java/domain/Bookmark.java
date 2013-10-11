@@ -10,10 +10,13 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Entity
 public class Bookmark extends AbstractPersistable<Long> {
 
-    @Column(nullable = false, length=1024)
+    @Column(nullable = false, length = 1024)
     private String url;
 
-    @Column(nullable = true, length=1024)
+    @Column(nullable = false, length = 1024)
+    private String title;
+
+    @Column(nullable = true, length = 1024)
     private String description;
 
     @Column(nullable = false)
@@ -24,9 +27,10 @@ public class Bookmark extends AbstractPersistable<Long> {
     @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     private DateTime modificationDate;
 
-    public static Bookmark create(String url, String description) {
+    public static Bookmark create(String url, String title, String description) {
         Bookmark bookmark = new Bookmark();
         bookmark.url = url;
+        bookmark.title = title;
         bookmark.description = description;
         bookmark.creationDate = new DateTime();
         return bookmark;
@@ -38,6 +42,14 @@ public class Bookmark extends AbstractPersistable<Long> {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {

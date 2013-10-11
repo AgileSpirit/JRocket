@@ -35,6 +35,8 @@
     <mockito.version>1.9.5</mockito.version>
     <javax-mail.version>1.4.7</javax-mail.version>
     <velocity.version>1.7</velocity.version>
+    <javamelody.version>1.46.0</javamelody.version>
+    <itext.version>4.2.1</itext.version>
 
     <!-- Plugins version -->
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
@@ -217,6 +219,25 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>${guava.version}</version>
+    </dependency>
+
+    <!-- ********** -->
+    <!-- MONITORING -->
+    <!-- ********** -->
+
+    <!-- JAVAMELODY : tool for monitoring Java applications (based on servlet filtering) -->
+    <!-- Doc : https://code.google.com/p/javamelody/wiki/UserGuide -->
+    <dependency>
+      <groupId>net.bull.javamelody</groupId>
+      <artifactId>javamelody-core</artifactId>
+      <version>${javamelody.version}</version>
+    </dependency>
+
+    <!-- ITEXT : used by JavaMelody for PDF generation -->
+    <dependency>
+      <groupId>com.lowagie</groupId>
+      <artifactId>itext</artifactId>
+      <version>${itext.version}</version>
     </dependency>
 
     <!-- ******* -->

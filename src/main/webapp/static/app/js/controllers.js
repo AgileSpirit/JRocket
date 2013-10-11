@@ -7,23 +7,22 @@ angular.module('impulse.controllers', [])
     // Instantiate an object to store your scope data in (Best Practices)
     $scope.data = {};
    
-//    var bookmarks = $scope.data.bookmarks = bookmarkResource.query();
-    
     bookmarkService.query(function(response) {
       // Assign the response INSIDE the callback
       $scope.data.bookmarks = response;
     });
     
     $scope.getBookmark = function(id) {
-      bookmarkService.get(id, function(response) {
-        console.log("Kiwi!");
-      });
+      var bookmark = bookmarkService.get(id);
+      console.log("bookmark = " + bookmark.id);
     };
     
+        
     $scope.removeBookmark = function(bookmark) {
       console.log("$scope.removeBookmark, id=" + bookmark.id);
       bookmarkService.remove({id:bookmark.id}, function() {
-        bookmarks.splice(bookmarks.indexOf(bookmark), 1);
+          var bookmarks = $scope.data.bookmarks;
+          bookmarks.splice(bookmarks.indexOf(bookmark), 1);
       });
     };
   }])

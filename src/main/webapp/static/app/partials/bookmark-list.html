@@ -1,11 +1,27 @@
-<table>
-  <tbody>
-    <tr ng-repeat="bookmark in data.bookmarks">
-      <td width="50">{{bookmark.id}}</td>
-      <td><a href="{{bookmark.url}}">{{bookmark.url}}</a></td>
-      <td>{{bookmark.description}}</td>
-      <td><a href="#" class="tiny button" ng-click="getBookmark(bookmark.id)">Edit</a></td>
-      <td><a href="#" class="tiny button alert" ng-click="removeBookmark(bookmark)">Remove</a></td>
-    </tr>
-  </tbody>
-</table>
+<div class="bookmarks">
+  <div class="header">
+    <div class="searchbar row">
+      <div class="large-9 columns">
+        <input type="text" placeholder="Search for bookmarks...">
+      </div>
+      <div class="large-3 columns">
+        <a class="button prefix alert" href="#">Add a bookmark</a>
+      </div>
+    </div>
+<!--     <button class="button alert">Add a bookmark</button> -->
+  </div>
+  <ul class="list">
+    <li class="bookmark" ng-repeat="bookmark in data.bookmarks">
+      <div class="title">
+        <a href="{{bookmark.url}}" class="link">{{bookmark.title}}</a>
+        <div class="actions">
+          <i class="foundicon-edit" ng-click="getBookmark(bookmark.id)" title="Edit"></i>
+          <i class="foundicon-trash" ng-click="removeBookmark(bookmark)" title="Remove"></i>
+        </div>
+      </div>
+      <div class="description">
+        <p>{{bookmark.description}}</p>
+      </div>
+    </li>
+</ul>
+</div>

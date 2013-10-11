@@ -1,0 +1,16 @@
+[class*="foundicon-"]:after {
+  position: relative;
+  top: -8px;
+  left: 10px;
+  color: #888;
+  font-size: 60%;
+  font-style: normal;
+}
+
+.foundicon-trash:after {
+  content: "trash";
+}
+
+.foundicon-edit:after {
+  content: "edit";
+}
