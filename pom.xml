@@ -316,6 +316,11 @@
       <artifactId>appstatus-web</artifactId>
       <version>${appstatus.version}</version>
     </dependency>
+    <dependency>
+      <groupId>net.sf.appstatus</groupId>
+      <artifactId>appstatus-services-inprocess</artifactId>
+      <version>${appstatus.version}</version>
+    </dependency>
 
     <!-- ******* -->
     <!-- TESTING -->

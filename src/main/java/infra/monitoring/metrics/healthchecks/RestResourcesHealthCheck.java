@@ -1,4 +1,4 @@
-package infra.monitoring.metrics;
+package infra.monitoring.metrics.healthchecks;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.fluent.Request;
@@ -26,7 +26,7 @@ public class RestResourcesHealthCheck extends HealthCheck {
     }
     
     private String getUrl() {
-        return "http://localhost:8080/service/bookmarks/ping";
+        return "http://localhost:8080/JavaWebStack/service/bookmarks/";
     }
 
 }

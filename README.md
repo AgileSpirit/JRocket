@@ -22,6 +22,9 @@ Java project boostrapper for common &amp; standard technical stack :
 - Mockito
 - JavaMail
 - Velocity
+- AOP / ApectJ
+- Monitoring (AppStatus, Metrics, custom Servlet filtering)
+- Front-end client (AngularJS)
 - and some Maven plugins for quality code (PMD, Cobertura, Checkstyle)
 
 Get started

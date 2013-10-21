@@ -1,35 +1,6 @@
 console.log("JQuery version = " + $().jquery);
 
-/*
- * Alerts
- */
-
-$.getJSON("alerts", function(data) {
-    console.log(data);
-    if (typeof data[0] !== 'undefined' && data[0] !== null) {
-        $.each(data, function(i, item) {
-            var activeClass = (item.active) ? "alert" : "success";
-            var activeLabel = (item.active) ? "K0" : "OK";
-
-            $("#alerts tbody").append("<tr>" 
-                    + "<td>" + item.name + "</td>" 
-                    + "<td>" + item.metricName + "</td>" 
-                    + "<td><span class=\"label "+ activeClass + "\">" + activeLabel + "</span></td>" 
-                    + "</tr>");
-        });
-    } else {
-        $("#alerts").append("<p>Il n'y a pas d'alertes en cours :-)</p>");
-    }
-});
-
-
-/*
- * Health Checks
- */
-$.getJSON("monitoring/metrics/healthcheck")
-.done(function(data) {
-    console.log(data);
-
+function displayHealthChecks(data){
     $.each(data, function(i, item) {
         var healthClass = (item.healthy) ? "success" : "alert";
         var healthLabel = (item.healthy) ? "OK" : "KO";
@@ -40,10 +11,17 @@ $.getJSON("monitoring/metrics/healthcheck")
                 + "<td><span class=\"label "+ healthClass + "\">" + healthLabel + "</span></td>" 
                 + "</tr>");
     });
+}
+
+/*
+ * Health Checks
+ */
+$.getJSON("monitoring/metrics/healthcheck")
+.done(function(data) {
+    displayHealthChecks(data);
 })
-.fail(function(jqxhr, textStatus, error) {
-    var err = textStatus + ", " + error;
-    console.log( "Request Failed: " + err );
+.fail(function( jqxhr, textStatus, error ) {
+    displayHealthChecks(jqxhr.responseJSON);
 });
 
 
@@ -123,7 +101,6 @@ $.getJSON("monitoring/metrics/metrics", function(data) {
         $("#gauges").hide();
     }
 
-    
     // Histograms
     if (!$.isEmptyObject(data.histograms)) {
         $.each(data.histograms, function(i, item) {

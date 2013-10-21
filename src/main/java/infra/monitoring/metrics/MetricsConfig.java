@@ -1,5 +1,9 @@
 package infra.monitoring.metrics;
 
+import infra.monitoring.metrics.healthchecks.BasicHealthCheck;
+import infra.monitoring.metrics.healthchecks.DatabaseHealthCheck;
+import infra.monitoring.metrics.healthchecks.RestResourcesHealthCheck;
+
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.PostConstruct;
@@ -51,11 +55,10 @@ public class MetricsConfig extends MetricsConfigurerAdapter {
     private void registerHealthChecks() {
         // Register HealthChecks
         final HealthCheckRegistry registry = HealthCheckServletContextListener.HEALTH_CHECK_REGISTRY;
-        final String className = getClass().getCanonicalName();
 
-        registry.register(className + "basic", new BasicHealthCheck());
-        registry.register(className + "restServicesAvailability", new RestResourcesHealthCheck());
-        registry.register(className + "databaseAvailability", new DatabaseHealthCheck(entityManager));
+        registry.register("Metrics HealthCheck mecanism", new BasicHealthCheck());
+        registry.register("REST resources", new RestResourcesHealthCheck());
+        registry.register("Database", new DatabaseHealthCheck(entityManager));
     }
     
 }

@@ -1,4 +1,4 @@
-package infra.monitoring.metrics;
+package infra.monitoring.metrics.healthchecks;
 
 import com.codahale.metrics.health.HealthCheck;
 

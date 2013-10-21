@@ -13,6 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.domain.Sort.Order;
 
+import com.codahale.metrics.annotation.Timed;
 import com.google.common.collect.Lists;
 
 /**
@@ -34,6 +35,7 @@ public class BookmarkServiceImpl implements BookmarkService {
         this.bookmarkRepository = bookmarkRepository;
     }
 
+    @Timed
     public Bookmark findOne(Long id) {
         return bookmarkRepository.findOne(id);
     }
@@ -41,6 +43,7 @@ public class BookmarkServiceImpl implements BookmarkService {
     /**
      * Return all the bookmarks sorted by modification date / creation date DESC
      */
+    @Timed
     public List<Bookmark> findAll() {
         final List<Order> orders = new ArrayList<>();
         orders.add(new Order(Direction.DESC, "modificationDate"));
@@ -52,6 +55,7 @@ public class BookmarkServiceImpl implements BookmarkService {
     /**
      * Save a bookmark and return the persisted entity
      */
+    @Timed
     public Bookmark save(Bookmark bookmark) {
         if (bookmark.getId() == null) {
             bookmark.setCreationDate(new DateTime());
@@ -61,6 +65,7 @@ public class BookmarkServiceImpl implements BookmarkService {
         return bookmarkRepository.save(bookmark);
     }
 
+    @Timed
     public void delete(Long id) {
         bookmarkRepository.delete(id);
     }
