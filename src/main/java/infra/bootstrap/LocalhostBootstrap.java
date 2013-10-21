@@ -37,7 +37,7 @@ public class LocalhostBootstrap extends ApplicationBootstrap {
     @Override
     void bootstrap() {
         dataGenerator.populateData();
-//        dataGenerator.retrieveAndDisplayAllData();
+        dataGenerator.retrieveAndDisplayAllData();
 
         /*
          * Uncomment the following instruction to test mail sending after application bootstraping.
