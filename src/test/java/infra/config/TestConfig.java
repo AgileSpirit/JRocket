@@ -1,5 +1,7 @@
 package infra.config;
 
+import infra.repository.RepositoryConfig;
+
 import java.util.Properties;
 
 import javax.sql.DataSource;

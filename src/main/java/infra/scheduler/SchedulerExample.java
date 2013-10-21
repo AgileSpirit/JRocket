@@ -15,9 +15,9 @@ import java.util.List;
  * This class is an example of scheduled task implementation.
  */
 @Named
-public class BookmarkScheduler {
+public class SchedulerExample {
 
-    private static Logger logger = LoggerFactory.getLogger(BookmarkScheduler.class);
+    private static Logger logger = LoggerFactory.getLogger(SchedulerExample.class);
 
     @Inject
     private BookmarkRepository bookmarkRepository;

@@ -42,6 +42,7 @@
     <metrics-spring.version>3.0.0-RC2</metrics-spring.version>
     <httpclient.version>4.2.6</httpclient.version>
     <commons-beanutils.version>20030211.134440</commons-beanutils.version>
+    <aspectj.version>1.7.3</aspectj.version>
 
     <!-- Plugins version -->
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
@@ -244,6 +245,18 @@
       <groupId>commons-beanutils</groupId>
       <artifactId>commons-beanutils</artifactId>
       <version>${commons-beanutils.version}</version>
+    </dependency>
+
+    <!-- ASPECTJ : AOP support through Spring -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>${aspectj.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjtools</artifactId>
+      <version>${aspectj.version}</version>
     </dependency>
 
     <!-- ********** -->

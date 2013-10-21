@@ -1,4 +1,4 @@
-package infra.config;
+package infra.mailing;
 
 import static infra.util.PropertyHelper.setProperty;
 

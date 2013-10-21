@@ -63,5 +63,5 @@ public class MonitoringConfig extends MetricsConfigurerAdapter {
         registry.register(className + "restServicesAvailability", new RestResourcesHealthCheck());
         registry.register(className + "databaseAvailability", new DatabaseHealthCheck(entityManager));
     }
-
+    
 }
