@@ -1,26 +1,57 @@
+<!-- ============= -->
+<!-- Bookmark List -->
+<!-- ============= -->
+
 <div class="bookmarks">
   <div class="header">
     <div class="searchbar row">
       <div class="large-9 columns">
-        <input type="text" placeholder="Search for bookmarks...">
+        <input type="text" placeholder="Search for bookmarks..." ng-model="searchText">
       </div>
       <div class="large-3 columns">
-        <a class="button prefix alert" href="#">Add a bookmark</a>
+        <a class="button prefix alert" href="#" data-reveal-id="bookmarkWizard">Add a bookmark</a>
       </div>
     </div>
   </div>
   <ul class="list">
-    <li class="bookmark" ng-repeat="bookmark in data.bookmarks">
+    <li class="bookmark" ng-repeat="bookmark in data.bookmarks | filter: searchText">
       <div class="title">
         <a href="{{bookmark.url}}" class="link">{{bookmark.title}}</a>
         <div class="actions">
-          <i class="foundicon-edit" ng-click="getBookmark(bookmark.id)" title="Edit"></i>
-          <i class="foundicon-trash" ng-click="removeBookmark(bookmark)" title="Remove"></i>
+          <i class="foundicon-edit has-tip" ng-click="getBookmark(bookmark.id)" title="Edit"></i>
+          <i class="foundicon-trash has-tip" ng-click="removeBookmark(bookmark)" title="Remove"></i>
         </div>
       </div>
       <div class="description">
         <p>{{bookmark.description}}</p>
       </div>
+      <div class="clearfix"></div>
     </li>
-</ul>
+  </ul>
+</div>
+
+<!-- =============== -->
+<!-- Bookmark Wizard -->
+<!-- =============== -->
+
+<div id="bookmarkWizard" class="reveal-modal small">
+  <form name="form" novalidate>
+    <div class="field">
+      <label class="required">URL</label>
+      <input type="url" placeholder="http://my.bookmark.com" ng-model="data.bookmark.url" required>
+    </div>
+    <div class="field">
+      <label class="required">Title</label>
+      <input type="text"  ng-model="data.bookmark.title" required>
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <textarea rows="5" ng-model="data.bookmark.description"></textarea>
+    </div>
+    <div class="row text-right">
+      <button class="button secondary" ng-click="closeBookmarkWizard()">Cancel</button>
+      <button class="button" ng-click="saveBookmark()" >Validate</button>
+    </div>
+  </form>
+  <a class="close-reveal-modal">&#215;</a>
 </div>

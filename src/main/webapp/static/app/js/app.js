@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var jwsApp = angular.module('jws', ['jws.filters', 'jws.services', 'jws.directives', 'jws.controllers'])
+angular.module('jws', ['jws.filters', 'jws.services', 'jws.directives', 'jws.controllers'])
   .config(['$routeProvider', '$httpProvider',function($routeProvider, httpProvider) {
     $routeProvider.when('/bookmarks', {templateUrl: 'partials/bookmark-list.html', controller: 'BookmarkListCtrl'});
     $routeProvider.when('/bookmarks/:bookmarkId', {templateUrl: 'partials/bookmark-detail.html', controller: 'BookmarkDetailCtrl'});
@@ -12,4 +12,9 @@ var jwsApp = angular.module('jws', ['jws.filters', 'jws.services', 'jws.directiv
     httpProvider.defaults.useXDomain = true;
     delete httpProvider.defaults.headers.common['X-Requested-With'];
   }
-]);
+  ])
+  .run(function($rootScope) {
+    $rootScope.$on('$viewContentLoaded', function () {
+      $(document).foundation();
+    });
+  });

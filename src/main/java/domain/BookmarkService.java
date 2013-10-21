@@ -1,43 +1,15 @@
 package domain;
 
-import infra.repository.BookmarkRepository;
+import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+public interface BookmarkService {
 
-import javax.inject.Inject;
-import javax.inject.Named;
+    public abstract Bookmark findOne(Long id);
 
-/**
- * Application service used to demostrate DDD application service and Mockito
- * usage.
- */
-@Named
-public class BookmarkService {
+    public abstract Bookmark save(Bookmark bookmark);
 
-    private static Logger logger = LoggerFactory.getLogger(BookmarkService.class);
+    public abstract List<Bookmark> findAll();
 
-    @Inject
-    private BookmarkRepository bookmarkRepository;
-
-    BookmarkService() {
-        // Empty constructor
-    }
-
-    /**
-     * Parameterized constructor for Mockito with Spring DI
-     *
-     * @param bookmarkRepository
-     */
-    BookmarkService(BookmarkRepository bookmarkRepository) {
-        this.bookmarkRepository = bookmarkRepository;
-    }
-
-    public Bookmark save(Bookmark bookmark) {
-        if (bookmark == null) {
-            logger.error("Can not save null object.");
-        }
-        return bookmarkRepository.save(bookmark);
-    }
+    public abstract void delete(Long id);
 
 }

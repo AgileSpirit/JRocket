@@ -6,6 +6,8 @@ import domain.Bookmark;
 
 public interface BookmarkResource {
 
+    String ping();
+    
     Bookmark getBookmarkById(Long id);
     
     List<Bookmark> getAllBookmarks();

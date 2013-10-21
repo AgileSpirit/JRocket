@@ -19,13 +19,13 @@ import org.mockito.runners.MockitoJUnitRunner;
  * Test class to demostrate Mockito usage.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class BookmarkServiceTest {
+public class BookmarkServiceImplTest {
 
     @Mock
     private BookmarkRepository bookmarkRepository;
 
     @InjectMocks
-    private BookmarkService bookmarkService;
+    private BookmarkServiceImpl bookmarkService;
 
     @Before
     public void setUp() {

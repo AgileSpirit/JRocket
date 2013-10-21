@@ -1,25 +1,27 @@
 <!doctype html>
 <html ng-app="jws">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Java Web Stack</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="css/general_foundicons.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
 
-<title>Java Web Stack</title>
+  <script src="lib/foundation/vendor/custom.modernizr.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-<link rel="stylesheet" type="text/css" href="css/general_foundicons.css">
-<link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 <body>
-  <header id="page-header">
+  <div id="page-header">
     <div class="row">
       <div class="twelve columns">
-        <h1 class="title"><a href="index.html">My great bookmarks</a></h1>
-        <h4 class="subtitle hide-for-small">The new reference for managing your bookmarks.</h4>
+        <h1 class="title"><a href="index.html">My bookmarks library</a></h1>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- View container -->
   <div id="page-main" class="row">
@@ -28,20 +30,19 @@
     </div>
   </div>
 
-  <footer id="page-footer">
+  <div id="page-footer">
     <div class="top"></div>
     <div class="middle"></div>
     <div class="bottom"></div>
-  </footer>
+  </div>
 
   <!-- ************ -->
   <!-- Include libs -->
   <!-- ************ -->
 
   <!-- Foundation by Zurb -->
-  <script>
-      document.write('<script src=' + ('__proto__' in {} ? 'lib/foundation/vendor/zepto' : 'lib/vendor/jquery') + '.js><\/script>')
-    </script>
+  <script src="lib/foundation/vendor/jquery.js"></script>
+  <script src="lib/foundation/vendor/custom.modernizr.js"></script>
   <script src="lib/foundation/foundation.min.js"></script>
   <script src="lib/foundation/foundation/foundation.topbar.js"></script>
 
@@ -56,8 +57,5 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
 
-  <script>
-      $(document).foundation();
-    </script>
 </body>
 </html>
