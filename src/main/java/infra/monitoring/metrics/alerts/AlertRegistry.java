@@ -1,4 +1,4 @@
-package infra.monitoring.alerts;
+package infra.monitoring.metrics.alerts;
 
 import java.util.Collections;
 import java.util.Map;

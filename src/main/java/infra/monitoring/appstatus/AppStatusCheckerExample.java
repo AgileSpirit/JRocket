@@ -8,7 +8,7 @@ import net.sf.appstatus.core.check.ICheckResult;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.fluent.Request;
 
-public class GooglePingStatusChecker extends AbstractCheck {
+public class AppStatusCheckerExample extends AbstractCheck {
 
     public ICheckResult checkStatus() {
         ICheckResult result;

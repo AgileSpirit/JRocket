@@ -9,7 +9,7 @@
   <!-- HTTP-ACTIVITY : custom filter -->
   <filter>
     <filter-name>filter-httpactivity</filter-name>
-    <filter-class>infra.monitoring.httpactivity.HttpActivityServletFilter</filter-class>
+    <filter-class>infra.monitoring.servletfilter.HttpActivityServletFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>filter-httpactivity</filter-name>

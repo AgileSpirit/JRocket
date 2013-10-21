@@ -1,4 +1,4 @@
-package infra.monitoring.httpactivity;
+package infra.monitoring.servletfilter;
 
 import static javax.servlet.http.HttpServletResponse.SC_BAD_REQUEST;
 import static javax.servlet.http.HttpServletResponse.SC_FORBIDDEN;

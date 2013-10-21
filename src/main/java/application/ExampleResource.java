@@ -1,4 +1,4 @@
-package application.resources;
+package application;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +16,7 @@ public class ExampleResource {
     /**
      * Basic resource method to check that the REST mechanism is OK.
      * <p>
-     * <strong>URL:</strong> http://[hostname]:[port]/[context]/example/test
+     * <strong>URL:</strong> http://[hostname]:[port]/[context]/service/example/test
      * </p>
      * 
      * @return the <code>String</code> "It works !"

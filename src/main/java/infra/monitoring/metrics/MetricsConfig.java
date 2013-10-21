@@ -1,10 +1,4 @@
-package infra.monitoring;
-
-import infra.monitoring.metrics.BasicHealthCheck;
-import infra.monitoring.metrics.DatabaseHealthCheck;
-import infra.monitoring.metrics.HealthCheckServletContextListener;
-import infra.monitoring.metrics.MetricsServletContextListener;
-import infra.monitoring.metrics.RestResourcesHealthCheck;
+package infra.monitoring.metrics;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +19,7 @@ import com.ryantenney.metrics.spring.config.annotation.MetricsConfigurerAdapter;
 
 @Configuration
 @EnableMetrics
-public class MonitoringConfig extends MetricsConfigurerAdapter {
+public class MetricsConfig extends MetricsConfigurerAdapter {
 
     @PersistenceContext
     private EntityManager entityManager;

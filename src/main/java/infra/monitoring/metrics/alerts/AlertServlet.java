@@ -1,4 +1,4 @@
-package infra.monitoring.alerts;
+package infra.monitoring.metrics.alerts;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -1,4 +1,4 @@
-package infra.monitoring.httpactivity;
+package infra.monitoring.servletfilter;
 
 import infra.monitoring.metrics.MetricsServletContextListener;
 

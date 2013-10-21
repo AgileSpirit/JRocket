@@ -1,4 +1,4 @@
-package application.resources;
+package application;
 
 import java.util.List;
 
