@@ -44,6 +44,8 @@ mail.message.to=<receiver-adress@gmail.com>
 ```
 $ mvn clean install
 ```
+This may take a few minutes because default mode sources and javadocs of each dependencies are downloaded by default (see downloadJavadocs and downloadSources properties in pom.xml).
+
 4) Run the application  
 
 Eclipse IDE integration
