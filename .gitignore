@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .project
 .classpath
 .idea
@@ -10,10 +9,4 @@ bin/**
 .hg/**
 .DS_Store
 *.iml
-=======
-.idea
-*.iml
-target
 *.log
-
->>>>>>> bc4f2a870a8ba2c4c566d061215b0bfcdc3d8845
