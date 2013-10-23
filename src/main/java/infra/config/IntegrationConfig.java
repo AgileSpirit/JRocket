@@ -6,8 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
-
-import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 
 @Configuration
 @PropertySource("classpath:environment/application-integration.properties")
@@ -16,7 +15,10 @@ public class IntegrationConfig implements EnvironmentConfig {
 
     @Bean
     public DataSource dataSource() {
-        return new ComboPooledDataSource();
+        final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
+        dsLookup.setResourceRef(true);
+        DataSource dataSource = dsLookup.getDataSource("java:comp/env/jdbc/mydb");
+        return dataSource;
     }
 
 }
