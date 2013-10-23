@@ -6,6 +6,28 @@
 
   <display-name>JavaWebStack</display-name>
 
+  <!-- *********************** -->
+  <!-- PERFORMANCE OPTIMIZATION -->
+  <!-- *********************** -->
+
+  <!-- HTTP request/response compression with GZIP -->
+  <filter>
+    <filter-name>EhCacheFilter</filter-name>
+    <filter-class>net.sf.ehcache.constructs.web.filter.SimpleCachingHeadersPageCachingFilter</filter-class>
+      <init-param>
+        <param-name>cacheName</param-name>
+        <param-value>CachingFilter</param-value>
+      </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>EhCacheFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- ********** -->
+  <!-- MONITORING -->
+  <!-- ********** -->
+
   <!-- HTTP-ACTIVITY : custom filter -->
   <filter>
     <filter-name>filter-httpactivity</filter-name>
@@ -33,7 +55,7 @@
   <listener>
     <listener-class>infra.monitoring.metrics.HealthCheckServletContextListener</listener-class>
   </listener>
-
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

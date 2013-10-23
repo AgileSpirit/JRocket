@@ -11,7 +11,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**").addResourceLocations("/static/app/").setCachePeriod(31556926);
+        registry.addResourceHandler("/**").addResourceLocations("/static/app/");
     }
     
 }

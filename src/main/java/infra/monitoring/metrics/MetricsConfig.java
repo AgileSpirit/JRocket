@@ -47,11 +47,11 @@ public class MetricsConfig extends MetricsConfigurerAdapter {
     @Override
     public void configureReporters(MetricRegistry metricRegistry) {
         // Console reporter
-        ConsoleReporter.forRegistry(metricRegistry).build().start(5, TimeUnit.MINUTES);
+        ConsoleReporter.forRegistry(metricRegistry).build().start(1, TimeUnit.HOURS);
 
         // SLF4J reporter
         Slf4jReporter.forRegistry(metricRegistry).outputTo(LoggerFactory.getLogger(getClass().getCanonicalName()))
-                .convertRatesTo(TimeUnit.SECONDS).convertDurationsTo(TimeUnit.MILLISECONDS).build().start(5, TimeUnit.MINUTES);
+                .convertRatesTo(TimeUnit.SECONDS).convertDurationsTo(TimeUnit.MILLISECONDS).build().start(1, TimeUnit.HOURS);
 
         // JMX reporter
         JmxReporter.forRegistry(metricRegistry).build().start();
