@@ -9,15 +9,17 @@ import com.codahale.metrics.health.HealthCheck;
  * Example of an HTTP based Metrics <code>HealthChecker</code>
  */
 public class RestResourcesHealthCheck extends HealthCheck {
+
+    private final String pingUrl;
     
-    /*
-     * The 3 parameters bellow should be parameterized for Production (warning AJP protocol !)
-     */
+    public RestResourcesHealthCheck(String pingUrl) {
+        this.pingUrl = pingUrl;
+    }
 
     @Override
     protected Result check() throws Exception {
-
-        HttpResponse response = Request.Get(getUrl()).execute().returnResponse();
+        
+        HttpResponse response = Request.Get(pingUrl).execute().returnResponse();
         
         if (response == null || response.getStatusLine().getStatusCode() != 200) {
             return Result.unhealthy("REST resources are not available");
@@ -25,8 +27,4 @@ public class RestResourcesHealthCheck extends HealthCheck {
         return Result.healthy("REST resources are available :-)");
     }
     
-    private String getUrl() {
-        return "http://localhost:8080/JavaWebStack/service/bookmarks/";
-    }
-
 }

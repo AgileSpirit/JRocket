@@ -1,5 +1,6 @@
 package infra.monitoring.metrics;
 
+import static infra.monitoring.metrics.HealthCheckServletContextListener.HEALTH_CHECK_REGISTRY;
 import infra.monitoring.metrics.healthchecks.BasicHealthCheck;
 import infra.monitoring.metrics.healthchecks.DatabaseHealthCheck;
 import infra.monitoring.metrics.healthchecks.RestResourcesHealthCheck;
@@ -7,11 +8,13 @@ import infra.monitoring.metrics.healthchecks.RestResourcesHealthCheck;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 
 import com.codahale.metrics.ConsoleReporter;
 import com.codahale.metrics.JmxReporter;
@@ -25,6 +28,9 @@ import com.ryantenney.metrics.spring.config.annotation.MetricsConfigurerAdapter;
 @EnableMetrics
 public class MetricsConfig extends MetricsConfigurerAdapter {
 
+    @Inject
+    private Environment env;
+    
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -53,12 +59,9 @@ public class MetricsConfig extends MetricsConfigurerAdapter {
 
     @PostConstruct
     private void registerHealthChecks() {
-        // Register HealthChecks
-        final HealthCheckRegistry registry = HealthCheckServletContextListener.HEALTH_CHECK_REGISTRY;
-
-        registry.register("Metrics HealthCheck mecanism", new BasicHealthCheck());
-        registry.register("REST resources", new RestResourcesHealthCheck());
-        registry.register("Database", new DatabaseHealthCheck(entityManager));
+        HEALTH_CHECK_REGISTRY.register("Metrics HealthCheck mecanism", new BasicHealthCheck());
+        HEALTH_CHECK_REGISTRY.register("Database", new DatabaseHealthCheck(entityManager));
+        HEALTH_CHECK_REGISTRY.register("REST resources", new RestResourcesHealthCheck(env.getProperty("checks.rest.resources.ping")));
     }
     
 }

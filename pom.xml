@@ -14,6 +14,8 @@
     <!-- Project properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.7</java.version>
+    <downloadJavadocs>false</downloadJavadocs>
+    <downloadSources>true</downloadSources>
 
     <!-- Dependencies version -->
     <junit.version>4.11</junit.version>
@@ -310,18 +312,6 @@
       <version>${httpclient.version}</version>
     </dependency>
 
-    <!-- APP-STATUS -->
-    <dependency>
-      <groupId>net.sf.appstatus </groupId>
-      <artifactId>appstatus-web</artifactId>
-      <version>${appstatus.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sf.appstatus</groupId>
-      <artifactId>appstatus-services-inprocess</artifactId>
-      <version>${appstatus.version}</version>
-    </dependency>
-
     <!-- ******* -->
     <!-- TESTING -->
     <!-- ******* -->
@@ -462,8 +452,6 @@
         <configuration>
           <wtpapplicationxml>true</wtpapplicationxml>
           <wtpversion>2.0</wtpversion>
-          <downloadJavadocs>true</downloadJavadocs>
-          <downloadSources>true</downloadSources>
         </configuration>
       </plugin>
 
