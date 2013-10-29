@@ -5,38 +5,6 @@
   id="JavaWebStack" version="2.5">
 
   <display-name>JavaWebStack</display-name>
-
-  <!-- ********** -->
-  <!-- MONITORING -->
-  <!-- ********** -->
-
-  <!-- HTTP-ACTIVITY : custom filter -->
-  <filter>
-    <filter-name>filter-httpactivity</filter-name>
-    <filter-class>infra.monitoring.servletfilter.HttpActivityServletFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>filter-httpactivity</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
-
-  <!-- METRICS : ping, health-checks, metrics, thread-dumps JSON GET-resources -->
-  <servlet>
-    <servlet-name>monitoring-metrics</servlet-name>
-    <servlet-class>com.codahale.metrics.servlets.AdminServlet</servlet-class>
-    <load-on-startup>2</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>monitoring-metrics</servlet-name>
-    <url-pattern>/monitoring/metrics/*</url-pattern>
-  </servlet-mapping>
-  <!-- Required ContextListers -->
-  <listener>
-    <listener-class>infra.monitoring.metrics.MetricsServletContextListener</listener-class>
-  </listener>
-  <listener>
-    <listener-class>infra.monitoring.metrics.HealthCheckServletContextListener</listener-class>
-  </listener>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

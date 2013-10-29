@@ -7,7 +7,6 @@ import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
 import static javax.servlet.http.HttpServletResponse.SC_NOT_MODIFIED;
 import static javax.servlet.http.HttpServletResponse.SC_NO_CONTENT;
 import static javax.servlet.http.HttpServletResponse.SC_OK;
-import infra.monitoring.metrics.MetricsServletContextListener;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -24,9 +23,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.codahale.metrics.Meter;
 import com.codahale.metrics.Metric;
+import com.codahale.metrics.MetricRegistry;
 
 public class HttpActivityServletFilter implements Filter {
 
@@ -34,8 +35,12 @@ public class HttpActivityServletFilter implements Filter {
     
     private final Map<Integer, String> metricsNamesByHttpStatusCode = new HashMap<Integer, String>();
     
+    private MetricRegistry metricRegistry;
+    
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
+        this.metricRegistry = (MetricRegistry) WebApplicationContextUtils.getWebApplicationContext(filterConfig.getServletContext()).getBean(MetricRegistry.class); 
+        
         createAndRegisterMeterForStatusCode(SC_OK, "Requête traitée avec succès");
         createAndRegisterMeterForStatusCode(SC_NO_CONTENT, "Requête traitée avec succès mais pas d’information à renvoyer");
         createAndRegisterMeterForStatusCode(SC_NOT_MODIFIED, "Document non modifié depuis la dernière requête");        
@@ -53,7 +58,7 @@ public class HttpActivityServletFilter implements Filter {
         metricsNamesByHttpStatusCode.put(Integer.valueOf(statusCode), registrationName);
 
         // Create and add the metric to the registry
-        return MetricsServletContextListener.METRIC_REGISTRY.meter(registrationName);
+        return metricRegistry.meter(registrationName);
     }
 
     @Override
@@ -71,7 +76,7 @@ public class HttpActivityServletFilter implements Filter {
         if (meterName == null) {
             LOGGER.warn("HTTP response status code " + httpResponse.getStatus() + " not monitored");
         } else {
-            Metric metric = MetricsServletContextListener.METRIC_REGISTRY.getMeters().get(meterName);
+            Metric metric = metricRegistry.getMeters().get(meterName);
             if (metric == null) {
                 LOGGER.error("Metric not found for name " + meterName);
             } else {

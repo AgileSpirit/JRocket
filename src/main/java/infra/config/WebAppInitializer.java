@@ -1,13 +1,19 @@
 package infra.config;
 
+import infra.monitoring.metrics.HealthCheckServletContextListener;
+import infra.monitoring.metrics.MetricsServletContextListener;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+
+import com.codahale.metrics.servlets.AdminServlet;
 
 /**
  * 
@@ -35,6 +41,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext container) {
         addSpringWebSupport(container);
+        addMetricsSupport(container);
     }
 
     private void addSpringWebSupport(ServletContext container) {
@@ -45,9 +52,32 @@ public class WebAppInitializer implements WebApplicationInitializer {
 
         // Register and map the dispatcher servlet
         LOGGER.info("Add servlet : DispatcherServlet");
-        ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet(dispatcherContext));
-        dispatcher.setLoadOnStartup(1);
-        dispatcher.addMapping("/*");
+        ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(dispatcherContext));
+        servlet.setLoadOnStartup(getServletIndex());
+        servlet.addMapping("/*");
+        
+        /*
+         * This listener is required for ServletListener to be aware of Spring context (ex: Metrics servlets)
+         */
+        container.addListener(new ContextLoaderListener(dispatcherContext));
     }
 
+    private void addMetricsSupport(ServletContext container) {
+        // Register Metrics AdminServlet
+        ServletRegistration.Dynamic servlet = container.addServlet("metrics", new AdminServlet());
+        servlet.setLoadOnStartup(getServletIndex());
+        servlet.addMapping("/monitoring/metrics/*");
+
+        /*
+         * These listeners are required by AdminServlet, that looks in their two ContextAttributes (MetricRegistry and HealthCheckRegistry)
+         */
+        container.addListener(MetricsServletContextListener.class);
+        container.addListener(HealthCheckServletContextListener.class);
+    }
+    
+    private static int servletIndex = 0;
+    
+    private final static int getServletIndex() {
+        return ++servletIndex;
+    }
 }
