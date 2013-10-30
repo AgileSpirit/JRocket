@@ -101,7 +101,7 @@ div.bookmarks ul.list li.bookmark:hover {
 }
 
 div.bookmarks ul.list li.bookmark:first-child {
-  border-top: none;  
+  border-top: none;
 }
 
 div.bookmarks ul.list li.bookmark div.title a.link {
