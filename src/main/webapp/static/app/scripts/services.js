@@ -4,7 +4,7 @@
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('jws.services', [ 'ngResource' ])
+angular.module('jwsServices', [ 'ngResource' ])
     .factory('bookmarkService', function($resource) {
         return $resource('./service/bookmarks/:id', { id : '@id' });
     })

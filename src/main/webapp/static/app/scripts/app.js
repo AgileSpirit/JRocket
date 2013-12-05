@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('jwsApp', ['jws.services', 'jws.controllers'])
+angular.module('jwsApp', ['jwsServices', 'jwsControllers'])
     .config(['$routeProvider', '$httpProvider',function($routeProvider, httpProvider) {
         $routeProvider.when('/bookmarks', {templateUrl: 'views/bookmark-list.html', controller: 'BookmarkListCtrl'});
         $routeProvider.when('/bookmarks/:bookmarkId', {templateUrl: 'views/bookmark-detail.html', controller: 'BookmarkDetailCtrl'});
@@ -17,3 +17,4 @@ angular.module('jwsApp', ['jws.services', 'jws.controllers'])
             $(document).foundation();
         });
     });
+

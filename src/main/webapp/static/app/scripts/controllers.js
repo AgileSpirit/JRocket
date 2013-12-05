@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('jws.controllers', [])
+angular.module('jwsControllers', [])
   .controller('BookmarkListCtrl', ['$scope', 'bookmarkService', function($scope, bookmarkService) {
     // Instantiate an object to store your scope data in (Best Practices)
     $scope.data = {};
