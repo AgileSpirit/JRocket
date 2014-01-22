@@ -17,9 +17,10 @@
     <li class="bookmark" ng-repeat="bookmark in data.bookmarks | filter: searchText">
       <div class="title">
         <a href="{{bookmark.url}}" class="link">{{bookmark.title}}</a>
+
         <div class="actions">
-          <i class="foundicon-edit has-tip" ng-click="getBookmark(bookmark.id)" title="Edit"></i>
-          <i class="foundicon-trash has-tip" ng-click="removeBookmark(bookmark)" title="Remove"></i>
+          <i class="foundicon-edit has-tip" ng-click="editBookmark(bookmark.id)" title="Edit - {{bookmark.id}}"></i>
+          <i class="foundicon-trash has-tip" ng-click="removeBookmark(bookmark)" title="Remove - {{bookmark.id}}"></i>
         </div>
       </div>
       <div class="description">
@@ -42,7 +43,7 @@
     </div>
     <div class="field">
       <label class="required">Title</label>
-      <input type="text"  ng-model="data.bookmark.title" required>
+      <input type="text" ng-model="data.bookmark.title" required>
     </div>
     <div class="field">
       <label>Description</label>
@@ -50,7 +51,7 @@
     </div>
     <div class="row text-right">
       <button class="button secondary" ng-click="closeBookmarkWizard()">Cancel</button>
-      <button class="button" ng-click="saveBookmark()" >Validate</button>
+      <button class="button" ng-click="saveBookmark()">Validate</button>
     </div>
   </form>
   <a class="close-reveal-modal">&#215;</a>
