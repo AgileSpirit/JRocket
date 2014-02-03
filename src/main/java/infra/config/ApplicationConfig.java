@@ -13,18 +13,18 @@ import org.springframework.jmx.export.naming.MetadataNamingStrategy;
 @EnableMBeanExport
 public class ApplicationConfig {
 
-  @Bean
-  public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-    return new PropertySourcesPlaceholderConfigurer();
-  }
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 
     /*
      * JMX MBean configuration
      */
 
-  @Bean
-  public MetadataNamingStrategy namingStrategy() {
-    return new MetadataNamingStrategy(new AnnotationJmxAttributeSource());
-  }
+    @Bean
+    public MetadataNamingStrategy namingStrategy() {
+        return new MetadataNamingStrategy(new AnnotationJmxAttributeSource());
+    }
 
 }

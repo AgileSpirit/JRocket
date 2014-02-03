@@ -1,20 +1,20 @@
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ehcache.xsd">
-  
-  <diskStore path="java.io.tmpdir" />
-  
-  <defaultCache maxEntriesLocalHeap="10" 
-    eternal="false"
-    timeToIdleSeconds="5" 
-    timeToLiveSeconds="10" 
-    overflowToDisk="true" />
-  
-  <!-- Page and Page Fragment Caches -->
-  <cache name="CachingFilter" 
-    maxEntriesLocalHeap="10" 
-    eternal="false"
-    timeToIdleSeconds="31556926" 
-    timeToLiveSeconds="31556926" 
-    overflowToDisk="true">
-  </cache>
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <defaultCache maxEntriesLocalHeap="10"
+                  eternal="false"
+                  timeToIdleSeconds="5"
+                  timeToLiveSeconds="10"
+                  overflowToDisk="true"/>
+
+    <!-- Page and Page Fragment Caches -->
+    <cache name="CachingFilter"
+           maxEntriesLocalHeap="10"
+           eternal="false"
+           timeToIdleSeconds="31556926"
+           timeToLiveSeconds="31556926"
+           overflowToDisk="true">
+    </cache>
 
 </ehcache>

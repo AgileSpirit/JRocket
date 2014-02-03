@@ -27,7 +27,7 @@ under the License.
             <item name="Introduction" href="index.html"/>
         </menu>
 
-        <menu name="Reports" ref="reports" />
+        <menu name="Reports" ref="reports"/>
 
     </body>
 </project>

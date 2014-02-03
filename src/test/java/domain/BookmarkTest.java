@@ -22,7 +22,7 @@ public class BookmarkTest {
         Assertions.assertThat(bookmark.getUrl()).isEqualTo(inputUrl);
         Assertions.assertThat(bookmark.getTitle()).isEqualTo(inputTitle);
         Assertions.assertThat(bookmark.getDescription()).isEqualTo(inputDescription);
-        Assertions.assertThat(bookmark.getCreationDate()).isNotNull();
+        Assertions.assertThat(bookmark.getCreationDate()).isNull();
         Assertions.assertThat(bookmark.getModificationDate()).isNull();
     }
 

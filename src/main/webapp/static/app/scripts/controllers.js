@@ -29,20 +29,26 @@ angular.module('jwsControllers', [])
         };
 
         $scope.saveBookmark = function () {
-            console.log("Saving bookmark...");
             // Retrieve bookmark
-            var savingBookmark = angular.copy($scope.data.bookmark);
+            var bookmark = angular.copy($scope.data.bookmark);
             // Server call
-            var savedBookmark = bookmarkService.save({id: savingBookmark.id}, savingBookmark,
-                function () {
-                    console.log("It worked ! :-)");
-                },
-                function () {
-                    console.log("It failed... :-(");
-                }
-            );
+            if (bookmark.id) {
+                // Merge
+                console.log("Updating bookmark...");
+                bookmarkService.update({id: bookmark.id}, bookmark,
+                    function () {
+                        console.log("Bookmark updated");
+                    },
+                    function () {
+                        console.log("Bookmark update KO");
+                    });
+            } else {
+                // Persist
+                console.log("Saving bookmark...");
+                bookmarkService.save(bookmark);
+                console.log("Bookmark saved");
+            }
             // Client update
-            console.log("Bookmark saved, id=" + savedBookmark.id);
             this.closeBookmarkWizard();
         }
 

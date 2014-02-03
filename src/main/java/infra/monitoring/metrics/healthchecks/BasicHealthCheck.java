@@ -4,7 +4,6 @@ import com.codahale.metrics.health.HealthCheck;
 
 /**
  * Example of basic HealthCheck that always returns true
- *
  */
 public class BasicHealthCheck extends HealthCheck {
 

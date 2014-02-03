@@ -1,12 +1,11 @@
 package infra.monitoring.metrics;
 
-import javax.servlet.ServletContextEvent;
-
+import com.codahale.metrics.health.HealthCheckRegistry;
+import com.codahale.metrics.servlets.HealthCheckServlet;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.codahale.metrics.health.HealthCheckRegistry;
-import com.codahale.metrics.servlets.HealthCheckServlet;
+import javax.servlet.ServletContextEvent;
 
 public class HealthCheckServletContextListener extends HealthCheckServlet.ContextListener {
 

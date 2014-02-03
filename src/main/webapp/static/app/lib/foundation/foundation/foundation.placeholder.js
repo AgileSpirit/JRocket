@@ -92,7 +92,7 @@
             "textarea"
         ],
 
-        // The list of keycodes that are not allowed when the polyfill is configured to hide-on-input
+    // The list of keycodes that are not allowed when the polyfill is configured to hide-on-input
         badKeys = [
 
             // The following keys all cause the caret to jump to the end of the input value
@@ -113,15 +113,15 @@
             46 // Delete
         ],
 
-        // Styling variables
+    // Styling variables
         placeholderStyleColor = "#ccc",
         placeholderClassName = "placeholdersjs",
         classNameRegExp = new RegExp("(?:^|\\s)" + placeholderClassName + "(?!\\S)"),
 
-        // These will hold references to all elements that can be affected. NodeList objects are live, so we only need to get those references once
+    // These will hold references to all elements that can be affected. NodeList objects are live, so we only need to get those references once
         inputs, textareas,
 
-        // The various data-* attributes used by the polyfill
+    // The various data-* attributes used by the polyfill
         ATTR_CURRENT_VAL = "data-placeholder-value",
         ATTR_ACTIVE = "data-placeholder-active",
         ATTR_INPUT_TYPE = "data-placeholder-type",
@@ -130,7 +130,7 @@
         ATTR_OPTION_FOCUS = "data-placeholder-focus",
         ATTR_OPTION_LIVE = "data-placeholder-live",
 
-        // Various other variables used throughout the rest of the script
+    // Various other variables used throughout the rest of the script
         test = document.createElement("input"),
         head = document.getElementsByTagName("head")[0],
         root = document.documentElement,
@@ -139,7 +139,8 @@
         hideOnInput, liveUpdates, keydownVal, styleElem, styleRules, placeholder, timer, form, elem, len, i;
 
     // No-op (used in place of public methods when native support is detected)
-    function noop() {}
+    function noop() {
+    }
 
     // Hide the placeholder value on a single element. Returns true if the placeholder was hidden and false if it was not (because it wasn't visible in the first place)
     function hidePlaceholder(elem) {
@@ -254,6 +255,7 @@
             }
         };
     }
+
     function makeKeyupHandler(elem) {
         return function () {
             var type;
@@ -279,6 +281,7 @@
             }
         };
     }
+
     function makeClickHandler(elem) {
         return function () {
             if (elem === document.activeElement && elem.value === elem.getAttribute(ATTR_CURRENT_VAL) && elem.getAttribute(ATTR_ACTIVE) === "true") {

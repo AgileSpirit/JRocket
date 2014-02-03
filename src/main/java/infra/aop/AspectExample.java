@@ -12,11 +12,11 @@ import javax.inject.Named;
 @Named
 public class AspectExample {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(AspectExample.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AspectExample.class);
 
-  @Around("execution(* domain.*Service.*(..))")
-  public Object inDomainServicesLayer(ProceedingJoinPoint pjp) throws Throwable {
-    return pjp.proceed();
-  }
+    @Around("execution(* domain.*Service.*(..))")
+    public Object inDomainServicesLayer(ProceedingJoinPoint pjp) throws Throwable {
+        return pjp.proceed();
+    }
 
 }

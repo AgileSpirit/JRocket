@@ -18,7 +18,7 @@ public class ExampleResource {
      * <p>
      * <strong>URL:</strong> http://[hostname]:[port]/[context]/service/example/test
      * </p>
-     * 
+     *
      * @return the <code>String</code> "It works !"
      */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
@@ -32,7 +32,7 @@ public class ExampleResource {
      * <p>
      * <strong>URL:</strong> http://[hostname]:[port]/[context]/example/hello
      * </p>
-     * 
+     *
      * @return a redirection to the JSP page WEB-INF/jsp/hello-world.jsp
      */
     @RequestMapping(value = "/hello")

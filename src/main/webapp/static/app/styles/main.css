@@ -1,15 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 html {
-  background: #333;
+    background: #333;
 }
 
 textarea {
-  height: auto;
+    height: auto;
 }
 
 /*=============*/
@@ -17,48 +17,48 @@ textarea {
 /*=============*/
 
 #page-header {
-  background-color: #2ba6cb;
+    background-color: #2ba6cb;
 }
 
 #page-header * {
-  color: white;
+    color: white;
 }
 
 #page-header h1 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 #page-header h4 {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 #page-main {
-  background-color: white;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  padding-bottom: 22px;
-  overflow: hidden;
+    background-color: white;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    overflow: hidden;
 }
 
 #page-footer {
-  border-top: 1px solid #eee;
+    border-top: 1px solid #eee;
 }
 
 #page-footer .top {
-  background: #33A6C9;
-  padding: 25px 0 25px 0;
-  margin-top: 30px;
+    background: #33A6C9;
+    padding: 25px 0 25px 0;
+    margin-top: 30px;
 }
 
 #page-footer .middle {
-  background: #1399bd;
-  padding: 40px 0;
-  color: white;
+    background: #1399bd;
+    padding: 40px 0;
+    color: white;
 }
 
 #page-footer .bottom {
-  background: #333;
-  padding: 24px 0 10px;
+    background: #333;
+    padding: 24px 0 10px;
 }
 
 /*============*/
@@ -66,7 +66,7 @@ textarea {
 /*============*/
 
 .button {
-  margin: 0;
+    margin: 0;
 }
 
 /*=======*/
@@ -74,12 +74,12 @@ textarea {
 /*=======*/
 
 input:focus.ng-invalid {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 div.field label.required:after {
-  content: " *";
-  color: red;
+    content: " *";
+    color: red;
 }
 
 /*====================*/
@@ -87,42 +87,44 @@ div.field label.required:after {
 /*====================*/
 
 div.bookmarks ul.list {
-  list-style: none;
+    list-style: none;
 }
 
 div.bookmarks ul.list li.bookmark {
-  border-top: 1px solid #e4e4e4;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 div.bookmarks ul.list li.bookmark:hover {
-  background-color: #e8f0f8;
+    background-color: #e8f0f8;
 }
 
 div.bookmarks ul.list li.bookmark:first-child {
-  border-top: none;
+    border-top: none;
 }
 
 div.bookmarks ul.list li.bookmark div.title a.link {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 div.bookmarks ul.list li.bookmark div.title div.actions {
-  display: inline-block;
-  vertical-align: middle;
-  float: right;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
 }
 
 div.bookmarks ul.list li.bookmark div.title div.actions i {
-  cursor: pointer;
-  margin-left: 5px;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 div.bookmarks ul.list li.bookmark div.description {
-  clear: both;
+    clear: both;
 }
+
 div.bookmarks ul.list li.bookmark div.description p {
-  margin-bottom: 0;
-  padding-bottom: 1.25em;
+    margin-bottom: 0;
+    padding-bottom: 1.25em;
 }

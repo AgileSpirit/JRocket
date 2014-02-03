@@ -1,216 +1,216 @@
 /* font-face */
 @font-face {
-  font-family: "GeneralFoundicons";
-  src: url("../fonts/general_foundicons.eot");
-  src: url("../fonts/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/general_foundicons.woff") format("woff"), url("../fonts/general_foundicons.ttf") format("truetype"), url("../fonts/general_foundicons.svg#GeneralFoundicons") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "GeneralFoundicons";
+    src: url("../fonts/general_foundicons.eot");
+    src: url("../fonts/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/general_foundicons.woff") format("woff"), url("../fonts/general_foundicons.ttf") format("truetype"), url("../fonts/general_foundicons.svg#GeneralFoundicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* global foundicon styles */
 [class*="foundicon-"] {
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: inherit;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
 }
 
 [class*="foundicon-"]:before {
-  font-family: "GeneralFoundicons";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
+    font-family: "GeneralFoundicons";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
 }
 
 /* icons */
 .foundicon-settings:before {
-  content: "\f000";
+    content: "\f000";
 }
 
 .foundicon-heart:before {
-  content: "\f001";
+    content: "\f001";
 }
 
 .foundicon-star:before {
-  content: "\f002";
+    content: "\f002";
 }
 
 .foundicon-plus:before {
-  content: "\f003";
+    content: "\f003";
 }
 
 .foundicon-minus:before {
-  content: "\f004";
+    content: "\f004";
 }
 
 .foundicon-checkmark:before {
-  content: "\f005";
+    content: "\f005";
 }
 
 .foundicon-remove:before {
-  content: "\f006";
+    content: "\f006";
 }
 
 .foundicon-mail:before {
-  content: "\f007";
+    content: "\f007";
 }
 
 .foundicon-calendar:before {
-  content: "\f008";
+    content: "\f008";
 }
 
 .foundicon-page:before {
-  content: "\f009";
+    content: "\f009";
 }
 
 .foundicon-tools:before {
-  content: "\f00a";
+    content: "\f00a";
 }
 
 .foundicon-globe:before {
-  content: "\f00b";
+    content: "\f00b";
 }
 
 .foundicon-home:before {
-  content: "\f00c";
+    content: "\f00c";
 }
 
 .foundicon-quote:before {
-  content: "\f00d";
+    content: "\f00d";
 }
 
 .foundicon-people:before {
-  content: "\f00e";
+    content: "\f00e";
 }
 
 .foundicon-monitor:before {
-  content: "\f00f";
+    content: "\f00f";
 }
 
 .foundicon-laptop:before {
-  content: "\f010";
+    content: "\f010";
 }
 
 .foundicon-phone:before {
-  content: "\f011";
+    content: "\f011";
 }
 
 .foundicon-cloud:before {
-  content: "\f012";
+    content: "\f012";
 }
 
 .foundicon-error:before {
-  content: "\f013";
+    content: "\f013";
 }
 
 .foundicon-right-arrow:before {
-  content: "\f014";
+    content: "\f014";
 }
 
 .foundicon-left-arrow:before {
-  content: "\f015";
+    content: "\f015";
 }
 
 .foundicon-up-arrow:before {
-  content: "\f016";
+    content: "\f016";
 }
 
 .foundicon-down-arrow:before {
-  content: "\f017";
+    content: "\f017";
 }
 
 .foundicon-trash:before {
-  content: "\f018";
+    content: "\f018";
 }
 
 .foundicon-add-doc:before {
-  content: "\f019";
+    content: "\f019";
 }
 
 .foundicon-edit:before {
-  content: "\f01a";
+    content: "\f01a";
 }
 
 .foundicon-lock:before {
-  content: "\f01b";
+    content: "\f01b";
 }
 
 .foundicon-unlock:before {
-  content: "\f01c";
+    content: "\f01c";
 }
 
 .foundicon-refresh:before {
-  content: "\f01d";
+    content: "\f01d";
 }
 
 .foundicon-paper-clip:before {
-  content: "\f01e";
+    content: "\f01e";
 }
 
 .foundicon-video:before {
-  content: "\f01f";
+    content: "\f01f";
 }
 
 .foundicon-photo:before {
-  content: "\f020";
+    content: "\f020";
 }
 
 .foundicon-graph:before {
-  content: "\f021";
+    content: "\f021";
 }
 
 .foundicon-idea:before {
-  content: "\f022";
+    content: "\f022";
 }
 
 .foundicon-mic:before {
-  content: "\f023";
+    content: "\f023";
 }
 
 .foundicon-cart:before {
-  content: "\f024";
+    content: "\f024";
 }
 
 .foundicon-address-book:before {
-  content: "\f025";
+    content: "\f025";
 }
 
 .foundicon-compass:before {
-  content: "\f026";
+    content: "\f026";
 }
 
 .foundicon-flag:before {
-  content: "\f027";
+    content: "\f027";
 }
 
 .foundicon-location:before {
-  content: "\f028";
+    content: "\f028";
 }
 
 .foundicon-clock:before {
-  content: "\f029";
+    content: "\f029";
 }
 
 .foundicon-folder:before {
-  content: "\f02a";
+    content: "\f02a";
 }
 
 .foundicon-inbox:before {
-  content: "\f02b";
+    content: "\f02b";
 }
 
 .foundicon-website:before {
-  content: "\f02c";
+    content: "\f02c";
 }
 
 .foundicon-smiley:before {
-  content: "\f02d";
+    content: "\f02d";
 }
 
 .foundicon-search:before {
-  content: "\f02e";
+    content: "\f02e";
 }

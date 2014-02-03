@@ -1,8 +1,7 @@
 package infra.repository;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
-
 import domain.Bookmark;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface BookmarkRepository extends PagingAndSortingRepository<Bookmark, Long>, BookmarkRepositoryCustom {
 

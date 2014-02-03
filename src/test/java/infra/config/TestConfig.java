@@ -1,24 +1,17 @@
 package infra.config;
 
+import com.github.springtestdbunit.bean.DatabaseConfigBean;
+import com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean;
 import infra.repository.RepositoryConfig;
-
-import java.util.Properties;
-
-import javax.sql.DataSource;
-
 import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.ext.h2.H2DataTypeFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.github.springtestdbunit.bean.DatabaseConfigBean;
-import com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean;
+import javax.sql.DataSource;
+import java.util.Properties;
 
 @Configuration
 @ComponentScan(".")

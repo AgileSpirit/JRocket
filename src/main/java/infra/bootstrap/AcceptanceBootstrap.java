@@ -1,11 +1,10 @@
 package infra.bootstrap;
 
 import infra.util.DataGenerator;
+import org.springframework.context.annotation.Profile;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-
-import org.springframework.context.annotation.Profile;
 
 @Named
 @Profile("acceptance")

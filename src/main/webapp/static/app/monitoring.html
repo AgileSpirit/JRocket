@@ -1,190 +1,198 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
 
-<title>Java Web Stack - Monitoring</title>
+  <title>Java Web Stack - Monitoring</title>
 
   <link rel="stylesheet" href="styles/normalize.min.css">
   <link rel="stylesheet" href="styles/foundation.min.css">
   <link rel="stylesheet" href="styles/general_foundicons.css">
-<link rel="stylesheet" type="text/css" href="styles/monitoring.css" />
+  <link rel="stylesheet" type="text/css" href="styles/monitoring.css"/>
 </head>
 <body>
-  <header id="page-header">
-    <div class="row">
-      <div class="twelve columns">
-        <h1 class="title">
-          <a href="monitoring.html">Monitoring</a>
-        </h1>
-      </div>
-    </div>
-  </header>
-
-  <!-- View container -->
-  <div id="page-main" class="row">
+<header id="page-header">
+  <div class="row">
     <div class="twelve columns">
-      
-      <!-- ************* -->
-      <!-- HEALTH CHECKS -->
-      <!-- ************* -->
-
-      <section>
-        <h2>Contrôles de santé (Health Check)</h2>
-        <div id="healths" class="health">
-          <table>
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">Nom de la métrique</th>
-                <th title="Message">Message</th>
-                <th title="Etat">Etat</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <hr>
-      
-      <!-- ******* -->
-      <!-- METRICS -->
-      <!-- ******* -->
-
-      <section>
-        <h2>Métriques (Metrics)</h2>
-        
-        <!-- Meters -->
-        <div id="meters" class="metric">
-          <h4>Compteurs énènementiels (Meters)</h4>
-          <p>Une métrique de type Meter mesure le taux d'occurence d'un évènement par seconde, sur plusieurs intervalles donnés (cf. en-tête des colonnes)</p>           
-          <table >
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">name</th>
-                <th title="Nombre d'occurences">count</th>
-                <th title="Taux moyen d'occurences par seconde">mean_rate</th>
-                <th title="Taux d'occurences par seconde au cours de la dernière minute">m1_rate</th>
-                <th title="Taux d'occurences par seconde au cours des 5 dernières minutes">m5_rate</th>
-                <th title="Taux d'occurences par seconde au cours des 15 dernières minutes">m15_rate</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-        <!-- #End Meters -->
-  
-        <!-- Timers -->
-        <div id="timers" class="metric">
-          <h4>Compteurs temps (Timers)</h4>
-          <table>
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">name</th>
-                <th title="Nombre d'occurences">count</th>
-                <th title="Taux moyen d'occurences par seconde">mean_rate</th>
-                <th title="Taux d'occurences par seconde au cours de la dernière minute">m1_rate</th>
-                <th title="Taux d'occurences par seconde au cours des 5 dernières minutes">m5_rate</th>
-                <th title="Taux d'occurences par seconde au cours des 15 dernières minutes">m15_rate</th>
-                <th title="Temps moyen (en sec.)">mean</th>
-                <th title="Temps min (en sec.)">min</th>
-                <th title="Temps max (en sec.)">max</th>
-                <th title="Centile-50">p50</th>
-                <th title="Centile-75">p75</th>
-                <th title="Centile-99">p99</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-        <!-- #End Meters -->
-  
-        <!-- Counters -->
-        <div id="counters" class="metric">
-          <h4>Compteurs simples (Counters)</h4>
-          <p>Un compteur est une simple valeur entière (sur 64-bit) qui peut être incrémentée ou décrémentée.</p> 
-          <table>
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">name</th>
-                <th title="Nombre d'occurences">count</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-        <!-- #End Counters -->
-  
-        <!-- Counters -->
-        <div id="gauges" class="metric">
-          <h4>Valeurs ponctuelles (Gauges)</h4>
-          <p>Le type de métrique Gauge est le type le plus simple et se contente de retourner une <i>valeur</i>. Il peut être utile par exemple  pour évaluer la taille d'une collection à un moment donné.</p>
-          <table>
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">name</th>
-                <th title="Nombre d'occurences">count</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-        <!-- #End Counters -->
-  
-        <!-- Histograms -->
-        <div id="histograms" class="metric">
-          <h4>Histogrammes (Histograms)</h4>
-          <p>Un Histogram mesure la distribution des valeurs pour un flux de données et permet de suivre l'évolution d'une mesure au fil du temps.</p>
-          <table>
-            <thead>
-              <tr>
-                <th title="Nom de la métrique">name</th>
-                <th title="Nombre de mesures collectées">count</th>
-                <th title="Valeur moyenne (en sec.)">mean</th>
-                <th title="Valeur min (en sec.)">min</th>
-                <th title="Valeur max (en sec.)">max</th>
-                <th title="Centile-50">p50</th>
-                <th title="Centile-75">p75</th>
-                <th title="Centile-99">p99</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-        <!-- #End Counters -->
-      </section>
+      <h1 class="title">
+        <a href="monitoring.html">Monitoring</a>
+      </h1>
     </div>
   </div>
+</header>
 
-  <footer id="page-footer">
-    <div class="top"></div>
-    <div class="middle"></div>
-    <div class="bottom"></div>
-  </footer>
+<!-- View container -->
+<div id="page-main" class="row">
+  <div class="twelve columns">
 
-  <!-- ************ -->
-  <!-- Include libs -->
-  <!-- ************ -->
+    <!-- ************* -->
+    <!-- HEALTH CHECKS -->
+    <!-- ************* -->
 
-  <!-- Foundation by Zurb -->
-  <script src="lib/foundation/vendor/jquery.js"></script>
-  <script src="lib/foundation/vendor/custom.modernizr.js"></script>
-  <script src="lib/foundation/foundation.min.js"></script>
-  <script src="lib/foundation/foundation/foundation.topbar.js"></script>
+    <section>
+      <h2>Contrôles de santé (Health Check)</h2>
 
-  <!-- Application scripts -->
-  <script src="scripts/monitoring.js"></script>
+      <div id="healths" class="health">
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">Nom de la métrique</th>
+            <th title="Message">Message</th>
+            <th title="Etat">Etat</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <script>
-    $(document).foundation();
-  </script>
-  
+    <hr>
+
+    <!-- ******* -->
+    <!-- METRICS -->
+    <!-- ******* -->
+
+    <section>
+      <h2>Métriques (Metrics)</h2>
+
+      <!-- Meters -->
+      <div id="meters" class="metric">
+        <h4>Compteurs énènementiels (Meters)</h4>
+
+        <p>Une métrique de type Meter mesure le taux d'occurence d'un évènement par seconde, sur plusieurs intervalles
+          donnés (cf. en-tête des colonnes)</p>
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">name</th>
+            <th title="Nombre d'occurences">count</th>
+            <th title="Taux moyen d'occurences par seconde">mean_rate</th>
+            <th title="Taux d'occurences par seconde au cours de la dernière minute">m1_rate</th>
+            <th title="Taux d'occurences par seconde au cours des 5 dernières minutes">m5_rate</th>
+            <th title="Taux d'occurences par seconde au cours des 15 dernières minutes">m15_rate</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- #End Meters -->
+
+      <!-- Timers -->
+      <div id="timers" class="metric">
+        <h4>Compteurs temps (Timers)</h4>
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">name</th>
+            <th title="Nombre d'occurences">count</th>
+            <th title="Taux moyen d'occurences par seconde">mean_rate</th>
+            <th title="Taux d'occurences par seconde au cours de la dernière minute">m1_rate</th>
+            <th title="Taux d'occurences par seconde au cours des 5 dernières minutes">m5_rate</th>
+            <th title="Taux d'occurences par seconde au cours des 15 dernières minutes">m15_rate</th>
+            <th title="Temps moyen (en sec.)">mean</th>
+            <th title="Temps min (en sec.)">min</th>
+            <th title="Temps max (en sec.)">max</th>
+            <th title="Centile-50">p50</th>
+            <th title="Centile-75">p75</th>
+            <th title="Centile-99">p99</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- #End Meters -->
+
+      <!-- Counters -->
+      <div id="counters" class="metric">
+        <h4>Compteurs simples (Counters)</h4>
+
+        <p>Un compteur est une simple valeur entière (sur 64-bit) qui peut être incrémentée ou décrémentée.</p>
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">name</th>
+            <th title="Nombre d'occurences">count</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- #End Counters -->
+
+      <!-- Counters -->
+      <div id="gauges" class="metric">
+        <h4>Valeurs ponctuelles (Gauges)</h4>
+
+        <p>Le type de métrique Gauge est le type le plus simple et se contente de retourner une <i>valeur</i>. Il peut
+          être utile par exemple pour évaluer la taille d'une collection à un moment donné.</p>
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">name</th>
+            <th title="Nombre d'occurences">count</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- #End Counters -->
+
+      <!-- Histograms -->
+      <div id="histograms" class="metric">
+        <h4>Histogrammes (Histograms)</h4>
+
+        <p>Un Histogram mesure la distribution des valeurs pour un flux de données et permet de suivre l'évolution d'une
+          mesure au fil du temps.</p>
+        <table>
+          <thead>
+          <tr>
+            <th title="Nom de la métrique">name</th>
+            <th title="Nombre de mesures collectées">count</th>
+            <th title="Valeur moyenne (en sec.)">mean</th>
+            <th title="Valeur min (en sec.)">min</th>
+            <th title="Valeur max (en sec.)">max</th>
+            <th title="Centile-50">p50</th>
+            <th title="Centile-75">p75</th>
+            <th title="Centile-99">p99</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- #End Counters -->
+    </section>
+  </div>
+</div>
+
+<footer id="page-footer">
+  <div class="top"></div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</footer>
+
+<!-- ************ -->
+<!-- Include libs -->
+<!-- ************ -->
+
+<!-- Foundation by Zurb -->
+<script src="lib/foundation/vendor/jquery.js"></script>
+<script src="lib/foundation/vendor/custom.modernizr.js"></script>
+<script src="lib/foundation/foundation.min.js"></script>
+<script src="lib/foundation/foundation/foundation.topbar.js"></script>
+
+<!-- Application scripts -->
+<script src="scripts/monitoring.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+
 </body>
 </html>

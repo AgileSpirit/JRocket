@@ -25,46 +25,46 @@ import java.util.concurrent.TimeUnit;
 @EnableMetrics
 public class MetricsConfig extends MetricsConfigurerAdapter {
 
-  @Inject
-  private Environment env;
+    @Inject
+    private Environment env;
 
-  @PersistenceContext
-  private EntityManager entityManager;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-  private final MetricRegistry metricRegistry = new MetricRegistry();
+    private final MetricRegistry metricRegistry = new MetricRegistry();
 
-  @Bean
-  @Override
-  public MetricRegistry getMetricRegistry() {
-    return metricRegistry;
-  }
+    @Bean
+    @Override
+    public MetricRegistry getMetricRegistry() {
+        return metricRegistry;
+    }
 
-  private final HealthCheckRegistry healthCheckRegistry = new HealthCheckRegistry();
+    private final HealthCheckRegistry healthCheckRegistry = new HealthCheckRegistry();
 
-  @Bean
-  @Override
-  public HealthCheckRegistry getHealthCheckRegistry() {
-    return healthCheckRegistry;
-  }
+    @Bean
+    @Override
+    public HealthCheckRegistry getHealthCheckRegistry() {
+        return healthCheckRegistry;
+    }
 
-  @Override
-  public void configureReporters(MetricRegistry metricRegistry) {
-    // Console reporter
-    ConsoleReporter.forRegistry(metricRegistry).build().start(5, TimeUnit.MINUTES);
+    @Override
+    public void configureReporters(MetricRegistry metricRegistry) {
+        // Console reporter
+        ConsoleReporter.forRegistry(metricRegistry).build().start(5, TimeUnit.MINUTES);
 
-    // SLF4J reporter
-    Slf4jReporter.forRegistry(metricRegistry).outputTo(LoggerFactory.getLogger(getClass().getCanonicalName()))
-        .convertRatesTo(TimeUnit.SECONDS).convertDurationsTo(TimeUnit.MILLISECONDS).build().start(5, TimeUnit.MINUTES);
+        // SLF4J reporter
+        Slf4jReporter.forRegistry(metricRegistry).outputTo(LoggerFactory.getLogger(getClass().getCanonicalName()))
+                .convertRatesTo(TimeUnit.SECONDS).convertDurationsTo(TimeUnit.MILLISECONDS).build().start(5, TimeUnit.MINUTES);
 
-    // JMX reporter
-    JmxReporter.forRegistry(metricRegistry).build().start();
-  }
+        // JMX reporter
+        JmxReporter.forRegistry(metricRegistry).build().start();
+    }
 
-  @PostConstruct
-  private void registerHealthChecks() {
-    healthCheckRegistry.register("Metrics HealthCheck mecanism", new BasicHealthCheck());
-    healthCheckRegistry.register("Database", new DatabaseHealthCheck(entityManager));
-    healthCheckRegistry.register("REST resources", new RestResourcesHealthCheck(env.getProperty("checks.rest.resources.ping")));
-  }
+    @PostConstruct
+    private void registerHealthChecks() {
+        healthCheckRegistry.register("Metrics HealthCheck mecanism", new BasicHealthCheck());
+        healthCheckRegistry.register("Database", new DatabaseHealthCheck(entityManager));
+        healthCheckRegistry.register("REST resources", new RestResourcesHealthCheck(env.getProperty("checks.rest.resources.ping")));
+    }
 
 }
