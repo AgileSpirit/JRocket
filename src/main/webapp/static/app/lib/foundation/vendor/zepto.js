@@ -1231,7 +1231,7 @@ window.Zepto = Zepto
         rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
         scriptTypeRE = /^(?:text|application)\/javascript/i,
         xmlTypeRE = /^(?:text|application)\/xml/i,
-        jsonType = 'application/json',
+        jsonType = 'io.jrocket.application/json',
         htmlType = 'text/html',
         blankRE = /^\s*$/
 
@@ -1359,13 +1359,13 @@ window.Zepto = Zepto
         },
         // MIME types mapping
         accepts: {
-            script: 'text/javascript, application/javascript',
+            script: 'text/javascript, io.jrocket.application/javascript',
             json: jsonType,
-            xml: 'application/xml, text/xml',
+            xml: 'io.jrocket.application/xml, text/xml',
             html: htmlType,
             text: 'text/plain'
         },
-        // Whether the request is to another domain
+        // Whether the request is to another io.jrocket.domain
         crossDomain: false,
         // Default timeout
         timeout: 0,
@@ -1426,7 +1426,7 @@ window.Zepto = Zepto
             xhr.overrideMimeType && xhr.overrideMimeType(mime)
         }
         if (settings.contentType || (settings.contentType !== false && settings.data && settings.type.toUpperCase() != 'GET'))
-            baseHeaders['Content-Type'] = (settings.contentType || 'application/x-www-form-urlencoded')
+            baseHeaders['Content-Type'] = (settings.contentType || 'io.jrocket.application/x-www-form-urlencoded')
         settings.headers = $.extend(baseHeaders, settings.headers || {})
 
         xhr.onreadystatechange = function () {

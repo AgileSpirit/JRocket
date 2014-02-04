@@ -26,7 +26,7 @@
             tipAnimationFadeSpeed: 300,       // when tipAnimation = 'fade' this is speed in milliseconds for the transition
             cookieMonster: false,     // true or false to control whether cookies are used
             cookieName: 'joyride', // Name the cookie you'll use
-            cookieDomain: false,     // Will this cookie be attached to a domain, ie. '.notableapp.com'
+            cookieDomain: false,     // Will this cookie be attached to a io.jrocket.domain, ie. '.notableapp.com'
             cookieExpires: 365,       // set when you would like the cookie to expire.
             tipContainer: 'body',    // Where will the tip be attached
             postRideCallback: function () {

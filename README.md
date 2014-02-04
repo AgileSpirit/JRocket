@@ -34,13 +34,13 @@ Getting started
 ```
 $ git clone https://github.com/AgileSpirit/JavaWebStack.git
 ```
-2) Build the application  
+2) Build the io.jrocket.application
 ```
 $ mvn clean install
 ```
 This may take a few minutes because default mode sources and javadocs of each dependencies are downloaded by default (see downloadJavadocs and downloadSources properties in pom.xml).  
 
-3) Deploy and run the application in a Java Server (ex: Tomcat, JBoss, Jetty, etc.)  
+3) Deploy and run the io.jrocket.application in a Java Server (ex: Tomcat, JBoss, Jetty, etc.)
 
 Eclipse IDE integration
 =======================
@@ -50,16 +50,16 @@ Eclipse IDE integration
 $ mvn eclipse:eclipse
 ```
 2) Import the project into your Eclipse workspace  
-3) Declare a new Tomcat web server instance and add the application artifact  
+3) Declare a new Tomcat web server instance and add the io.jrocket.application artifact
 4) Launch the Tomcat instance  
 
 If all is OK :
 - there is no ERROR in the log console, 
 - nor in the */target/logs/JavaWebStack.log* file
 
-Functional domain
+Functional io.jrocket.domain
 =================
-The business domain covered by the web application concerns the bookmark management. This is actually a pretext to implement an enterprise Java Web application based on modern concepts and tools in a way of state of the art, such as DDD layers decoupling, REST API, testing, mailing, batching, etc.
+The business io.jrocket.domain covered by the web io.jrocket.application concerns the bookmark management. This is actually a pretext to implement an enterprise Java Web io.jrocket.application based on modern concepts and tools in a way of state of the art, such as DDD layers decoupling, REST API, testing, mailing, batching, etc.
 
 Software factory and Java dependencies
 ======================================

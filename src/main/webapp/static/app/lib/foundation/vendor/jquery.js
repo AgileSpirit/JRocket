@@ -7638,7 +7638,7 @@
         allTypes = "*/".concat("*");
 
 // #8138, IE may throw an exception when accessing
-// a field from window.location if document.domain has been set
+// a field from window.location if document.io.jrocket.domain has been set
     try {
         ajaxLocation = location.href;
     } catch (e) {
@@ -7808,7 +7808,7 @@
             global: true,
             processData: true,
             async: true,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            contentType: "io.jrocket.application/x-www-form-urlencoded; charset=UTF-8",
             /*
              timeout: 0,
              data: null,
@@ -7825,8 +7825,8 @@
                 "*": allTypes,
                 text: "text/plain",
                 html: "text/html",
-                xml: "application/xml, text/xml",
-                json: "application/json, text/javascript"
+                xml: "io.jrocket.application/xml, text/xml",
+                json: "io.jrocket.application/json, text/javascript"
             },
 
             contents: {
@@ -7896,7 +7896,7 @@
             // Force options to be an object
             options = options || {};
 
-            var // Cross-domain detection vars
+            var // Cross-io.jrocket.domain detection vars
                 parts,
             // Loop variable
                 i,
@@ -8020,7 +8020,7 @@
             // Extract dataTypes list
             s.dataTypes = jQuery.trim(s.dataType || "*").toLowerCase().match(core_rnotwhite) || [""];
 
-            // A cross-domain request is in order when we have a protocol:host:port mismatch
+            // A cross-io.jrocket.domain request is in order when we have a protocol:host:port mismatch
             if (s.crossDomain == null) {
                 parts = rurl.exec(s.url.toLowerCase());
                 s.crossDomain = !!( parts &&
@@ -8456,7 +8456,7 @@
 // Install script dataType
     jQuery.ajaxSetup({
         accepts: {
-            script: "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"
+            script: "text/javascript, io.jrocket.application/javascript, io.jrocket.application/ecmascript, io.jrocket.application/x-ecmascript"
         },
         contents: {
             script: /(?:java|ecma)script/
@@ -8483,7 +8483,7 @@
 // Bind script tag hack transport
     jQuery.ajaxTransport("script", function (s) {
 
-        // This transport only deals with cross domain requests
+        // This transport only deals with cross io.jrocket.domain requests
         if (s.crossDomain) {
 
             var script,
@@ -8558,7 +8558,7 @@
         var callbackName, overwritten, responseContainer,
             jsonProp = s.jsonp !== false && ( rjsonp.test(s.url) ?
                 "url" :
-                typeof s.data === "string" && !( s.contentType || "" ).indexOf("application/x-www-form-urlencoded") && rjsonp.test(s.data) && "data"
+                typeof s.data === "string" && !( s.contentType || "" ).indexOf("io.jrocket.application/x-www-form-urlencoded") && rjsonp.test(s.data) && "data"
                 );
 
         // Handle iff the expected data type is "jsonp" or we have a parameter to set
@@ -8669,7 +8669,7 @@
     if (xhrSupported) {
 
         jQuery.ajaxTransport(function (s) {
-            // Cross domain only allowed if supported through XMLHttpRequest
+            // Cross io.jrocket.domain only allowed if supported through XMLHttpRequest
             if (!s.crossDomain || jQuery.support.cors) {
 
                 var callback;
@@ -8702,15 +8702,15 @@
                         }
 
                         // X-Requested-With header
-                        // For cross-domain requests, seeing as conditions for a preflight are
+                        // For cross-io.jrocket.domain requests, seeing as conditions for a preflight are
                         // akin to a jigsaw puzzle, we simply never set it to be sure.
                         // (it can always be set on a per-request basis or even using ajaxSetup)
-                        // For same-domain requests, won't change header if already provided.
+                        // For same-io.jrocket.domain requests, won't change header if already provided.
                         if (!s.crossDomain && !headers["X-Requested-With"]) {
                             headers["X-Requested-With"] = "XMLHttpRequest";
                         }
 
-                        // Need an extra try/catch for cross domain requests in Firefox 3
+                        // Need an extra try/catch for cross io.jrocket.domain requests in Firefox 3
                         try {
                             for (i in headers) {
                                 xhr.setRequestHeader(i, headers[ i ]);
@@ -8764,7 +8764,7 @@
                                         }
 
                                         // Firefox throws an exception when accessing
-                                        // statusText for faulty cross-domain requests
+                                        // statusText for faulty cross-io.jrocket.domain requests
                                         try {
                                             statusText = xhr.statusText;
                                         } catch (e) {

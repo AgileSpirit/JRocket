@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="JavaWebStack" version="2.5">
 
-    <display-name>JavaWebStack</display-name>
+    <display-name>JRocket</display-name>
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
