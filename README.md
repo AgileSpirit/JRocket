@@ -1,5 +1,5 @@
-JavaWebStack
-============
+JRocket
+=======
 
 Java project boostrapper for common &amp; standard enterprise technical stack : 
 - Spring
@@ -55,11 +55,11 @@ $ mvn eclipse:eclipse
 
 If all is OK :
 - there is no ERROR in the log console, 
-- nor in the */target/logs/JavaWebStack.log* file
+- nor in the */target/logs/JRocket.log* file
 
-Functional io.jrocket.domain
+Functional Domain
 =================
-The business io.jrocket.domain covered by the web io.jrocket.application concerns the bookmark management. This is actually a pretext to implement an enterprise Java Web io.jrocket.application based on modern concepts and tools in a way of state of the art, such as DDD layers decoupling, REST API, testing, mailing, batching, etc.
+The business domain covered by the web application concerns the bookmark management. This is actually a pretext to implement an enterprise Java Web io.jrocket.application based on modern concepts and tools in a way of state of the art, such as DDD layers decoupling, REST API, testing, mailing, batching, etc.
 
 Software factory and Java dependencies
 ======================================
