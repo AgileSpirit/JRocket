@@ -469,6 +469,34 @@
                 </configuration>
             </plugin>
 
+            <!-- Plugin used to manage AngularJS part -->
+            <plugin>
+                <groupId>pl.allegro</groupId>
+                <artifactId>grunt-maven-plugin</artifactId>
+                <version>1.2.0</version>
+                <configuration>
+                    <!-- example options usage to get verbose output in logs -->
+                    <gruntOptions>
+                        <gruntOption>--verbose</gruntOption>
+                    </gruntOptions>
+
+                    <!-- example options usage to filter variables in given resource -->
+                    <filteredResources>
+                        <filteredResource>maven-properties.json</filteredResource>
+                    </filteredResources>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>create-resources</goal>
+                            <goal>npm</goal>
+                            <goal>grunt</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- ********* -->
             <!-- PACKAGING -->
             <!-- ********* -->

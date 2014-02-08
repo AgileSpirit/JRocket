@@ -1,130 +1,202 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/* DEFAULT
+========== */
 
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-html {
-    background: #333;
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-textarea {
-    height: auto;
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
 }
 
-/*=============*/
-/* Page Layout */
-/*=============*/
-
-#page-header {
-    background-color: #2ba6cb;
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
-#page-header * {
-    color: white;
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
 }
 
-#page-header h1 {
-    font-weight: 500;
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
 }
 
-#page-header h4 {
-    font-weight: 300;
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
 }
 
-#page-main {
-    background-color: white;
-    margin-top: 22px;
-    margin-bottom: 22px;
-    padding-bottom: 22px;
-    overflow: hidden;
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 }
 
-#page-footer {
-    border-top: 1px solid #eee;
+/* JRocket
+========== */
+
+body {
+  background: #f5f5f5;
+  color: #333;
+  padding-top: 50px;
 }
 
-#page-footer .top {
-    background: #33A6C9;
-    padding: 25px 0 25px 0;
-    margin-top: 30px;
+#page-wrapper {
+  background-color: #fff;
 }
 
-#page-footer .middle {
-    background: #1399bd;
-    padding: 40px 0;
-    color: white;
+#header {
+
 }
 
-#page-footer .bottom {
-    background: #333;
-    padding: 24px 0 10px;
+#body {
+  min-height: 300px;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
-/*============*/
-/* Components */
-/*============*/
-
-.button {
-    margin: 0;
+#footer {
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/*=======*/
-/* Forms */
-/*=======*/
+/* Navbar
+--------- */
 
-input:focus.ng-invalid {
-    border: 1px solid red;
+.jrocket .navbar {
+  background: #205081;
+  border-bottom: 1px solid #2e3d54;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.jrocket .navbar-brand,
+.jrocket .navbar-brand:active,
+.jrocket .navbar-brand:hover,
+.jrocket .navbar-brand:visited {
+  color: #fff;
+}
+.jrocket .navbar-brand:hover {
+  background-color: #3b73af;
 }
 
-div.field label.required:after {
-    content: " *";
-    color: red;
+.jrocket .navbar-nav > li > a,
+.jrocket .navbar-nav > li > a:active,
+.jrocket .navbar-nav > li > a:hover,
+.jrocket .navbar-nav > li > a:visited {
+  color: #fff;
+}
+.jrocket .navbar-nav > li.active > a,
+.jrocket .navbar-nav > li.active > a:active,
+.jrocket .navbar-nav > li.active > a:hover,
+.jrocket .navbar-nav > li.active > a:visited {
+  background-color: #3b73af;
+  color: #fff;
 }
 
-/*====================*/
-/* Bookmark list page */
-/*====================*/
+/* Searchbar
+------------ */
 
-div.bookmarks ul.list {
-    list-style: none;
+.searchbar {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  z-index: 1030;
 }
 
-div.bookmarks ul.list li.bookmark {
-    border-top: 1px solid #e4e4e4;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+/* Footer
+--------- */
+
+#footer ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer ul li {
+  display: inline;
+}
+#footer ul li a {
+  color: #666;
+  font-size: 0.85em;
 }
 
-div.bookmarks ul.list li.bookmark:hover {
-    background-color: #e8f0f8;
-}
+/* Bookmarks
+------------ */
 
-div.bookmarks ul.list li.bookmark:first-child {
-    border-top: none;
+.bookmarks > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-div.bookmarks ul.list li.bookmark div.title a.link {
-    font-size: 1.3em;
+.bookmarks > ul li {
+  border-top: 1px dotted #ccc;
+  padding: 10px 0;
 }
-
-div.bookmarks ul.list li.bookmark div.title div.actions {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
+.bookmarks > ul li:first-child {
+  border-top: none;
+  padding-top: 0;
 }
-
-div.bookmarks ul.list li.bookmark div.title div.actions i {
-    cursor: pointer;
-    margin-left: 5px;
+.bookmarks > ul li .actions {
+  padding-top: 5px;
 }
-
-div.bookmarks ul.list li.bookmark div.description {
-    clear: both;
+.bookmarks > ul li .actions button {
+  text-align: left;
 }
-
-div.bookmarks ul.list li.bookmark div.description p {
-    margin-bottom: 0;
-    padding-bottom: 1.25em;
+.bookmarks > ul li .bookmark {
+  padding-right: 0;
+}
+.bookmarks > ul li .bookmark .description {
+  text-align: justify;
 }

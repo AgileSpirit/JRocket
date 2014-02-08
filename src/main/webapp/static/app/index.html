@@ -14,11 +14,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-  <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/normalize.min.css">
-  <link rel="stylesheet" href="styles/foundation.min.css">
-  <link rel="stylesheet" href="styles/general_foundicons.css">
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
@@ -28,35 +29,55 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!--[if lt IE 9]>
-<script src="bower_components/es5-shim/es5-shim.js"></script>
-<script src="bower_components/json3/lib/json3.min.js"></script>
-<![endif]-->
-
-<!-- Add your site or io.jrocket.application content here -->
-<a href="https://github.com/AgileSpirit/JRocket"><img style="position: absolute; top: 0; right: 0; border: 0;"
-                                                      src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
-                                                      alt="Fork me on GitHub"></a>
-
-<div id="page-header">
-  <div class="row">
-    <div class="twelve columns">
-      <h1 class="title"><a href="index.html">My bookmarks library</a></h1>
+<div id="page-wrapper">
+  <!-- Fixed navbar -->
+  <div id="header" class="jrocket">
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">JRocket sample application</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <button type="button" class="btn btn-primary navbar-btn" ng-click="openBookmarkWizard()">Add a bookmark
+          </button>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
     </div>
   </div>
-</div>
-
-<!-- View container -->
-<div id="page-main" class="row">
-  <div class="twelve columns">
-    <div ng-view></div>
+  <div class="searchbar" role="search">
+    <div class="container">
+      <input type="text" class="form-control" id="filter" placeholder="Enter filter" ng-model="searchText">
+    </div>
   </div>
-</div>
 
-<div id="page-footer">
-  <div class="top"></div>
-  <div class="middle"></div>
-  <div class="bottom"></div>
+  <!-- Add your site or application content here -->
+  <div id="body" class="container" ng-view="">
+  </div>
+  <!-- /.container -->
+
+  <!-- Declare bookmark wizard -->
+  <div bookmark-wizard></div>
+
+</div>
+<!-- /.page-wrapper -->
+
+<div id="footer">
+  <div class="container">
+    <ul>
+      <li><a href="#">Blog</a></li>
+      <li> -</li>
+      <li><a href="#">GitHub</a></li>
+      <li> -</li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+  </div>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -77,26 +98,31 @@
   ga('send', 'pageview');
 </script>
 
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
 
-<!-- Foundation by Zurb -->
-<script src="lib/foundation/vendor/jquery.js"></script>
-<script src="lib/foundation/vendor/custom.modernizr.js"></script>
-<script src="lib/foundation/foundation.min.js"></script>
-<script src="lib/foundation/foundation/foundation.topbar.js"></script>
-
-
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-
-<!-- build:js scripts/modules.js -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbower -->
 <!-- endbuild -->
 
-<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- App declaration -->
 <script src="scripts/app.js"></script>
-<script src="scripts/controllers.js"></script>
-<script src="scripts/services.js"></script>
+<!-- Controllers declaration -->
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/BookmarkListController.js"></script>
+<script src="scripts/controllers/BookmarkWizardController.js"></script>
+<!-- Services declaration -->
+<script src="scripts/services/BookmarkService.js"></script>
 <!-- endbuild -->
 </body>
 </html>

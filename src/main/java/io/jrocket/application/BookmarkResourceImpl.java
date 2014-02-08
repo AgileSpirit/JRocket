@@ -13,7 +13,7 @@ import java.util.List;
  * Example of REST Web Services with Spring-MVC
  */
 @Controller
-@RequestMapping("/service/bookmarks")
+@RequestMapping("/api/bookmarks")
 public class BookmarkResourceImpl implements BookmarkResource {
 
     @Inject
