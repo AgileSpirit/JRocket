@@ -1,0 +1,29 @@
+<!-- ============= -->
+<!-- Bookmark List -->
+<!-- ============= -->
+
+<div class="bookmarks">
+  <ul>
+    <li ng-repeat="bookmark in data.bookmarks | filter: searchText">
+      <div class="row">
+        <div class="col-md-10 bookmark">
+          <div class="title">
+            <a href="{{bookmark.url}}" class="link">{{bookmark.title}}</a>
+          </div>
+          <div class="description">
+            <p>{{bookmark.description}}</p>
+          </div>
+        </div>
+        <div class="col-md-2 btn-group-vertical actions">
+          <button type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-pencil"></span> Edit
+          </button>
+          <button type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-remove"></span> Remove
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>

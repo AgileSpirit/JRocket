@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: BookmarksCtrl', function () {
 
   // load the controller's module
   beforeEach(module('jrocketApp'));
 
-  var MainCtrl,
+  var BookmarksCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    BookmarksCtrl = $controller('BookmarksCtrl', {
       $scope: scope
     });
   }));
