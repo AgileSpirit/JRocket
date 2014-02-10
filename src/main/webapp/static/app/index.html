@@ -26,18 +26,19 @@
 
     <div id="page-wrapper">
 
-      <div ng-include src="'views/header.html'"></div>
+      <!-- Header -->
+      <div ng-include="'views/header.html'"></div>
 
-      <!-- Add your site or application content here -->
-      <div id="body" class="container" ng-view>
-      </div><!-- /.container -->
+      <!-- Body -->
+      <div id="body" class="container" ng-view></div>
 
-      <!-- Declare bookmark wizard -->
-      <div ng-include src="'views/bookmark-wizard.html'"></div>
+      <!-- Bookmark wizard -->
+      <div ng-include="'views/bookmark-wizard.html'"></div>
 
-    </div><!-- /.page-wrapper -->
+    </div>
 
-    <div ng-include src="'views/footer.html'"></div>
+    <!-- Footer -->
+    <div ng-include="'views/footer.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
