@@ -4,7 +4,7 @@
 
 <div class="bookmarks" ng-controller="BookmarkListController">
   <ul>
-    <li ng-repeat="bookmark in data.bookmarks | filter: searchText">
+    <li ng-repeat="bookmark in bookmarks | filter: searchText">
       <div class="row">
         <div class="col-md-10 bookmark">
           <div class="title">

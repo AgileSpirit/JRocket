@@ -26,19 +26,21 @@
 
     <div id="page-wrapper">
 
-      <!-- Header -->
-      <div ng-include="'views/header.html'"></div>
+      <div id="header" ng-include="'views/header.html'"></div>
 
-      <!-- Body -->
+      <div id="searchbar" class="searchbar" role="search">
+        <div class="container">
+          <input type="text" class="form-control" id="filter" placeholder="Enter filter" ng-model="searchText">
+        </div>
+      </div>
+
       <div id="body" class="container" ng-view></div>
 
       <!-- Bookmark wizard -->
       <div ng-include="'views/bookmark-wizard.html'"></div>
-
     </div>
 
-    <!-- Footer -->
-    <div ng-include="'views/footer.html'"></div>
+    <div id="footer" ng-include="'views/footer.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

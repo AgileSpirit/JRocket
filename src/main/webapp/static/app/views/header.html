@@ -12,13 +12,8 @@
         <a class="navbar-brand" href="#">JRocket sample application</a>
       </div>
       <div class="navbar-collapse collapse navbar-right">
-        <button type="button" class="btn btn-primary navbar-btn" ng-click="openBookmarkWizard()">Add a bookmark</button>
+        <button type="button" class="btn btn-primary navbar-btn" ng-click="$emit('openBookmarkWizardEvent')">Add a bookmark</button>
       </div><!--/.nav-collapse -->
     </div>
-  </div>
-</div>
-<div class="searchbar" role="search">
-  <div class="container">
-    <input type="text" class="form-control" id="filter" placeholder="Enter filter" ng-model="searchText">
   </div>
 </div>

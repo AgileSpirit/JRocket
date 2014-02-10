@@ -10,11 +10,24 @@
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <form name="form" novalidate>
+          <div class="field">
+            <label class="required">URL</label>
+            <input type="url" placeholder="http://my.bookmark.com" ng-model="bookmark.url" required>
+          </div>
+          <div class="field">
+            <label class="required">Title</label>
+            <input type="text" ng-model="bookmark.title" required>
+          </div>
+          <div class="field">
+            <label>Description</label>
+            <textarea rows="5" ng-model="bookmark.description"></textarea>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" ng-click="saveBookmark()">Save changes</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
