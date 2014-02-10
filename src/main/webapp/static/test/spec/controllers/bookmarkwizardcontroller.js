@@ -5,8 +5,7 @@ describe('Controller: BookmarkwizardcontrollerCtrl', function () {
   // load the controller's module
   beforeEach(module('jrocketApp'));
 
-  var BookmarkwizardcontrollerCtrl,
-    scope;
+  var BookmarkwizardcontrollerCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {

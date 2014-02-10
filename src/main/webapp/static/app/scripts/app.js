@@ -7,7 +7,7 @@ angular.module('jrocketApp', [
     'ngRoute'
   ])
   .config(function ($routeProvider, $httpProvider) {
-    $routeProvider.when('/bookmarks', {templateUrl: 'views/bookmark-list.html', controller: 'BookmarkListController'});
+    $routeProvider.when('/bookmarks', {templateUrl: 'views/bookmark-list.html'});
     $routeProvider.when('/test', {templateUrl: 'views/main.html', controller: 'MainCtrl'});
     $routeProvider.otherwise({redirectTo: '/bookmarks'});
 

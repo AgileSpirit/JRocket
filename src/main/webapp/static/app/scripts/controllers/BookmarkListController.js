@@ -21,8 +21,8 @@ angular.module('jrocketApp')
           });
       };
 
-      $scope.editBookmark = function (id) {
-        $scope.openBookmarkWizard(id);
-      };
+//      $scope.editBookmark = function (id) {
+//        $rootScope.emit('wizard.open', id);
+//      };
 
     }]);

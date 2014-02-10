@@ -1,17 +1,19 @@
 'use strict';
 
 angular.module('jrocketApp')
-  .controller('BookmarkWizardController', ['$scope', 'BookmarkService', function ($scope, bookmarkService) {
+  .controller('BookmarkWizardController', ['$scope', '$rootScope', 'BookmarkService', function ($scope, $rootScope, bookmarkService) {
 
-    // Instantiate an object to store your scope data in (Best Practices)
-    $scope.data = {};
+//    $rootScope.on('wizard.open', my_open_function);
+//    $rootScope.on('$destroy', do_unbind);
+
+    $scope.wizard = {};
 
     // Initialize the bookmark object that will be used for wizard (ADDING/EDITION)
-    $scope.data.bookmark = {};
+    $scope.wizard.bookmark = {};
 
     $scope.saveBookmark = function () {
       // Retrieve bookmark
-      var bookmark = $scope.data.bookmark;
+      var bookmark = $scope.wizard.bookmark;
       // Server call
       if (bookmark.id) {
         // Merge
@@ -34,9 +36,9 @@ angular.module('jrocketApp')
     };
 
     $scope.openBookmarkWizard = function (bookmarkId) {
-      $scope.data.bookmark = {};
+      $scope.wizard.bookmark = {};
       if (typeof bookmarkId != 'undefined') {
-        $scope.data.bookmark = bookmarkService.get({id: id});;
+        $scope.wizard.bookmark = bookmarkService.get({id: id});;
       }
       $('#bookmarkWizard').modal('show');
     };
