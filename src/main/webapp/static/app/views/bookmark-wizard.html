@@ -10,18 +10,18 @@
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <form name="form" novalidate>
-          <div class="field">
-            <label class="required">URL</label>
-            <input type="url" placeholder="http://my.bookmark.com" ng-model="bookmark.url" required>
+        <form name="form" role="form">
+          <div class="form-group">
+            <label for="url" class="required">URL</label>
+            <input id="url" type="url" placeholder="http://my.bookmark.com" ng-model="bookmark.url" class="form-control">
           </div>
-          <div class="field">
+          <div class="form-group">
             <label class="required">Title</label>
-            <input type="text" ng-model="bookmark.title" required>
+            <input type="text" ng-model="bookmark.title" class="form-control">
           </div>
-          <div class="field">
-            <label>Description</label>
-            <textarea rows="5" ng-model="bookmark.description"></textarea>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" rows="5" ng-model="bookmark.description" class="form-control"></textarea>
           </div>
         </form>
       </div>

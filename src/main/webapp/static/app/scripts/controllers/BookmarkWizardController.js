@@ -17,6 +17,9 @@ angular.module('jrocketApp')
           function() {
             console.log('Bookmark updated');
             emitRefreshBookmarkListEvent();
+          },
+          function() {
+            console.error("An error occurred during updating");
           });
       } else {
         // Persist
@@ -25,6 +28,9 @@ angular.module('jrocketApp')
           function() {
             console.log('Bookmark saved');
             emitRefreshBookmarkListEvent();
+          },
+          function() {
+            console.error("An error occurred during saving");
           });
       }
 

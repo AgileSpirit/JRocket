@@ -15,7 +15,7 @@ angular.module('jrocketApp')
             $scope.bookmarks = bookmarkService.query();
           },
           function (httpResponse) {
-            console.log('An error occured during bookmark delete');
+            console.log('An error occurred during bookmark deleting');
           });
       };
 
@@ -23,7 +23,9 @@ angular.module('jrocketApp')
         $rootScope.$emit('openBookmarkWizardEvent', id);
       };
 
-      $rootScope.$on('refreshBookmarkList', refreshBookmarkList());
+      $rootScope.$on('refreshBookmarkList', function(event, args){
+        refreshBookmarkList();
+      });
 
       function refreshBookmarkList() {
         $scope.bookmarks = bookmarkService.query();

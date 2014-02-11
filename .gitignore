@@ -3,6 +3,7 @@
 .idea
 .classpath/**
 target/**
+target-grunt/**
 .settings/**
 .idea/**
 bin/**
