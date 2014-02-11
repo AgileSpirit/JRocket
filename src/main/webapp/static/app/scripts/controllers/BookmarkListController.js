@@ -10,11 +10,11 @@ angular.module('jrocketApp')
       $scope.removeBookmark = function (bookmark) {
         // Server call
         bookmarkService.remove({id: bookmark.id},
-          function (value, responseHeaders) {
+          function () {
             // Client update
             $scope.bookmarks = bookmarkService.query();
           },
-          function (httpResponse) {
+          function () {
             console.log('An error occurred during bookmark deleting');
           });
       };
@@ -23,7 +23,7 @@ angular.module('jrocketApp')
         $rootScope.$emit('openBookmarkWizardEvent', id);
       };
 
-      $rootScope.$on('refreshBookmarkList', function(event, args){
+      $rootScope.$on('refreshBookmarkList', function(){
         refreshBookmarkList();
       });
 

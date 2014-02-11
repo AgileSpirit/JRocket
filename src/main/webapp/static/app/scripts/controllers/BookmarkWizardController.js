@@ -19,7 +19,7 @@ angular.module('jrocketApp')
             emitRefreshBookmarkListEvent();
           },
           function() {
-            console.error("An error occurred during updating");
+            console.error('An error occurred during updating');
           });
       } else {
         // Persist
@@ -30,7 +30,7 @@ angular.module('jrocketApp')
             emitRefreshBookmarkListEvent();
           },
           function() {
-            console.error("An error occurred during saving");
+            console.error('An error occurred during saving');
           });
       }
 
@@ -48,7 +48,7 @@ angular.module('jrocketApp')
 
     function openBookmarkWizard(bookmarkId) {
       $scope.bookmark = {};
-      if (typeof bookmarkId != 'undefined') {
+      if (typeof bookmarkId !== 'undefined') {
         $scope.bookmark = bookmarkService.get({id: bookmarkId});
       }
       $('#bookmarkWizard').modal('show');
