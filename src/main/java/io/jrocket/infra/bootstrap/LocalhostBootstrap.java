@@ -20,25 +20,22 @@ public class LocalhostBootstrap extends ApplicationBootstrap {
 
     @Inject
     private DataGenerator dataGenerator;
-
     @Inject
     private MailService mailService;
-
     @Inject
     private BookmarkRepository bookmarkRepository;
-
     @Value("${mail.message.to}")
     private String mailTo;
 
     @Override
     void bootstrap() {
         dataGenerator.populateData();
-        dataGenerator.retrieveAndDisplayAllData();
 
-        /*
-         * Uncomment the following instruction to test mail sending after io.jrocket.application bootstraping.
-         */
-//        sendTestMail();
+        /* Uncomment the instruction below to display the populated bookmarks */
+        // dataGenerator.retrieveAndDisplayAllData();
+
+        /* Uncomment the instruction below to test mail sending after io.jrocket.application bootstraping. */
+        // sendTestMail();
     }
 
     private void sendTestMail() {
