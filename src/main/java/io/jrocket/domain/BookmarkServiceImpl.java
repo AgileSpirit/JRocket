@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Application service used to demostrate DDD io.jrocket.application service and Mockito usage.
+ * Application service used to demostrate DDD application service and Mockito usage.
  */
 @Named
 public class BookmarkServiceImpl implements BookmarkService {
@@ -35,9 +35,6 @@ public class BookmarkServiceImpl implements BookmarkService {
         return bookmarkRepository.findOne(id);
     }
 
-    /**
-     * Return all the bookmarks sorted by modification date / creation date DESC
-     */
     @Timed
     public List<Bookmark> findAll() {
         final List<Order> orders = new ArrayList<>();
@@ -47,18 +44,12 @@ public class BookmarkServiceImpl implements BookmarkService {
         return Lists.newArrayList(bookmarkRepository.findAll(new Sort(orders)));
     }
 
-    /**
-     * Save a bookmark and return the persisted entity
-     */
     @Timed
     public Bookmark save(Bookmark bookmark) {
         bookmark.setCreationDate(new DateTime());
         return bookmarkRepository.save(bookmark);
     }
 
-    /**
-     * Update a bookmark and return the persisted entity
-     */
     @Timed
     public Bookmark update(Bookmark bookmark) {
         bookmark.setModificationDate(new DateTime());

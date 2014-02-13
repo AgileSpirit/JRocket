@@ -14,6 +14,9 @@ import java.util.Properties;
 
 import static io.jrocket.infra.util.PropertyHelper.setProperty;
 
+/**
+ * Spring configuration class for mailing.
+ */
 @Configuration
 public class MailingConfig {
 

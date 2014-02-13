@@ -14,6 +14,9 @@ import javax.inject.Named;
 import javax.mail.internet.MimeMessage;
 import java.util.Map;
 
+/**
+ * Infrastructural service used to prepare and send emails.
+ */
 @Named
 public class MailService {
 
@@ -25,6 +28,15 @@ public class MailService {
     @Inject
     private VelocityEngine velocityEngine;
 
+    /**
+     * Generic method in order to send a mail.
+     *
+     * @param mailSubject the subject of the mail (field 'Subject:')
+     * @param mailTo the recipient of the mail  (field 'To:')
+     * @param templateName the name of the template to use (ex: "sendBookmarks.vm") ; the templates are expected to be
+     *                     in folder src/main/java/resources/velocity
+     * @param model
+     */
     public void sendMail(final String mailSubject, final String mailTo, final String templateName, final Map<String, Object> model) {
 
         MimeMessagePreparator preparator = new MimeMessagePreparator() {
@@ -40,6 +52,7 @@ public class MailService {
         try {
             this.mailSender.send(preparator);
         } catch (MailException ex) {
+            // Error is caught and simply logged because we do not want to make it blocking the application.
             logger.error(ex.getMessage());
         }
     }

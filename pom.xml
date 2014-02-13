@@ -571,12 +571,6 @@
                                     <format>html</format>
                                     <format>xml</format>
                                 </formats>
-                                <instrumentation>
-                                    <excludes>
-                                        <exclude>io.jrocket.infra/**/*Config.class</exclude>
-                                        <exclude>io.jrocket.infra/**/*Bootstrap.class</exclude>
-                                    </excludes>
-                                </instrumentation>
                             </configuration>
                         </plugin>
                         <!-- Plugin used to generate Javadoc-->
