@@ -10,6 +10,16 @@
     <name>JRocket</name>
     <url>https://github.com/AgileSpirit/JRocket</url>
 
+    <!-- ****************** -->
+    <!-- SOURCES MANAGEMENT -->
+    <!-- ****************** -->
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:jrocket/jrocket.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:jrocket/jrocket.git</developerConnection>
+        <url>https://bitbucket.org/jrocket/jrocket</url>
+    </scm>
+
     <!-- ********** -->
     <!-- PROPERTIES -->
     <!-- ********** -->
@@ -64,6 +74,7 @@
         <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
         <maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
         <grunt-maven-plugin.version>1.2.0</grunt-maven-plugin.version>
+        <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
     </properties>
 
     <!-- ************ -->
@@ -594,6 +605,13 @@
                         </plugin>
                     </reportPlugins>
                 </configuration>
+            </plugin>
+
+            <!-- Plugin used to release -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin.version}</version>
             </plugin>
 
         </plugins>
