@@ -4,7 +4,7 @@
     <groupId>io.jrocket</groupId>
     <artifactId>JRocket</artifactId>
     <packaging>war</packaging>
-    <version>0.4.0</version>
+    <version>0.4.0-SNAPSHOT</version>
 
     <name>JRocket</name>
     <url>http://jrocket.io</url>
@@ -17,7 +17,6 @@
         <connection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</connection>
         <developerConnection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</developerConnection>
         <url>https://bitbucket.org/jrocket/jrocket</url>
-    <tag>JRocket-0.4.0</tag>
   </scm>
 
     <!-- ********** -->
