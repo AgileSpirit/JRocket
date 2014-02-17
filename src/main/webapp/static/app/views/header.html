@@ -1,5 +1,5 @@
 <!-- Fixed navbar -->
-<div class="jrocket">
+<div class="jrocket" ng-controller="HeaderController">
   <div class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -12,7 +12,7 @@
         <a class="navbar-brand" href="#">JRocket sample application</a>
       </div>
       <div class="navbar-collapse collapse navbar-right">
-        <button type="button" class="btn btn-primary navbar-btn" ng-click="$emit('openBookmarkWizardEvent')">Add a bookmark</button>
+        <button type="button" class="btn btn-primary navbar-btn" ng-click="addBookmark()">Add a bookmark</button>
       </div><!--/.nav-collapse -->
     </div>
   </div>

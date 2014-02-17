@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('jrocketApp')
-  .controller('BookmarkListController', ['$scope', '$rootScope', 'BookmarkService',
-    function ($scope, $rootScope, bookmarkService) {
+  .controller('BookmarkListController', ['$scope', '$rootScope', '$modal', 'BookmarkService',
+    function ($scope, $rootScope, $modal, bookmarkService) {
 
       // Instantiate an object to store your scope data in (Best Practices)
       $scope.bookmarks = {};
@@ -19,8 +19,16 @@ angular.module('jrocketApp')
           });
       };
 
-      $scope.editBookmark = function (id) {
-        $rootScope.$emit('openBookmarkWizardEvent', id);
+      $scope.editBookmark = function(id) {
+        $modal.open({
+          templateUrl: 'views/bookmark-wizard.html',
+          controller: 'BookmarkWizardController',
+          resolve: {
+            bookmarkId: function(){
+              return id;
+            }
+          }
+        });
       };
 
       $rootScope.$on('refreshBookmarkList', function(){

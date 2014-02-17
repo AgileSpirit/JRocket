@@ -4,7 +4,8 @@ angular.module('jrocketApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider, $httpProvider) {
     $routeProvider.when('/bookmarks', {templateUrl: 'views/bookmark-list.html'});

@@ -38,8 +38,6 @@
 
       <div id="body" class="container" ng-view></div>
 
-      <!-- Bookmark wizard -->
-      <div ng-include="'views/bookmark-wizard.html'"></div>
     </div>
 
     <div id="footer" ng-include="'views/footer.html'"></div>
@@ -69,6 +67,7 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -76,6 +75,7 @@
     <script src="scripts/app.js"></script>
     <!-- Controllers declaration -->
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/HeaderController.js"></script>
     <script src="scripts/controllers/BookmarkListController.js"></script>
     <script src="scripts/controllers/BookmarkWizardController.js"></script>
     <!-- Services declaration -->

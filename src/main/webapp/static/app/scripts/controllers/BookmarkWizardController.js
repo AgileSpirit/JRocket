@@ -1,10 +1,15 @@
 'use strict';
 
 angular.module('jrocketApp')
-  .controller('BookmarkWizardController', ['$scope', '$rootScope', 'BookmarkService', function ($scope, $rootScope, bookmarkService) {
+  .controller('BookmarkWizardController', ['$scope', '$rootScope', '$modalInstance', 'BookmarkService', 'bookmarkId',
+    function ($scope, $rootScope, $modalInstance, bookmarkService, bookmarkId) {
 
     // Initialize the bookmark object that will be used for wizard (ADDING/EDITION)
     $scope.bookmark = {};
+
+    if (bookmarkId) {
+      $scope.bookmark = bookmarkService.get({id: bookmarkId});
+    }
 
     $scope.saveBookmark = function () {
       // Retrieve bookmark
@@ -35,27 +40,15 @@ angular.module('jrocketApp')
       }
 
       // Close the wizard
-      closeBookmarkWizard();
+      $modalInstance.close();
+    };
+
+    $scope.cancel = function() {
+      $modalInstance.dismiss('cancel');
     };
 
     function emitRefreshBookmarkListEvent() {
       $rootScope.$emit('refreshBookmarkList');
-    }
-
-    $rootScope.$on('openBookmarkWizardEvent', function(event, args){
-      openBookmarkWizard(args);
-    });
-
-    function openBookmarkWizard(bookmarkId) {
-      $scope.bookmark = {};
-      if (typeof bookmarkId !== 'undefined') {
-        $scope.bookmark = bookmarkService.get({id: bookmarkId});
-      }
-      $('#bookmarkWizard').modal('show');
-    }
-
-    function closeBookmarkWizard() {
-      $('#bookmarkWizard').modal('hide');
     }
 
   }]);
