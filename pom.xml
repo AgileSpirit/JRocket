@@ -5,7 +5,7 @@
     <groupId>io.jrocket</groupId>
     <artifactId>JRocket</artifactId>
     <packaging>war</packaging>
-    <version>0.3.1-SNAPSHOT</version>
+    <version>0.3.1</version>
 
     <name>JRocket</name>
     <url>https://github.com/AgileSpirit/JRocket</url>
