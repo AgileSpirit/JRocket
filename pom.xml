@@ -14,8 +14,8 @@
     <!-- ****************** -->
 
     <scm>
-        <connection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</connection>
-        <developerConnection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</developerConnection>
+        <connection>scm:git:https://jrocket@bitbucket.org/jrocket/jrocket.git</connection>
+        <developerConnection>scm:git:https://jrocket@bitbucket.org/jrocket/jrocket.git</developerConnection>
         <url>https://bitbucket.org/jrocket/jrocket</url>
   </scm>
 
