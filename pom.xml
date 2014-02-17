@@ -1,24 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.jrocket</groupId>
     <artifactId>JRocket</artifactId>
     <packaging>war</packaging>
-    <version>0.4.1-SNAPSHOT</version>
+    <version>0.4.0-SNAPSHOT</version>
 
     <name>JRocket</name>
     <url>http://jrocket.io</url>
-
-    <!-- ****************** -->
-    <!-- SOURCES MANAGEMENT -->
-    <!-- ****************** -->
-
-    <scm>
-        <connection>scm:git:https://jrocket@bitbucket.org/jrocket/jrocket.git</connection>
-        <developerConnection>scm:git:https://jrocket@bitbucket.org/jrocket/jrocket.git</developerConnection>
-        <url>https://bitbucket.org/jrocket/jrocket</url>
-    <tag>HEAD</tag>
-  </scm>
 
     <!-- ********** -->
     <!-- PROPERTIES -->
@@ -605,13 +595,6 @@
                         </plugin>
                     </reportPlugins>
                 </configuration>
-            </plugin>
-
-            <!-- Plugin used to release -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>${maven-release-plugin.version}</version>
             </plugin>
 
         </plugins>
