@@ -38,8 +38,8 @@ public class BookmarkServiceImpl implements BookmarkService {
     @Timed
     public List<Bookmark> findAll() {
         final List<Order> orders = new ArrayList<>();
-        orders.add(new Order(Direction.DESC, "modificationDate"));
         orders.add(new Order(Direction.DESC, "creationDate"));
+        orders.add(new Order(Direction.DESC, "modificationDate"));
 
         return Lists.newArrayList(bookmarkRepository.findAll(new Sort(orders)));
     }

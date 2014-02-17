@@ -52,6 +52,7 @@
         <aspectj.version>1.7.3</aspectj.version>
 
         <!-- Plugins version -->
+        <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
         <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
         <maven-buildnumber-plugin.version>1.2</maven-buildnumber-plugin.version>
@@ -482,8 +483,21 @@
                 </configuration>
             </plugin>
 
+            <!-- Plugin used to clean AngularJS generated "target" folder -->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven-clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>target-grunt</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
             <!-- Plugin used to manage AngularJS part -->
-            <!--
             <plugin>
                 <groupId>pl.allegro</groupId>
                 <artifactId>grunt-maven-plugin</artifactId>
@@ -506,7 +520,7 @@
                     </execution>
                 </executions>
             </plugin>
-            -->
+
 
             <!-- ========= -->
             <!-- PACKAGING -->
