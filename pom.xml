@@ -4,20 +4,19 @@
     <groupId>io.jrocket</groupId>
     <artifactId>JRocket</artifactId>
     <packaging>war</packaging>
-    <version>0.4.0</version>
+    <version>0.4.0-SNAPSHOT</version>
 
     <name>JRocket</name>
-    <url>https://github.com/AgileSpirit/JRocket</url>
+    <url>http://jrocket.io</url>
 
     <!-- ****************** -->
     <!-- SOURCES MANAGEMENT -->
     <!-- ****************** -->
 
     <scm>
-        <connection>scm:git:git@bitbucket.org:jrocket/jrocket.git</connection>
-        <developerConnection>scm:git:git@bitbucket.org:jrocket/jrocket.git</developerConnection>
+        <connection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/jrocket/jrocket.git</developerConnection>
         <url>https://bitbucket.org/jrocket/jrocket</url>
-      <tag>JRocket-0.4.0</tag>
   </scm>
 
     <!-- ********** -->
