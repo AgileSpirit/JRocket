@@ -24,7 +24,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
     }
 
     private void addSpringWebSupport(ServletContext container) {
-        // Create the dispatcher servlet's Spring io.jrocket.application context
+        // Create the dispatcher servlet's Spring application context
         AnnotationConfigWebApplicationContext dispatcherContext = new AnnotationConfigWebApplicationContext();
         dispatcherContext.register(ApplicationConfig.class);
         dispatcherContext.getEnvironment().setDefaultProfiles("localhost");

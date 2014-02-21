@@ -504,6 +504,7 @@
                 <artifactId>grunt-maven-plugin</artifactId>
                 <version>${grunt-maven-plugin.version}</version>
                 <configuration>
+                    <showColors>true</showColors>
                     <gruntOptions>
                         <gruntOption>-verbose</gruntOption>
                     </gruntOptions>
