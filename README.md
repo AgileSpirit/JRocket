@@ -89,3 +89,11 @@ RAW (Payload) :
 }
 ```
 
+Functionnal testing with FitNesse
+---------------------------------
+You can run FitNesse in edition mode and running functionnal tests with command :
+```
+mvn test -Pfitnesse
+```
+Then, go to http://localhost:8000
+
