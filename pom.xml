@@ -50,6 +50,7 @@
         <httpclient.version>4.2.6</httpclient.version>
         <commons-beanutils.version>20030211.134440</commons-beanutils.version>
         <aspectj.version>1.7.3</aspectj.version>
+        <fitnesse.version>20140201</fitnesse.version>
 
         <!-- Plugins version -->
         <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
@@ -65,6 +66,7 @@
         <maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
         <grunt-maven-plugin.version>1.2.0</grunt-maven-plugin.version>
         <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
+        <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
     </properties>
 
     <!-- ************ -->
@@ -401,6 +403,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.fitnesse</groupId>
+            <artifactId>fitnesse</artifactId>
+            <version>${fitnesse.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- ======= -->
         <!-- MAILING -->
         <!-- ======= -->
@@ -492,6 +501,7 @@
                     <filesets>
                         <fileset>
                             <directory>target-grunt</directory>
+                            <directory>src/main/webapp/static/dist</directory>
                             <followSymlinks>false</followSymlinks>
                         </fileset>
                     </filesets>
@@ -601,4 +611,35 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>fitnesse</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>${maven-antrun-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>start-fitnesse</id>
+                                <phase>test</phase>
+                                <configuration>
+                                    <tasks>
+                                        <echo taskname="fitnesse" message="Starting FitNesse..." />
+                                        <java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true">
+                                            <arg line="-p 8000" />
+                                            <arg line="-d src/test/fitnesse" />
+                                        </java>
+                                    </tasks>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
