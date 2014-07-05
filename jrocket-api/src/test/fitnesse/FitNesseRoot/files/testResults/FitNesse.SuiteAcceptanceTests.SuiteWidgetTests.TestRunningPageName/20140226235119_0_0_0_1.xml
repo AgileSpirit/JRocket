@@ -1,0 +1,1522 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.TestRunningPageName</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>39</exceptions>
+    </counts>
+    <runTimeInMillis>43</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary"&gt;.FitNesse.SuiteAcceptanceTests.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;nothing&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given test page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given slim test page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!define TEST_SYSTEM {slim}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td colspan="2"&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;&amp;lt;a href="@target"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@source&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@target&amp;lt;a title="create page" href="@target?edit&amp;amp;nonExistent=true"&amp;gt;[?]&amp;lt;/a&amp;gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have creating link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should not contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;in line&lt;/td&gt;
+		&lt;td&gt;symbol&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$@symbol=&lt;/td&gt;
+		&lt;td&gt;line number containing&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should match&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;its test results should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test ressults for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;widget&lt;/td&gt;
+		&lt;td&gt;wikiText&lt;/td&gt;
+		&lt;td&gt;should render&lt;/td&gt;
+		&lt;td&gt;htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@wikiText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;the line&lt;/td&gt;
+		&lt;td&gt;after&lt;/td&gt;
+		&lt;td&gt;should come after&lt;/td&gt;
+		&lt;td&gt;before&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo int&lt;/td&gt;
+		&lt;td&gt;$@before&lt;/td&gt;
+		&lt;td colspan="2"&gt;&amp;lt; $@after&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;&amp;lt;SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SetUp &lt;span class="error"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;echo fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;page driver&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/htmlparser/NodeFilter
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName(Class.java:188) [rt.jar:1.7.0_17]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]
+Caused by: java.lang.ClassNotFoundException: org.htmlparser.NodeFilter
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366) [rt.jar:1.7.0_17]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355) [rt.jar:1.7.0_17]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.7.0_17]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354) [rt.jar:1.7.0_17]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423) [rt.jar:1.7.0_17]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308) [rt.jar:1.7.0_17]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName(Class.java:188) [rt.jar:1.7.0_17]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible invisible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;test page content definition&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;variable defined: pageContent=!include -setup SetUp
+!include IncludedPage
+Including Page running page name is !-${RUNNING_PAGE_NAME}-!
+!include -teardown TearDown&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: firstLevelPageContent=!include SecondLevelIncludedPage
+First Level Included running page name is !-${RUNNING_PAGE_NAME}-!&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h3&gt;Test that the RUNNING_PAGE_NAME variable is always the top level running page's name&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SetUp&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Set Up running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;TearDown&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Tear Down running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;IncludedPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Included Page running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;given page&lt;/td&gt;
+		&lt;td class="error"&gt;IncludingPage&lt;/td&gt;
+		&lt;td class="error"&gt;with content&lt;/td&gt;
+		&lt;td class="error"&gt;!include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;IncludingPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;!include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[IncludingPage]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h3&gt;Test that the RUNNING_PAGE_NAME variable recurses over multiple levels of included pages&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SetUp&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Set Up running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;TearDown&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Tear Down running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SecondLevelIncludedPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;Second Level Included Page running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;IncludedPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!include SecondLevelIncludedPage&lt;br/&gt;First Level Included running page name is ${RUNNING_PAGE_NAME}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;given page&lt;/td&gt;
+		&lt;td class="error"&gt;IncludingPage&lt;/td&gt;
+		&lt;td class="error"&gt;with content&lt;/td&gt;
+		&lt;td class="error"&gt;!include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;IncludingPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;!include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[IncludingPage]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Second Level Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Second Level Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Second Level Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;First Level Included running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;First Level Included running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;First Level Included running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;page&lt;/td&gt;
+		&lt;td class="error"&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td class="error"&gt;should contain&lt;/td&gt;
+		&lt;td class="error"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT-&gt;[IncludingPage]&lt;/td&gt;
+		&lt;td colspan="2"&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show &lt;span class="error"&gt;Method content[0] not found in fitnesse.fixtures.PageBuilder.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tear down &lt;span class="error"&gt;java.lang.NullPointerException&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestRunningPageName</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_25_0', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_25_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_26_0', instruction='make', instanceName='decisionTable_26', className='SetUp', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_26_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NoClassDefFoundError: org/apache/velocity/context/Context</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_0', instruction='make', instanceName='library1', className='EchoFixture', args=[]}</instruction>
+        <slimResult>pass(echo fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_27_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>echo fixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_1', instruction='make', instanceName='library2', className='PageDriver', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>library_27_1</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SetUp, Set Up running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_1', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[TearDown, Tear Down running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_2', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[IncludedPage, Included Page running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_3/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[IncludingPage, !include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_3/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_3/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[IncludingPage]}</instruction>
+        <slimResult>$IT&lt;-[IncludingPage]</slimResult>
+                <expectation>
+                    <instructionId>scriptTable_28_3/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[IncludingPage]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_4/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_4/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_4/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_4/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_4/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_4/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_5/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_5/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_5/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_5/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_5/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_5/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_6/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_6/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_6/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_6/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_6/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_6/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_7/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_7/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_7/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_7/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_7/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_28_7/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SetUp, Set Up running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_1', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[TearDown, Tear Down running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_2', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SecondLevelIncludedPage, Second Level Included Page running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_3', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[IncludedPage, !include SecondLevelIncludedPage&lt;br/&gt;First Level Included running page name is ${RUNNING_PAGE_NAME}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_4/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[IncludingPage, !include -setup SetUp&lt;br/&gt;!include IncludedPage&lt;br/&gt;Including Page running page name is ${RUNNING_PAGE_NAME}&lt;br/&gt;!include -teardown TearDown]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_4/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_4/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[IncludingPage]}</instruction>
+        <slimResult>$IT&lt;-[IncludingPage]</slimResult>
+                <expectation>
+                    <instructionId>scriptTable_29_4/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[IncludingPage]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_5/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_5/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_5/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Set Up running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_5/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_5/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_5/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_6/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_6/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_6/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Tear Down running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_6/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_6/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_6/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_7/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_7/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_7/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Second Level Included Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_7/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_7/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_7/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_8/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_8/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_8/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[First Level Included running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_8/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_8/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_8/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_9/scriptTable_12_0/scriptTable_9_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[$IT]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_9/scriptTable_12_0/scriptTable_9_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_9/scriptTable_12_0/scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='contentContains', args=[Including Page running page name is &lt;a href="IncludingPage"&gt;IncludingPage&lt;/a&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_9/scriptTable_12_0/scriptTable_9_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>Method contentContains[1] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_9/scriptTable_12_0/scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='content', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_9/scriptTable_12_0/scriptTable_9_2</instructionId>
+                              <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Method content[0] not found in fitnesse.fixtures.PageBuilder.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_0', instruction='make', instanceName='decisionTable_30', className='TearDown', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NullPointerException</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>44</totalRunTimeInMillis>
+  
+</testResults>
+

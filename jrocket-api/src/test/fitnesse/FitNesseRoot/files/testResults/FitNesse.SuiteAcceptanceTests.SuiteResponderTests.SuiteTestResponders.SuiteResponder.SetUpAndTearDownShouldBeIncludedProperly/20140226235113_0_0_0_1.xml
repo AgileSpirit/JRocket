@@ -1,0 +1,1611 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUpAndTearDownShouldBeIncludedProperly</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>22</exceptions>
+    </counts>
+    <runTimeInMillis>50</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary"&gt;.FitNesse.SuiteAcceptanceTests.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;nothing&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given test page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given slim test page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!define TEST_SYSTEM {slim}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td colspan="2"&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;&amp;lt;a href="@target"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@source&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@target&amp;lt;a title="create page" href="@target?edit&amp;amp;nonExistent=true"&amp;gt;[?]&amp;lt;/a&amp;gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have creating link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should not contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;in line&lt;/td&gt;
+		&lt;td&gt;symbol&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$@symbol=&lt;/td&gt;
+		&lt;td&gt;line number containing&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should match&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;its test results should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test ressults for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;widget&lt;/td&gt;
+		&lt;td&gt;wikiText&lt;/td&gt;
+		&lt;td&gt;should render&lt;/td&gt;
+		&lt;td&gt;htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@wikiText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;the line&lt;/td&gt;
+		&lt;td&gt;after&lt;/td&gt;
+		&lt;td&gt;should come after&lt;/td&gt;
+		&lt;td&gt;before&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo int&lt;/td&gt;
+		&lt;td&gt;$@before&lt;/td&gt;
+		&lt;td colspan="2"&gt;&amp;lt; $@after&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;&amp;lt;SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SetUp &lt;span class="error"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: VariableUsedInTest=foo&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: PATHS=
+${SUT_PATH}
+!-!define TEST_SYSTEM (slim:A)-!
+!-!define SLIM_PORT (9000)-!
+&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;page driver&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/htmlparser/NodeFilter
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName(Class.java:188) [rt.jar:1.7.0_17]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]
+Caused by: java.lang.ClassNotFoundException: org.htmlparser.NodeFilter
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366) [rt.jar:1.7.0_17]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355) [rt.jar:1.7.0_17]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.7.0_17]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354) [rt.jar:1.7.0_17]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423) [rt.jar:1.7.0_17]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308) [rt.jar:1.7.0_17]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_17]
+	at java.lang.Class.forName(Class.java:188) [rt.jar:1.7.0_17]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;echo fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;given page with content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;br/&gt;
+!path classes
+!path lib/*.jar
+&lt;br/&gt;!define TEST_SYSTEM (slim:A)&lt;br/&gt;!define SLIM_PORT (9000)&lt;br/&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;br/&gt;
+!path classes
+!path lib/*.jar
+&lt;br/&gt;!define TEST_SYSTEM (slim:A)&lt;br/&gt;!define SLIM_PORT (9000)&lt;br/&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne.SuiteSetUp&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne.SuiteSetUp&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne.SuiteSetUp]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne.SuiteSetUp&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne.SuiteTearDown&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne.SuiteTearDown&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne.SuiteTearDown]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne.SuiteTearDown&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne.TestOneOne&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne.TestOneOne&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne.TestOneOne]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne.TestOneOne&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne.TestOneTwo&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne.TestOneTwo&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne.TestOneTwo]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne.TestOneTwo&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildTwo.SuiteSetUp&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildTwo.SuiteSetUp&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildTwo.SuiteSetUp]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildTwo.SuiteSetUp&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildTwo.SuiteTearDown&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildTwo.SuiteTearDown&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildTwo.SuiteTearDown]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildTwo.SuiteTearDown&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildTwo.TestTwoOne&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildTwo.TestTwoOne&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildTwo.TestTwoOne]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildTwo.TestTwoOne&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildTwo.TestTwoTwo&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildTwo.TestTwoTwo&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildTwo.TestTwoTwo]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildTwo.TestTwoTwo&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildThree&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildThree&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildThree]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildThree&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildThree.TestThreeOne&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildThree.TestThreeOne&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildThree.TestThreeOne]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildThree.TestThreeOne&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildThree.TestThreeTwo&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildThree.TestThreeTwo&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildThree.TestThreeTwo]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildThree.TestThreeTwo&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;SuiteParent.SuiteChildOne.TestOneThree&lt;/td&gt;
+		&lt;td class="error"&gt;!define TEST_SYSTEM {slim:B}&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page &lt;span class="error"&gt;Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SuiteParent.SuiteChildOne.TestOneThree&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;!define TEST_SYSTEM {slim:B}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT&amp;lt;-[SuiteParent.SuiteChildOne.TestOneThree]&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;SuiteParent.SuiteChildOne.TestOneThree&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;SuiteParent?suite&lt;/td&gt;
+		&lt;td&gt;200 &lt;span class="error"&gt;Method requestPage[1] not found in fitnesse.fixtures.EchoFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;span class="pass"&gt;ordered query:pages run in suite&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;SuiteChildOne&lt;/td&gt;
+		&lt;td class="error"&gt;A&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.PagesRunInSuite.getPagesRunInSuite(PagesRunInSuite.java:24) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.PagesRunInSuite.query(PagesRunInSuite.java:17) [fitnesse-20140201.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) [rt.jar:1.7.0_17]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;page name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.SuiteSetUp&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.TestOneOne&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.TestOneTwo&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.SuiteTearDown&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;span class="pass"&gt;ordered query:pages run in suite&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;SuiteChildOne&lt;/td&gt;
+		&lt;td class="error"&gt;B&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.PagesRunInSuite.getPagesRunInSuite(PagesRunInSuite.java:24) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.PagesRunInSuite.query(PagesRunInSuite.java:17) [fitnesse-20140201.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) [rt.jar:1.7.0_17]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;page name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.SuiteSetUp&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.TestOneThree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildOne.SuiteTearDown&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;span class="pass"&gt;ordered query:pages run in suite&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;SuiteChildTwo&lt;/td&gt;
+		&lt;td class="error"&gt;A&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.PagesRunInSuite.getPagesRunInSuite(PagesRunInSuite.java:24) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.PagesRunInSuite.query(PagesRunInSuite.java:17) [fitnesse-20140201.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) [rt.jar:1.7.0_17]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;page name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildTwo.SuiteSetUp&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildTwo.TestTwoOne&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildTwo.TestTwoTwo&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildTwo.SuiteTearDown&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;span class="pass"&gt;ordered query:pages run in suite&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;SuiteChildThree&lt;/td&gt;
+		&lt;td class="error"&gt;A&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.PagesRunInSuite.getPagesRunInSuite(PagesRunInSuite.java:24) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.PagesRunInSuite.query(PagesRunInSuite.java:17) [fitnesse-20140201.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) [rt.jar:1.7.0_17]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;page name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildThree.TestThreeOne&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;SuiteChildThree.TestThreeTwo&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tear down &lt;span class="error"&gt;java.lang.NullPointerException&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>SetUpAndTearDownShouldBeIncludedProperly</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_25_0', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_25_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_26_0', instruction='make', instanceName='decisionTable_26', className='SetUp', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_26_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NoClassDefFoundError: org/apache/velocity/context/Context</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_0', instruction='make', instanceName='library1', className='PageDriver', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>library_27_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_1', instruction='make', instanceName='library2', className='EchoFixture', args=[]}</instruction>
+        <slimResult>pass(echo fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_27_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>echo fixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_0/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent, &lt;br/&gt;
+!path classes
+!path lib/*.jar
+&lt;br/&gt;!define TEST_SYSTEM (slim:A)&lt;br/&gt;!define SLIM_PORT (9000)&lt;br/&gt;]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_0/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_0/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_0/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_1/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_1/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_1/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_1/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_2/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne.SuiteSetUp, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_2/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_2/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne.SuiteSetUp]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne.SuiteSetUp]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_2/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne.SuiteSetUp]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_3/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne.SuiteTearDown, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_3/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_3/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne.SuiteTearDown]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne.SuiteTearDown]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_3/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne.SuiteTearDown]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_4/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne.TestOneOne, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_4/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_4/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne.TestOneOne]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneOne]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_4/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneOne]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_5/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne.TestOneTwo, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_5/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_5/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne.TestOneTwo]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneTwo]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_5/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneTwo]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_6/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildTwo.SuiteSetUp, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_6/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_6/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildTwo.SuiteSetUp]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildTwo.SuiteSetUp]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_6/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildTwo.SuiteSetUp]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_7/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildTwo.SuiteTearDown, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_7/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_7/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildTwo.SuiteTearDown]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildTwo.SuiteTearDown]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_7/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildTwo.SuiteTearDown]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_8/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildTwo.TestTwoOne, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_8/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_8/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildTwo.TestTwoOne]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildTwo.TestTwoOne]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_8/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildTwo.TestTwoOne]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_9/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildTwo.TestTwoTwo, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_9/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_9/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildTwo.TestTwoTwo]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildTwo.TestTwoTwo]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_9/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildTwo.TestTwoTwo]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_10/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildThree, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_10/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_10/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildThree]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildThree]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_10/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildThree]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_11/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildThree.TestThreeOne, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_11/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_11/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildThree.TestThreeOne]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildThree.TestThreeOne]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_11/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildThree.TestThreeOne]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_12/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildThree.TestThreeTwo, ]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_12/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_12/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildThree.TestThreeTwo]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildThree.TestThreeTwo]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_12/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildThree.TestThreeTwo]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_13/scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='createPageWithContent', args=[SuiteParent.SuiteChildOne.TestOneThree, !define TEST_SYSTEM {slim:B}]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_13/scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method createPageWithContent[2] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_13/scriptTable_0_1', instruction='callAndAssign', symbolName='IT', instanceName='scriptTableActor', methodName='echo', args=[SuiteParent.SuiteChildOne.TestOneThree]}</instruction>
+        <slimResult>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneThree]</slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_13/scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$IT&lt;-[SuiteParent.SuiteChildOne.TestOneThree]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_0', instruction='call', instanceName='scriptTableActor', methodName='requestPage', args=[SuiteParent?suite]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_29_0</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method requestPage[1] not found in fitnesse.fixtures.EchoFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_30_0', instruction='make', instanceName='queryTable_30', className='PagesRunInSuite', args=[SuiteChildOne, A]}</instruction>
+        <slimResult>pass(ordered query:pages run in suite)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>queryTable_30_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ordered query:pages run in suite</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_30_2', instruction='call', instanceName='queryTable_30', methodName='query', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>queryTable_30_2</instructionId>
+                              <type>QueryTableExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_31_0', instruction='make', instanceName='queryTable_31', className='PagesRunInSuite', args=[SuiteChildOne, B]}</instruction>
+        <slimResult>pass(ordered query:pages run in suite)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>queryTable_31_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ordered query:pages run in suite</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_31_2', instruction='call', instanceName='queryTable_31', methodName='query', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>queryTable_31_2</instructionId>
+                              <type>QueryTableExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_32_0', instruction='make', instanceName='queryTable_32', className='PagesRunInSuite', args=[SuiteChildTwo, A]}</instruction>
+        <slimResult>pass(ordered query:pages run in suite)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>queryTable_32_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ordered query:pages run in suite</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_32_2', instruction='call', instanceName='queryTable_32', methodName='query', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>queryTable_32_2</instructionId>
+                              <type>QueryTableExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_33_0', instruction='make', instanceName='queryTable_33', className='PagesRunInSuite', args=[SuiteChildThree, A]}</instruction>
+        <slimResult>pass(ordered query:pages run in suite)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>queryTable_33_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ordered query:pages run in suite</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='queryTable_33_2', instruction='call', instanceName='queryTable_33', methodName='query', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>queryTable_33_2</instructionId>
+                              <type>QueryTableExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_34_0', instruction='make', instanceName='decisionTable_34', className='TearDown', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_34_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NullPointerException</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>51</totalRunTimeInMillis>
+  
+</testResults>
+

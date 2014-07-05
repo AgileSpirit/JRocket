@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests</rootPath>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.AlwaysSecureOperation</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.AlwaysSecureOperation?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>18</exceptions>
+    </counts>
+    <runTimeInMillis>182</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureReadOperations</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureReadOperations?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>34</exceptions>
+    </counts>
+    <runTimeInMillis>100</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureTestOperations</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureTestOperations?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>9</exceptions>
+    </counts>
+    <runTimeInMillis>53</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureWriteOperations</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SecureWriteOperations?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>12</exceptions>
+    </counts>
+    <runTimeInMillis>62</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestInsecureReadPage</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestInsecureReadPage?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>8</exceptions>
+    </counts>
+    <runTimeInMillis>62</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestReadChildOfSecurePage</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestReadChildOfSecurePage?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>8</exceptions>
+    </counts>
+    <runTimeInMillis>51</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureFilesAccess</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureFilesAccess?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <runTimeInMillis>55</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureSuitePage</name>
+    <date>02/24/2014 20:06:12</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureSuitePage?pageHistory&amp;resultDate=20140224200612</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>9</exceptions>
+    </counts>
+    <runTimeInMillis>144</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureTestPage</name>
+    <date>02/24/2014 20:06:13</date>
+    <pageHistoryLink>FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.TestSecureTestPage?pageHistory&amp;resultDate=20140224200613</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>9</exceptions>
+    </counts>
+    <runTimeInMillis>73</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>9</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1113</totalRunTimeInMillis>
+
+</suiteResults>
+

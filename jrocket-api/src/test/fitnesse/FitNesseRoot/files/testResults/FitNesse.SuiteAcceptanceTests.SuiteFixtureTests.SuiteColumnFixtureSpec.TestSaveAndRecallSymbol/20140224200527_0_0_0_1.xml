@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteColumnFixtureSpec.TestSaveAndRecallSymbol</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>5</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fitnesse.fixtures&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;SetUp&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context
+	at fitnesse.FitNesseContext.&lt;init&gt;(FitNesseContext.java:67)
+	at fitnesse.ContextConfigurator.makeFitNesseContext(ContextConfigurator.java:114)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:84)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:68)
+	at fitnesse.fixtures.SetUp.&lt;init&gt;(SetUp.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+Caused by: java.lang.ClassNotFoundException: org.apache.velocity.context.Context
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 23 more
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h3&gt;You can save and recall symbols in a ColumnFixture.  You do this by using the =id? and id= syntax.&lt;/h3&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;=id? or =id() takes the output of a function and stores it in the symbol named by the cell.  In the example below the integer 1 is stored in the symbol &lt;i&gt;one&lt;/i&gt;, and the integer 2 is stored in the symbol &lt;i&gt;two&lt;/i&gt;.&lt;/li&gt;
+	&lt;li&gt;id= recalls the value of the symbol named by the cell, and puts it in the &lt;i&gt;id&lt;/i&gt; variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;input&lt;/td&gt;
+		&lt;td&gt;=output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;one &lt;span class="fit_grey"&gt; = 1&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;two &lt;span class="fit_grey"&gt; = 2&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;input=&lt;/td&gt;
+		&lt;td&gt;output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;one &lt;span class="fit_grey"&gt; = 1&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;two &lt;span class="fit_grey"&gt; = 2&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;b&gt;With classed integral types, there's a chance the value may be null as a correct result:&lt;/b&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;integerInput&lt;/td&gt;
+		&lt;td&gt;=integerOutput?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;one &lt;span class="fit_grey"&gt; = 1&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;two &lt;span class="fit_grey"&gt; = 2&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;null&lt;/td&gt;
+		&lt;td&gt;three &lt;span class="fit_grey"&gt; = null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;integerInput=&lt;/td&gt;
+		&lt;td&gt;integerOutput?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;one &lt;span class="fit_grey"&gt; = 1&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;two &lt;span class="fit_grey"&gt; = 2&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;three &lt;span class="fit_grey"&gt; = null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;null&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;pre&gt;
+public class ColumnFixtureTestFixture extends ColumnFixture
+{
+  public int input;
+  public int output() {return input;}
+
+  public Integer integerInput;
+  public Integer integerOutput() { return integerInput; }
+
+  public boolean exception() throws Exception {throw new Exception("I thowed up");}
+}
+&lt;/pre&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;tear down&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.TearDown.&lt;init&gt;(TearDown.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestSaveAndRecallSymbol</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5</totalRunTimeInMillis>
+  
+</testResults>
+

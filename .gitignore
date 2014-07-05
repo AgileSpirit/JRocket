@@ -13,3 +13,16 @@ bin/**
 *.log
 /target
 /.checkstyle
+jrocket-api/bin/**
+jrocket-api/.hg/**
+jrocket-api/.DS_Store
+jrocket-api/*.iml
+jrocket-api/*.log
+jrocket-api/target
+jrocket-api/.checkstyle
+jrocket-ui/dist
+jrocket-ui/bower_components
+jrocket-ui/node_modules
+jrocket-ui/.tmp
+jrocket-ui/.sass-cache
+jrocket-ui/npm-debug.log

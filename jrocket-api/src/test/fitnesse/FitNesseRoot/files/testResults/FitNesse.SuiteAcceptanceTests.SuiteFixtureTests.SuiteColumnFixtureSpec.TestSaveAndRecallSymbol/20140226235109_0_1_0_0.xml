@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteColumnFixtureSpec.TestSaveAndRecallSymbol</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>20</exceptions>
+    </counts>
+    <runTimeInMillis>60</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary"&gt;.FitNesse.SuiteAcceptanceTests.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;nothing&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given test page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given slim test page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!define TEST_SYSTEM {slim}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td colspan="2"&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;&amp;lt;a href="@target"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@source&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@target&amp;lt;a title="create page" href="@target?edit&amp;amp;nonExistent=true"&amp;gt;[?]&amp;lt;/a&amp;gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have creating link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should not contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;in line&lt;/td&gt;
+		&lt;td&gt;symbol&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$@symbol=&lt;/td&gt;
+		&lt;td&gt;line number containing&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should match&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;its test results should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test ressults for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;widget&lt;/td&gt;
+		&lt;td&gt;wikiText&lt;/td&gt;
+		&lt;td&gt;should render&lt;/td&gt;
+		&lt;td&gt;htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@wikiText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;the line&lt;/td&gt;
+		&lt;td&gt;after&lt;/td&gt;
+		&lt;td&gt;should come after&lt;/td&gt;
+		&lt;td&gt;before&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo int&lt;/td&gt;
+		&lt;td&gt;$@before&lt;/td&gt;
+		&lt;td colspan="2"&gt;&amp;lt; $@after&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SetUp &lt;span class="error"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h3&gt;You can save and recall symbols in a ColumnFixture.  You do this by using the =id? and id= syntax.&lt;/h3&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;=id? or =id() takes the output of a function and stores it in the symbol named by the cell.  In the example below the integer 1 is stored in the symbol &lt;i&gt;one&lt;/i&gt;, and the integer 2 is stored in the symbol &lt;i&gt;two&lt;/i&gt;.&lt;/li&gt;
+	&lt;li&gt;id= recalls the value of the symbol named by the cell, and puts it in the &lt;i&gt;id&lt;/i&gt; variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;input&lt;/td&gt;
+		&lt;td&gt;=output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;one &lt;span class="error"&gt;Method Output[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;two &lt;span class="error"&gt;Method Output[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;input=&lt;/td&gt;
+		&lt;td&gt;output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;one &lt;span class="error"&gt;Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[0] &lt;span class="fail"&gt;expected [1]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;two &lt;span class="error"&gt;Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[0] &lt;span class="fail"&gt;expected [2]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;b&gt;With classed integral types, there's a chance the value may be null as a correct result:&lt;/b&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;integerInput&lt;/td&gt;
+		&lt;td&gt;=integerOutput?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;one &lt;span class="error"&gt;Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;two &lt;span class="error"&gt;Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;null &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;three &lt;span class="error"&gt;Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;fitnesse.fixtures.ColumnFixtureTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;integerInput=&lt;/td&gt;
+		&lt;td&gt;integerOutput?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;one &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:9) [fitnesse-20140201.jar]
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:7) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.toString(MethodExecutionResult.java:91) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.returnValue(MethodExecutionResult.java:83) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;two &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:9) [fitnesse-20140201.jar]
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:7) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.toString(MethodExecutionResult.java:91) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.returnValue(MethodExecutionResult.java:83) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;three &lt;span class="error"&gt;Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;null&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:9) [fitnesse-20140201.jar]
+	at fitnesse.slim.converters.IntConverter.toString(IntConverter.java:7) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.toString(MethodExecutionResult.java:91) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutionResult.returnValue(MethodExecutionResult.java:83) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;pre&gt;
+public class ColumnFixtureTestFixture extends ColumnFixture
+{
+  public int input;
+  public int output() {return input;}
+
+  public Integer integerInput;
+  public Integer integerOutput() { return integerInput; }
+
+  public boolean exception() throws Exception {throw new Exception("I thowed up");}
+}
+&lt;/pre&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tear down &lt;span class="error"&gt;java.lang.NullPointerException&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestSaveAndRecallSymbol</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_25_0', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_25_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_26_0', instruction='make', instanceName='decisionTable_26', className='SetUp', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_26_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NoClassDefFoundError: org/apache/velocity/context/Context</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_0', instruction='make', instanceName='decisionTable_27', className='fitnesse.fixtures.ColumnFixtureTestFixture', args=[]}</instruction>
+        <slimResult>pass(fitnesse.fixtures.ColumnFixtureTestFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_27_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures.ColumnFixtureTestFixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_4', instruction='call', instanceName='decisionTable_27', methodName='setInput', args=[1]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_27_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_6', instruction='call', instanceName='decisionTable_27', methodName='Output', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_27_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method Output[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_8', instruction='call', instanceName='decisionTable_27', methodName='setInput', args=[2]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_27_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_10', instruction='call', instanceName='decisionTable_27', methodName='Output', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_27_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method Output[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_0', instruction='make', instanceName='decisionTable_28', className='fitnesse.fixtures.ColumnFixtureTestFixture', args=[]}</instruction>
+        <slimResult>pass(fitnesse.fixtures.ColumnFixtureTestFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_28_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures.ColumnFixtureTestFixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_4', instruction='call', instanceName='decisionTable_28', methodName='setInput', args=[one]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_6', instruction='call', instanceName='decisionTable_28', methodName='output', args=[]}</instruction>
+        <slimResult>fail(a=0;e=1)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_28_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>0</actual>
+                              <expected>1</expected>
+                            </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_8', instruction='call', instanceName='decisionTable_28', methodName='setInput', args=[two]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_28_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_10', instruction='call', instanceName='decisionTable_28', methodName='output', args=[]}</instruction>
+        <slimResult>fail(a=0;e=2)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_28_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>0</actual>
+                              <expected>2</expected>
+                            </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_0', instruction='make', instanceName='decisionTable_29', className='fitnesse.fixtures.ColumnFixtureTestFixture', args=[]}</instruction>
+        <slimResult>pass(fitnesse.fixtures.ColumnFixtureTestFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_29_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures.ColumnFixtureTestFixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_4', instruction='call', instanceName='decisionTable_29', methodName='setIntegerInput', args=[1]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_6', instruction='call', instanceName='decisionTable_29', methodName='IntegerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_8', instruction='call', instanceName='decisionTable_29', methodName='setIntegerInput', args=[2]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_10', instruction='call', instanceName='decisionTable_29', methodName='IntegerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_12', instruction='call', instanceName='decisionTable_29', methodName='setIntegerInput', args=[null]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_14', instruction='call', instanceName='decisionTable_29', methodName='IntegerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_14</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method IntegerOutput[0] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_0', instruction='make', instanceName='decisionTable_30', className='fitnesse.fixtures.ColumnFixtureTestFixture', args=[]}</instruction>
+        <slimResult>pass(fitnesse.fixtures.ColumnFixtureTestFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_30_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures.ColumnFixtureTestFixture</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_4', instruction='call', instanceName='decisionTable_30', methodName='setIntegerInput', args=[one]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_6', instruction='call', instanceName='decisionTable_30', methodName='integerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_8', instruction='call', instanceName='decisionTable_30', methodName='setIntegerInput', args=[two]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_10', instruction='call', instanceName='decisionTable_30', methodName='integerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_12', instruction='call', instanceName='decisionTable_30', methodName='setIntegerInput', args=[three]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setIntegerInput[1] not found in fitnesse.fixtures.ColumnFixtureTestFixture.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_14', instruction='call', instanceName='decisionTable_30', methodName='integerOutput', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_14</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_0', instruction='make', instanceName='decisionTable_31', className='TearDown', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_31_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NullPointerException</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>61</totalRunTimeInMillis>
+  
+</testResults>
+

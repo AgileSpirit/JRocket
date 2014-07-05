@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.TestParsingOfObjects</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>6</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fitnesse.fixtures&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;SetUp&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context
+	at fitnesse.FitNesseContext.&lt;init&gt;(FitNesseContext.java:67)
+	at fitnesse.ContextConfigurator.makeFitNesseContext(ContextConfigurator.java:114)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:84)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:68)
+	at fitnesse.fixtures.SetUp.&lt;init&gt;(SetUp.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+Caused by: java.lang.ClassNotFoundException: org.apache.velocity.context.Context
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 23 more
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Table cells contain strings.  Fixtures deal with objects.  In order to convert the strings into the objects FIT needs to know how to parse the strings.  One way we accomplish this is to allow the objects to have the following method:&lt;pre&gt;Object parse(String s);&lt;/pre&gt;
+The following table shows the result of adding two vectors.  Each vector is represented by an ordered pair which represents it's X and Y dimensions.  The class CartesianVector&lt;a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.CartesianVector?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt; is used to parse, display, and sum the vectors.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;fitnesse.testutil.VectorSum&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;v1&lt;/td&gt;
+		&lt;td&gt;v2&lt;/td&gt;
+		&lt;td&gt;sum?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,0)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,1)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,2)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(2,2)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;It is not always possible to add a parse method on the Object returned by the fixture.&lt;br/&gt;&lt;br/&gt;For Ex. if your fixture returns java.awt.Point class which does not have a &lt;pre&gt;Object parse(String s);&lt;/pre&gt;
+ method, this approach won't work.&lt;br/&gt;&lt;br/&gt;Following approach can be used to delegate the parse method to a different class (Parse Delegate class). The parse delegate class has the &lt;pre&gt;Object parse(String s);&lt;/pre&gt;
+ method which returns the Object we are interested in.&lt;br/&gt;&lt;br/&gt;The following table shows the result of adding two points.  Each point is represented by an ordered pair which represents it's X and Y dimensions.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;fitnesse.testutil.ObjectTranslatePoint&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;p1&lt;/td&gt;
+		&lt;td&gt;p2&lt;/td&gt;
+		&lt;td&gt;sum?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,0)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,1)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,2)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(2,2)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;In the ObjectTranslatePoint&lt;a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.ObjectTranslatePoint?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt; fixture, we have a static block which registers the parse delegate object for a give Class type.&lt;br/&gt;&lt;br/&gt;Ex:&lt;br/&gt;&lt;pre&gt;static
+{
+        TypeAdapter.registerParseDelegate(java.awt.Point.class, new ObjectDelegatePointParser());
+}
+&lt;/pre&gt;
+Please note that we are passing a Object of the Parse Delegate class. It is also possible to pass a class instead of the object. Only difference being the parse delegate class should have a &lt;pre&gt;public static Object parse(String s);&lt;/pre&gt;
+ method.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;fitnesse.testutil.ClassTranslatePoint&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;p1&lt;/td&gt;
+		&lt;td&gt;p2&lt;/td&gt;
+		&lt;td&gt;sum?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,0)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,1)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td&gt;(0,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(0,2)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td&gt;(1,1)&lt;/td&gt;
+		&lt;td class="pass"&gt;(2,2)&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;In the ClassTranslatePoint&lt;a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.ClassTranslatePoint?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt; fixture, we have a static block which registers the parse delegate class for a give Class type.&lt;br/&gt;&lt;br/&gt;Ex:&lt;br/&gt;&lt;pre&gt;static
+{
+        TypeAdapter.registerParseDelegate(java.awt.Point.class, ClassDelegatePointParser.class);
+}
+&lt;/pre&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;tear down&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.TearDown.&lt;init&gt;(TearDown.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestParsingOfObjects</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>7</totalRunTimeInMillis>
+  
+</testResults>
+

@@ -1,0 +1,8 @@
+
+!3 !-slim:fitnesse.slim.SlimService-!
+|'''Date: '''| 8:06:25 PM (CET) on lundi, février 24, 2014 |
+|'''Test Page: '''|.FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests|
+|'''Command: '''| !-java -cp /Users/OCTO-JBU/.m2/repository/org/fitnesse/fitnesse/20140201/fitnesse-20140201.jar:classes:lib/*.jar fitnesse.slim.SlimService  8088-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 1.044 seconds |
+

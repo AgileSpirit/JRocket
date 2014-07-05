@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.TestCreatingSubPageSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>16</exceptions>
+    </counts>
+    <runTimeInMillis>5</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fitnesse.fixtures&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;SetUp&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context
+	at fitnesse.FitNesseContext.&lt;init&gt;(FitNesseContext.java:67)
+	at fitnesse.ContextConfigurator.makeFitNesseContext(ContextConfigurator.java:114)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:84)
+	at fitnesse.testutil.FitNesseUtil.makeTestContext(FitNesseUtil.java:68)
+	at fitnesse.fixtures.SetUp.&lt;init&gt;(SetUp.java:24)
+	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+Caused by: java.lang.ClassNotFoundException: org.apache.velocity.context.Context
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 22 more
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateSubPageSymbolicLink"&gt;CreateSubPageSymbolicLink&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateSubPageSymbolicLink?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;Create a symbolic link to a sub-page:&lt;br/&gt;&lt;br/&gt;First we need to create some pages to play with.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;Page creator.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Page name.&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NoClassDefFoundError: org/apache/commons/lang/ArrayUtils
+	at fit.Binding.getAllDeclaredFields(Binding.java:146)
+	at fit.Binding.getAllDeclaredFields(Binding.java:146)
+	at fit.Binding.getAllDeclaredFields(Binding.java:146)
+	at fit.Binding.findField(Binding.java:132)
+	at fit.Binding.makeAdapterForField(Binding.java:63)
+	at fit.Binding.makeAdapter(Binding.java:55)
+	at fit.Binding.create(Binding.java:41)
+	at fit.ColumnFixture.createBinding(ColumnFixture.java:84)
+	at fit.ColumnFixture.bind(ColumnFixture.java:75)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:17)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td&gt;PageContents.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;LinkingPage&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;LINKING PAGE&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;LinkingPage.LinkedChild&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;LINKED CHILD&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Now we create a symbolic link named SymLink.  This links LinkingPage.LinkedChild as a child of LinkingPage.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Requester.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;status?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;LinkingPage?responder=symlink&amp;amp;linkName=SymLink&amp;amp;linkPath=&amp;gt;LinkedChild&lt;/td&gt;
+		&lt;td class="error" class="error"&gt;303&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.FitNesseExpediter.createGoodResponse(FitNesseExpediter.java:126)
+	at fitnesse.fixtures.ResponseRequester.execute(ResponseRequester.java:37)
+	at fit.ColumnFixture.executeIfNeeded(ColumnFixture.java:57)
+	at fit.ColumnFixture.check(ColumnFixture.java:46)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseRequester.status(ResponseRequester.java:43)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Creating a symlink will redirect back to the properties page.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;Location: LinkingPage\?properties&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78)
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67)
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;error&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Let's have a look at the properties view.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Requester.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;status?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;LinkingPage?properties&lt;/td&gt;
+		&lt;td class="error" class="error"&gt;200&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.FitNesseExpediter.createGoodResponse(FitNesseExpediter.java:126)
+	at fitnesse.fixtures.ResponseRequester.execute(ResponseRequester.java:37)
+	at fit.ColumnFixture.executeIfNeeded(ColumnFixture.java:57)
+	at fit.ColumnFixture.check(ColumnFixture.java:46)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseRequester.status(ResponseRequester.java:43)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;RESPONSE DATA&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;wrappedHtml?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;error&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;The newly created symbolic link will be listed along with a link to the linked page.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;SymLink&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78)
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67)
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&amp;lt;a href=".LinkingPage.LinkedChild"&amp;gt;&amp;gt;LinkedChild&amp;lt;/a&amp;gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78)
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67)
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;tear down&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fitnesse.fixtures.TearDown.&lt;init&gt;(TearDown.java:15)
+	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at fit.FixtureClass.newInstance(FixtureClass.java:24)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:62)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:84)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:44)
+	at fit.Fixture.loadFixture(Fixture.java:141)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:133)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:119)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestCreatingSubPageSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5</totalRunTimeInMillis>
+  
+</testResults>
+

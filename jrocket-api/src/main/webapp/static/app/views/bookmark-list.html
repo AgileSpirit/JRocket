@@ -1,0 +1,28 @@
+<!-- ============= -->
+<!-- Bookmark List -->
+<!-- ============= -->
+
+<div class="bookmarks" ng-controller="BookmarkListController">
+  <ul>
+    <li ng-repeat="bookmark in bookmarks">
+      <div class="row">
+        <div class="col-md-10 bookmark">
+          <div class="title">
+            <a href="{{bookmark.url}}" class="link">{{bookmark.title}}</a>
+          </div>
+          <div class="description">
+            <p>{{bookmark.description}}</p>
+          </div>
+        </div>
+        <div class="col-md-2 btn-group-vertical actions">
+          <button type="button" class="btn btn-default btn-xs" ng-click="editBookmark(bookmark.id)">
+            <span class="glyphicon glyphicon-pencil"></span> Edit
+          </button>
+          <button type="button" class="btn btn-default btn-xs" ng-click="removeBookmark(bookmark)">
+            <span class="glyphicon glyphicon-remove"></span> Remove
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

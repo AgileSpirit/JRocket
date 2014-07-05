@@ -1,0 +1,1426 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.TestSuiteWithOneXrefWidget</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>14</exceptions>
+    </counts>
+    <runTimeInMillis>60</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary"&gt;.FitNesse.SuiteAcceptanceTests.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;nothing&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given test page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given slim test page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!define TEST_SYSTEM {slim}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td colspan="2"&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;&amp;lt;a href="@target"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@source&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@target&amp;lt;a title="create page" href="@target?edit&amp;amp;nonExistent=true"&amp;gt;[?]&amp;lt;/a&amp;gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have creating link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should not contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;in line&lt;/td&gt;
+		&lt;td&gt;symbol&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$@symbol=&lt;/td&gt;
+		&lt;td&gt;line number containing&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should match&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;its test results should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test ressults for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;widget&lt;/td&gt;
+		&lt;td&gt;wikiText&lt;/td&gt;
+		&lt;td&gt;should render&lt;/td&gt;
+		&lt;td&gt;htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@wikiText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;the line&lt;/td&gt;
+		&lt;td&gt;after&lt;/td&gt;
+		&lt;td&gt;should come after&lt;/td&gt;
+		&lt;td&gt;before&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo int&lt;/td&gt;
+		&lt;td&gt;$@before&lt;/td&gt;
+		&lt;td colspan="2"&gt;&amp;lt; $@after&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;&amp;lt;SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SetUp &lt;span class="error"&gt;java.lang.NoClassDefFoundError: org/apache/velocity/context/Context&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: VariableUsedInTest=foo&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;When you execute a suite page, FitNesse tests all the pages mentioned in !see cross reference widgets.&lt;br/&gt;&lt;i&gt;Note: the classpath for the cross referenced pages is not determined by the referencing page, it is determined by the referenced pages.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;hr/&gt;
+&lt;br/&gt;Create a simple test page&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Page Builder&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;
+!path classes
+!path lib/*.jar
+&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;|!-fitnesse.testutil.PassFixture-!|&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;TestPage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Create a Suite page that mentions the test page in a !test widget&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Page Builder&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;!see TestPage&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;SuitePage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;SuitePage&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseRequester.status(ResponseRequester.java:43) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.valid(ResponseRequester.java:22) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.FitNesseExpediter.createGoodResponse(FitNesseExpediter.java:126) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.execute(ResponseRequester.java:37) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.contents(ResponseExaminer.java:24) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Now run the suite page.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;SuitePage?responder=suite&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseRequester.status(ResponseRequester.java:43) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.valid(ResponseRequester.java:22) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.FitNesseExpediter.createGoodResponse(FitNesseExpediter.java:126) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.execute(ResponseRequester.java:37) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.contents(ResponseExaminer.java:24) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;The suite should report the TestPage and should show no errors.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;contents&lt;/td&gt;
+		&lt;td class="error"&gt;TestPage&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;contents&lt;/td&gt;
+		&lt;td class="error"&gt;Test Pages:.*1 right&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;The error log page should not have any errors&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;ErrorLogs.SuitePage&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseRequester.status(ResponseRequester.java:43) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.valid(ResponseRequester.java:22) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.FitNesseExpediter.createGoodResponse(FitNesseExpediter.java:126) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseRequester.execute(ResponseRequester.java:37) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.contents(ResponseExaminer.java:24) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;contents&lt;/td&gt;
+		&lt;td class="error"&gt;Exit code.*0.*Time&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at fitnesse.fixtures.ResponseExaminer.extractValueFromResponse(ResponseExaminer.java:78) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matchCount(ResponseExaminer.java:67) [fitnesse-20140201.jar]
+	at fitnesse.fixtures.ResponseExaminer.matches(ResponseExaminer.java:91) [fitnesse-20140201.jar]
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source) [n/a]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.7.0_17]
+	at java.lang.reflect.Method.invoke(Method.java:601) [rt.jar:1.7.0_17]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-20140201.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-20140201.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20140201.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-20140201.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:159) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:167) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:129) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:62) [fitnesse-20140201.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:48) [fitnesse-20140201.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tear down &lt;span class="error"&gt;java.lang.NullPointerException&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestSuiteWithOneXrefWidget</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_25_0', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_25_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_26_0', instruction='make', instanceName='decisionTable_26', className='SetUp', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_26_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NoClassDefFoundError: org/apache/velocity/context/Context</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_27_0', instruction='make', instanceName='scriptTableActor', className='PageBuilder', args=[]}</instruction>
+        <slimResult>pass(Page Builder)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_27_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page Builder</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_27_1', instruction='call', instanceName='scriptTableActor', methodName='line', args=[
+!path classes
+!path lib/*.jar
+]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_27_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_27_2', instruction='call', instanceName='scriptTableActor', methodName='line', args=[|!-fitnesse.testutil.PassFixture-!|]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_27_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_27_3', instruction='call', instanceName='scriptTableActor', methodName='page', args=[TestPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_27_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_0', instruction='make', instanceName='scriptTableActor', className='PageBuilder', args=[]}</instruction>
+        <slimResult>pass(Page Builder)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_28_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page Builder</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_1', instruction='call', instanceName='scriptTableActor', methodName='line', args=[!see TestPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_28_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_2', instruction='call', instanceName='scriptTableActor', methodName='page', args=[SuitePage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_28_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_0', instruction='make', instanceName='decisionTable_29', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_29_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_4', instruction='call', instanceName='decisionTable_29', methodName='setUri', args=[SuitePage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_29_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_5', instruction='call', instanceName='decisionTable_29', methodName='execute', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_5</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_6', instruction='call', instanceName='decisionTable_29', methodName='valid', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_29_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_0', instruction='make', instanceName='decisionTable_30', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_30_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_5', instruction='call', instanceName='decisionTable_30', methodName='contents', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_30_5</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_0', instruction='make', instanceName='decisionTable_31', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_31_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_4', instruction='call', instanceName='decisionTable_31', methodName='setUri', args=[SuitePage?responder=suite]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_31_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_5', instruction='call', instanceName='decisionTable_31', methodName='execute', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_31_5</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_6', instruction='call', instanceName='decisionTable_31', methodName='valid', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_31_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_32_0', instruction='make', instanceName='decisionTable_32', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_32_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_32_5', instruction='call', instanceName='decisionTable_32', methodName='contents', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_32_5</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_0', instruction='make', instanceName='decisionTable_33', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_33_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_4', instruction='call', instanceName='decisionTable_33', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_5', instruction='call', instanceName='decisionTable_33', methodName='setPattern', args=[TestPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_7', instruction='call', instanceName='decisionTable_33', methodName='matches', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_33_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_9', instruction='call', instanceName='decisionTable_33', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_9</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_10', instruction='call', instanceName='decisionTable_33', methodName='setPattern', args=[Test Pages:.*1 right]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_12', instruction='call', instanceName='decisionTable_33', methodName='matches', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_33_12</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_34_0', instruction='make', instanceName='decisionTable_34', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_34_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_34_4', instruction='call', instanceName='decisionTable_34', methodName='setUri', args=[ErrorLogs.SuitePage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_34_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_34_5', instruction='call', instanceName='decisionTable_34', methodName='execute', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_34_5</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_34_6', instruction='call', instanceName='decisionTable_34', methodName='valid', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_34_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_35_0', instruction='make', instanceName='decisionTable_35', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_35_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_35_5', instruction='call', instanceName='decisionTable_35', methodName='contents', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_35_5</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_0', instruction='make', instanceName='decisionTable_36', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_36_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_4', instruction='call', instanceName='decisionTable_36', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_36_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_5', instruction='call', instanceName='decisionTable_36', methodName='setPattern', args=[Exit code.*0.*Time]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_36_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_7', instruction='call', instanceName='decisionTable_36', methodName='matches', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_36_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_0', instruction='make', instanceName='decisionTable_37', className='TearDown', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_37_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NullPointerException</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>60</totalRunTimeInMillis>
+  
+</testResults>
+

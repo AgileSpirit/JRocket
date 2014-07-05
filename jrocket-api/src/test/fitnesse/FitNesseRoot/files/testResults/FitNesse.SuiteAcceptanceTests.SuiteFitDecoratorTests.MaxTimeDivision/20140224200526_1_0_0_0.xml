@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.MaxTimeDivision</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.decorator&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.decorator.performance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;eg&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Consider you have a simple fit test as follows:&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;12.6&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td class="pass"&gt;4.2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;100&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td class="pass"&gt;25&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Now you want to measure how much time this test is taking to execute. But you don't want to or cannot modify the existing test fixture. Basically you want to decorate the existing fit tests with extra features.&lt;br/&gt;&lt;br/&gt;It would be cool if you could write a decorator around your fit test which starts a timer before the execution of the fit test starts, runs the fit test as usual and once the execution is completed it records the amount of time it took to run the test. An assertion on the execution time to make sure it executes within a max time is also quite handy to be aware of the application's performance over a period of time. Something like this:&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Max Time&lt;/td&gt;
+		&lt;td class="pass"&gt;100&lt;hr&gt;actual 1.0&lt;/td&gt;
+		&lt;td&gt;milliseconds&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;12.6&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td class="pass"&gt;4.2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;100&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td class="pass"&gt;25&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;b&gt;Note:&lt;/b&gt; As of now, all the times are in milliseconds. The parameter "milliseconds" in the fixture above is just ignored.&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.Summary&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;EncapsulatedFixtureName&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;Division&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;actualTimeTaken&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;counts&lt;/span&gt;&lt;/td&gt;
+&lt;td class="pass"&gt; &lt;span class="fit_grey"&gt;7 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;maxTime&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;100&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;run date&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;Mon Feb 24 20:05:26 CET 2014&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;run elapsed time&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;0:00.01&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>MaxTimeDivision</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>7</totalRunTimeInMillis>
+  
+</testResults>
+

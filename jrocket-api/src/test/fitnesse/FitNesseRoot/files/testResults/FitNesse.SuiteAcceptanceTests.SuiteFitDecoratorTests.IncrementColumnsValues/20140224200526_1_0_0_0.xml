@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.IncrementColumnsValues</rootPath>
+    <result>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.decorator&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.decorator.performance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;eg&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;What if you want to increment the value of one of the columns of your fixture table at run time? You can use the IncrementColumnsValue decorator. This lets you increment column's values. This decorator supports the following data types:&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;int or integer&lt;/li&gt;
+	&lt;li&gt;double&lt;/li&gt;
+	&lt;li&gt;string&lt;/li&gt;
+	&lt;li&gt;date&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Increment Columns Value&lt;/td&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;of type&lt;/td&gt;
+		&lt;td&gt;int&lt;/td&gt;
+		&lt;td&gt;by&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td colspan="4"&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;20&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Increment Columns Value&lt;/td&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;of type&lt;/td&gt;
+		&lt;td&gt;integer&lt;/td&gt;
+		&lt;td&gt;by&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td colspan="4"&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;20&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Increment Columns Value&lt;/td&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;of type&lt;/td&gt;
+		&lt;td&gt;double&lt;/td&gt;
+		&lt;td&gt;by&lt;/td&gt;
+		&lt;td&gt;10.2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td colspan="4"&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10.2&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5.1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;20.4&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5.1&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Increment Columns Value&lt;/td&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;of type&lt;/td&gt;
+		&lt;td&gt;string&lt;/td&gt;
+		&lt;td&gt;by&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;Division&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;numerator&lt;/td&gt;
+		&lt;td&gt;denominator&lt;/td&gt;
+		&lt;td colspan="4"&gt;quotient()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;55&lt;/td&gt;
+		&lt;td&gt;11&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;555&lt;/td&gt;
+		&lt;td&gt;111&lt;/td&gt;
+		&lt;td colspan="4" class="pass"&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Updates the dates by 5 days.&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Increment Columns Value&lt;/td&gt;
+		&lt;td&gt;inDate&lt;/td&gt;
+		&lt;td&gt;of type&lt;/td&gt;
+		&lt;td&gt;date&lt;/td&gt;
+		&lt;td&gt;by&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;Get Dates&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;inDate&lt;/td&gt;
+		&lt;td colspan="5"&gt;updatedDate()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;12/02/2006&lt;/td&gt;
+		&lt;td colspan="5" class="pass"&gt;12/02/2006&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;12/07/2006&lt;/td&gt;
+		&lt;td colspan="5" class="pass"&gt;12/07/2006&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;01/01/2007&lt;/td&gt;
+		&lt;td colspan="5" class="pass"&gt;01/01/2007&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;This decorator by itself is not as useful. But piped with other decorators this can be really handy.&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand All&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse All&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fit.Summary&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;EncapsulatedFixtureName&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;Get Dates&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;columnName&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;inDate&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;counts&lt;/span&gt;&lt;/td&gt;
+&lt;td class="pass"&gt; &lt;span class="fit_grey"&gt;14 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;delta&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;DataType = 'date' and value = 5&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;run date&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;Mon Feb 24 20:05:26 CET 2014&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;run elapsed time&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;0:00.02&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>IncrementColumnsValues</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>10</totalRunTimeInMillis>
+  
+</testResults>
+

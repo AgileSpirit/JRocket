@@ -1,0 +1,42 @@
+<div id="page-header">
+</div>
+
+<div id="page-body" class="container bookmarks-view">
+
+    <div class="searchbar" role="search">
+        <input type="text" class="form-control" id="filter" placeholder="Enter filter" ng-model="searchText">
+    </div>
+
+    <hr>
+
+    <!-- ============= -->
+    <!-- Bookmark List -->
+    <!-- ============= -->
+
+    <div class="bookmarks" >
+        <div class="center-block">
+            <ul class="list">
+                <li ng-repeat="bookmark in bookmarks | filter: searchText">
+                    <div class="bookmark">
+                        <div class="title">
+                            <a href="{{bookmark.url}}">{{bookmark.title}}</a>
+                        </div>
+                        <div class="description">
+                            <p>{{bookmark.description}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <ul class="pagination">
+                <li ng-class="{disabled: previousPageDisabled()}"><a href="" ng-click="previousPage()">&laquo;</a></li>
+                <li ng-class="{active: ($index + 1) === currentPage}" ng-repeat="i in getPages() track by $index"><a href="" ng-click="changePage({{$index + 1}})">{{$index + 1}}</a></li>
+                <li ng-class="{disabled: nextPageDisabled()}"><a href="" ng-click="nextPage()" ng-disabled="nextPageDisabled()">&raquo;</a></li>
+            </ul>
+            </div>
+    </div>
+</div>
+
+<div id="page-footer">
+</div>
