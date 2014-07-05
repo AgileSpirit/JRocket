@@ -1,7 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    background-color: #f9fafb;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -82,6 +81,19 @@ body {
 /* App styles */
 /* ========== */
 
+#page-header.navbar {
+    border-radius: 0;
+    border: none;
+    background-color: #3686be;
+    background-color: #1db5bd;
+    background-color: #4d5a6e;
+}
+#page-header .navbar-brand,
+#page-header .navbar-brand:hover,
+#page-header .navbar-brand:focus {
+    color: white;
+}
+
 #page-footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -89,6 +101,20 @@ body {
     color: #777;
     text-align: center;
     border-top: 1px solid #e5e5e5;
+}
+
+.btn {
+    border-radius: 0px;
+    transition: background-color 200ms;
+}
+
+.btn-add-bookmark {
+    background-color: #7DB461;
+    border: none;
+}
+.btn-add-bookmark:hover,
+.btn-add-bookmark:focus {
+    background-color: #6ba44e;
 }
 
 /*
@@ -114,7 +140,15 @@ body {
 }
 
 .bookmarks-view .bookmark {
-    margin: 15px 0;
+    padding: 15px;
+    background-color: white;
+    margin: 8px 0;
+    border-left: 4px solid white;
+}
+.bookmarks-view .bookmark:hover,
+.bookmarks-view .bookmark:focus {
+    border-left-color: #215f8b;
+    border-left-color: #ea6344;
 }
 .bookmarks-view .bookmark .title {}
 .bookmarks-view .bookmark .description {}

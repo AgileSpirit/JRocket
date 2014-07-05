@@ -55,6 +55,7 @@ public class BookmarkResourceImpl implements BookmarkResource {
     @ResponseBody
     public BookmarkSearchResponse searchBookmarks(@RequestParam("q") String query, @RequestParam("o") int offset, @RequestParam("s") int size) {
         BookmarkSearchResponse response = new BookmarkSearchResponse();
+        response.setQuery(query);
         response.setOffset(offset);
         response.setTotalItems(bookmarkService.count(query));
         response.setBookmarks(bookmarkService.find(query, offset, size));

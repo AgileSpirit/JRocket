@@ -11,9 +11,18 @@ import java.util.List;
  */
 public class BookmarkSearchResponse {
 
+    private String query;
     private long totalItems;
     private List<Bookmark> bookmarks;
     private int offset;
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
 
     public long getTotalItems() {
         return totalItems;

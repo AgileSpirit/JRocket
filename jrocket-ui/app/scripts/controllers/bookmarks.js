@@ -11,9 +11,9 @@ angular.module('jrocketUiApp')
     .controller('BookmarksCtrl', ['$scope', 'BookmarkService', function ($scope, bookmarkService) {
 
         // Model data
-        $scope.query = '';
+        $scope.searchQuery = '';
         $scope.currentPage = 1;
-        $scope.pageSize = 7;
+        $scope.pageSize = 8;
         $scope.bookmarks = {};
         $scope.lastPage = -1;
         $scope.pageLinks = {};
@@ -23,9 +23,10 @@ angular.module('jrocketUiApp')
             var offset = pageToOffset(page, $scope.pageSize);
             bookmarkService.search({'query' : query, 'offset': offset , 'size': size}, function(response) {
                 $scope.bookmarks = response.bookmarks;
+                $scope.searchQuery = response.query;
                 $scope.totalItems = response.totalItems;
                 $scope.currentPage = offsetToPage(response.offset, $scope.pageSize);
-                $scope.lastPage = Math.round($scope.totalItems / size );
+                $scope.lastPage = Math.floor(($scope.totalItems + $scope.pageSize - 1) / size );
             });
         }
 
@@ -54,8 +55,12 @@ angular.module('jrocketUiApp')
             return 'undefined';
         };
 
+        $scope.search = function() {
+            loadBookmarks($scope.searchQuery, 1, $scope.pageSize);
+        };
+
         $scope.changePage = function (page) {
-            loadBookmarks($scope.query, page, $scope.pageSize);
+            loadBookmarks($scope.searchQuery, page, $scope.pageSize);
         };
 
         $scope.previousPage = function() {
@@ -71,7 +76,7 @@ angular.module('jrocketUiApp')
         };
 
         function initialize() {
-            loadBookmarks($scope.query, $scope.currentPage, $scope.pageSize);
+            loadBookmarks($scope.searchQuery, $scope.currentPage, $scope.pageSize);
         }
         initialize();
 

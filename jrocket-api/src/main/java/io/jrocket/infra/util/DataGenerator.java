@@ -31,6 +31,7 @@ public class DataGenerator {
         bookmarks.add(newBookmark("http://linkedin.com", "LinkedIn", "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."));
         bookmarks.add(newBookmark("http://ebay.com", "Ebay", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."));
 
+/*
         for (int i = 1 ; i < 100 ; i++) {
             bookmarks.add(newBookmark("http://amazon.com", "Bookmark-" + i++, "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."));
             bookmarks.add(newBookmark("http://facebook.com", "Bookmark-" + i++, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."));
@@ -38,6 +39,7 @@ public class DataGenerator {
             bookmarks.add(newBookmark("http://linkedin.com", "Bookmark-" + i++, "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."));
             bookmarks.add(newBookmark("http://ebay.com", "Bookmark-" + i++, "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."));
         }
+*/
 
         bookmarkRepository.save(bookmarks);
     }

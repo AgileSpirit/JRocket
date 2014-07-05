@@ -1,10 +1,12 @@
-<div id="page-header">
-</div>
+<div ng-include="'views/fragments/header.html'"></div>
 
 <div id="page-body" class="container bookmarks-view">
 
     <div class="searchbar" role="search">
-        <input type="text" class="form-control" id="filter" placeholder="Enter filter" ng-model="searchText">
+        <input type="text" class="form-control"
+               id="filter" placeholder="Enter filter"
+               ng-model="searchQuery"
+               ng-change="search()">
     </div>
 
     <hr>
@@ -16,7 +18,7 @@
     <div class="bookmarks" >
         <div class="center-block">
             <ul class="list">
-                <li ng-repeat="bookmark in bookmarks | filter: searchText">
+                <li ng-repeat="bookmark in bookmarks">
                     <div class="bookmark">
                         <div class="title">
                             <a href="{{bookmark.url}}">{{bookmark.title}}</a>
@@ -38,5 +40,4 @@
     </div>
 </div>
 
-<div id="page-footer">
-</div>
+<div ng-include="'views/fragments/footer.html'"></div>
