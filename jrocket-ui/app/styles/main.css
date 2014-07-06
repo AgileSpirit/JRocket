@@ -1,6 +1,7 @@
 /* Space out content a bit */
 body {
     background-color: #f9fafb;
+    padding-top: 60px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -80,18 +81,36 @@ body {
 /* ========== */
 /* App styles */
 /* ========== */
-
 #page-header.navbar {
     border-radius: 0;
     border: none;
     background-color: #3686be;
+    background-color: #205081;
     background-color: #1db5bd;
     background-color: #4d5a6e;
+    background-color: #444;
 }
 #page-header .navbar-brand,
 #page-header .navbar-brand:hover,
 #page-header .navbar-brand:focus {
     color: white;
+}
+#page-header .navbar-collapse {
+    padding: 0;
+}
+
+#page-header .navbar-nav > li > a {
+    color: #FFF;
+}
+#page-header .navbar-nav > li:hover,
+#page-header .navbar-nav > li:focus {
+    background-color: #EA6344;
+}
+#page-header .header-top {
+    background-color: #444;
+}
+
+#page-body {
 }
 
 #page-footer {
@@ -152,3 +171,7 @@ body {
 }
 .bookmarks-view .bookmark .title {}
 .bookmarks-view .bookmark .description {}
+
+.search-bar {
+    background-color: #e8eaee;
+}

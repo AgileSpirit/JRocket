@@ -8,7 +8,7 @@
  * Controller of the jrocketUiApp
  */
 angular.module('jrocketUiApp')
-    .controller('BookmarksCtrl', ['$scope', 'BookmarkService', function ($scope, bookmarkService) {
+    .controller('BookmarksCtrl', ['$scope', '$rootScope', 'BookmarkService', function ($scope, $rootScope, bookmarkService) {
 
         // Model data
         $scope.searchQuery = '';
@@ -75,6 +75,16 @@ angular.module('jrocketUiApp')
             }
         };
 
+        /**
+         * Handle the event emitted by BookmarkFormCtrl controller
+         */
+        $rootScope.$on('refreshBookmarkList', function(){
+            loadBookmarks($scope.searchQuery, 1, $scope.pageSize);
+        });
+
+        /**
+         * Method called after this controller was initialized
+         */
         function initialize() {
             loadBookmarks($scope.searchQuery, $scope.currentPage, $scope.pageSize);
         }

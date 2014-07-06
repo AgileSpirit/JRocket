@@ -1,5 +1,5 @@
 <!-- Fixed navbar -->
-<div id="page-header" class="navbar navbar-default" role="navigation">
+<div id="page-header" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="HeaderCtrl">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,8 +10,15 @@
             </button>
             <a class="navbar-brand" href="#">JRocket sample application</a>
         </div>
-        <div class="navbar-collapse collapse navbar-right">
-            <button type="button" class="btn btn-primary navbar-btn btn-add-bookmark" ng-click="addBookmark()">Add a bookmark</button>
-        </div><!--/.nav-collapse -->
+        <div class=" collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a ng-click="addBookmark()"><span class="glyphicon glyphicon-plus"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+            <!--<button type="button" class="btn btn-primary navbar-btn btn-add-bookmark" ng-click="addBookmark()">Add a bookmark</button>-->
+        </div>
+        <!--/.nav-collapse -->
     </div>
 </div>
