@@ -9,7 +9,7 @@
  */
 angular.module('jrocketUiApp')
     .service('BookmarkService', function BookmarkService($resource) {
-        var endPoint = 'http://localhost:8080/jrocket/api/bookmarks';
+        var endPoint = 'http://localhost:8080/api/bookmarks';
 
         return $resource(endPoint, {}, {
             save: { method: 'POST', url: endPoint },

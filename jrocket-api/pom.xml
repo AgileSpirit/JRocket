@@ -67,6 +67,7 @@
         <grunt-maven-plugin.version>1.2.0</grunt-maven-plugin.version>
         <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
+        <jetty-maven-plugin.version>9.2.1.v20140609</jetty-maven-plugin.version>
     </properties>
 
     <!-- ************ -->
@@ -553,6 +554,16 @@
                         </manifest>
                     </archive>
                 </configuration>
+            </plugin>
+
+            <!-- ===== -->
+            <!-- JETTY -->
+            <!-- ===== -->
+
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty-maven-plugin.version}</version>
             </plugin>
 
             <!-- ========= -->
