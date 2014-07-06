@@ -1,7 +1,7 @@
 JRocket
 =======
 
-JRocket is a full-stack webapp bootstrapper, based on a Java / Spring back-end and an AngularJS / Foundation5 front-end.
+JRocket is a full-stack bootstrapping webapp, based on a Java / Spring for back-end and an AngularJS / Bootstrap for front-end.
 
 Use cases
 ---------
@@ -18,7 +18,11 @@ Technical stack
 Getting started
 ===============
 
-1) Retrieve the sources  
+Since version 0.5.0, the application is divided in two parts :
+- jrocket-api : the server side, exposing a RESTful API (in JSON) and managing busiess logic and data persistence
+- jrocket-ui : the client side, with an AngularJS SPA-type application
+
+1) Retrieve the sources
 ```
 $ git clone https://github.com/AgileSpirit/JRocket.git
 ```
@@ -26,10 +30,39 @@ $ git clone https://github.com/AgileSpirit/JRocket.git
 ```
 $ mvn clean install
 ```
-This may take a few minutes because default mode sources and javadocs of each dependencies are downloaded by default (see downloadJavadocs and downloadSources properties in pom.xml).  
+This may take a few minutes because default mode sources and javadocs of each dependencies are downloaded by default (see downloadJavadocs and downloadSources properties in pom.xml).
 
-3) Deploy and run the application in a Java Server (ex: Tomcat, JBoss, Jetty, etc.)
+3) Run the API module
+```
+$ cd jrocket-api
+$ mvn jetty:run
+```
+4) Run the UI module (you must have a working NodeJS / AngularJS environment, cf. above)
+```
+$ cd ../jrocket-ui
+$ grunt serve
+```
 
+Configure a SPA workstation
+===========================
+
+1. Install [NodeJS](http://nodejs.org/download/ "NodeJS")
+2. Install Grunt-cli
+```
+$ npm install -g grunt-cli
+```
+3. Install Yeoman
+```
+$ npm install -g yeoman
+```
+4. Retrieve Grunt Node modules
+```
+$ npm install
+```
+5. Retrieve Bower dependencies
+```
+$ bower dependencies
+```
 
 IDE integration
 ===============
