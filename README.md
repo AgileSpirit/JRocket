@@ -42,6 +42,7 @@ $ mvn jetty:run
 $ cd ../jrocket-ui
 $ grunt serve
 ```
+5) The API should be accessible at [http://localhost:8080/api/bookmarks](http://localhost:8080/api/bookmarks "JRocket API") and the UI at [http://localhost:9000](http://localhost:9000 "JRocket UI")
 
 Configure a SPA workstation
 ===========================
@@ -95,10 +96,13 @@ Live testing REST calls
 In a REST console (chrome-extension://hgmloofddffdnphfgcellkdfbfbjeloo/RestClient.html) :
 
 **GET**  
-URL: http://localhost:8080/JRocket/service/bookmarks
+URL: http://localhost:8080/api/bookmarks
+
+**GET**  
+URL: http://localhost:8080/api/bookmarks/search?q=est&o=0&s=10
 
 **POST**  
-URL: http://localhost:8080/JRocket/service/bookmarks 
+URL: http://localhost:8080/api/bookmarks 
 RAW (Payload) : 
 ```
 {
@@ -109,7 +113,7 @@ RAW (Payload) :
 ```
 
 **PUT**  
-URL: http://localhost:8080/JRocket/service/bookmarks/10
+URL: http://localhost:8080/api/bookmarks/10
 RAW (Payload) :
 ```
 {
