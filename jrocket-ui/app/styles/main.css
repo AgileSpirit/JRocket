@@ -90,6 +90,7 @@ body {
     background-color: #4d5a6e;
     background-color: #444;
     background-color: #1d508d;
+    background-color: #0a5175;
 }
 #page-header .navbar-brand,
 #page-header .navbar-brand:hover,
@@ -102,9 +103,11 @@ body {
 
 #page-header .navbar-nav > li > a {
     color: #FFF;
+    cursor: pointer;
 }
 #page-header .navbar-nav > li:hover,
 #page-header .navbar-nav > li:focus {
+    background-color: #46af65;
     background-color: #EA6344;
 }
 #page-header .header-top {
@@ -131,10 +134,6 @@ body {
 .btn-add-bookmark {
     background-color: #7DB461;
     border: none;
-}
-.btn-add-bookmark:hover,
-.btn-add-bookmark:focus {
-    background-color: #6ba44e;
 }
 
 /*
@@ -164,15 +163,54 @@ body {
     background-color: white;
     margin: 8px 0;
     border-left: 4px solid white;
+    cursor: pointer;
 }
 .bookmarks-view .bookmark:hover,
 .bookmarks-view .bookmark:focus {
     border-left-color: #215f8b;
     border-left-color: #ea6344;
 }
-.bookmarks-view .bookmark .title {}
+.bookmarks-view .bookmark .title { font-weight: bold; }
 .bookmarks-view .bookmark .description {}
 
 .search-bar {
     background-color: #e8eaee;
 }
+
+/*
+ * Modal
+ */
+.modal-dialog { margin-top: 49px; }
+.modal-content {  }
+.modal-header {
+    background-color: #5ab9fe;
+    background-color: #4ea3e2;
+    background-color: #fd8f56;
+    color: #ffffff;
+    border-bottom: none;
+}
+.modal-header .close {
+    color: #ffffff;
+    opacity: 0.5;
+}
+.modal-header .close:hover,
+.modal-header .close:focus {
+    opacity: 1;
+}
+.modal-footer {
+    border-top: none;
+    background-color: #f9fafb;
+}
+
+/*
+ * Buttons
+ */
+.btn{display:inline-block;padding:4px 15px;margin-bottom:0;font-size:14px;line-height:16px;color:#fff;text-align:center;vertical-align:middle;cursor:pointer;background:#000;outline:none;border:none;-webkit-border-radius:3px;border-radius:3px;height:34px;font-weight:400;margin:0}
+.btn:hover{opacity:.85;}
+.btn.active,.btn:active,.btn-group.open .btn{opacity:.9;outline:0}
+.btn.disabled,.btn[disabled]{cursor:default !important;opacity:.75 !important;;-webkit-box-shadow:none;box-shadow:none;color:rgba(255,255,255,0.5)}
+.btn-primary { background-color: #4ea3e2; }
+.btn-danger { background-color: #ea6344; }
+.btn-inverse { background-color: #28292d; }
+.btn-draft { background-color: #fd8f56; }
+.btn-success { background-color: #64b46a; }

@@ -8,7 +8,7 @@
  * Controller of the jrocketUiApp
  */
 angular.module('jrocketUiApp')
-    .controller('BookmarksCtrl', ['$scope', '$rootScope', 'BookmarkService', function ($scope, $rootScope, bookmarkService) {
+    .controller('BookmarksCtrl', ['$rootScope', '$scope', '$window', 'BookmarkService', function ($rootScope, $scope, $window, bookmarkService) {
 
         // Model data
         $scope.searchQuery = '';
@@ -73,6 +73,10 @@ angular.module('jrocketUiApp')
             if ($scope.currentPage < $scope.lastPage) {
                 $scope.changePage($scope.currentPage + 1);
             }
+        };
+
+        $scope.openLink = function(url) {
+            $window.open(url, '_blank');
         };
 
         /**
